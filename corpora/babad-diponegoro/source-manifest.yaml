@@ -1,0 +1,982 @@
+version: 1
+corpus_id: babad-diponegoro
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The romanized (Latin-script) transliteration of the Babad Dipanagara autobiographical manuscript (LOr 6547), downloaded canto by canto from an openly hosted archive.org item after an explicit rights confirmation. 41 of 43 cantos; cantos 7 and 12 are broken stubs in the source and are excluded. Catalog pointers to the EAP scans and a manuscript facsimile stay pointers."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Diponegoro source work (other babad recensions, Dutch colonial records)."
+paths:
+  tegalrejo-and-the-outbreak:
+    title: "Tegalrejo and the Outbreak"
+    point: "Start where the war starts: the sacred-land dispute and the road stakes driven through Diponegoro's estate at Tegalrejo in 1825."
+  guerrilla-years:
+    title: "The Guerrilla Years"
+    point: "Follow the five-year war, 1825-1830: Selarong, Kyai Mojo, Sentot, and the Dutch fortress system that ground the rising down."
+  capture-and-exile:
+    title: "Capture and Exile"
+    point: "Read the end from the inside: arrest at Magelang during negotiations in March 1830, then exile to Manado, where the babad was written, and Makassar."
+  prophecy-lineage-and-genre:
+    title: "Prophecy, Lineage, and Genre"
+    point: "See how a babad works: macapat verse mixing visions of the Ratu Adil, descent from the Mataram sultans, and the events of a life."
+items:
+  - id: ia:babad-lor6547-pupuh-01
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_01_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 01 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+      - capture-and-exile
+    curator_score: 9.2
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "The famous Mijil opening written in Manado exile (Sun amedhar surasaning ati...), verified July 2026 by plain GET of the text file."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-02
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_02_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 02 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-03
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_03_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 03 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-04
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_04_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 04 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-05
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_05_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 05 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-06
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_06_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 06 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-08
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_08_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 08 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-09
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_09_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 09 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-10
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_10_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 10 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-11
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_11_-_Babad_Dipanegara_LOr6547A.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 11 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-13
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_13_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 13 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-14
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_14_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 14 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-15
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_15_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 15 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-16
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_16_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 16 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-17
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_17_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 17 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-18
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_18_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 18 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-19
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_19_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 19 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-20
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_20_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 20 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+    curator_score: 9.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "Approximate location of the pre-war crisis narrative in the 43-canto Manado recension."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-21
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_21_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 21 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+    curator_score: 9.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "Approximate location of the outbreak-of-war narrative in the 43-canto Manado recension."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-22
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_22_-_Babad_Dipanegara_LOr6547B.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 22 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-23
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_23_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 23 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-24
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_24_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 24 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-25
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_25_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 25 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-26
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_26_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 26 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-27
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_27_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 27 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-28
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_28_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 28 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-29
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_29_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 29 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-30
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_30_-_Babad_Dipanegara_LOr6547C.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 30 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-31
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_31_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 31 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-32
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_32_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 32 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-33
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_33_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 33 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-34
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_34_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 34 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-35
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_35_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 35 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-36
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_36_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 36 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-37
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_37_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 37 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-38
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_38_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 38 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-39
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_39_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 39 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-40
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_40_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 40 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - guerrilla-years
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-41
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_41_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 41 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - capture-and-exile
+    curator_score: 8.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "One canto of the only openly downloadable machine-readable transliteration of the babad; canto-level episode mapping is approximate (see metadata)."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-42
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_42_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 42 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - capture-and-exile
+    curator_score: 9.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "Near the chronicle's close: the end of the war from the inside."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: ia:babad-lor6547-pupuh-43
+    source_type: static_text_url
+    url: "https://archive.org/download/babad-diponegoro/LOr.%206547%20Hazeu/Transliteration/Pupuh_43_-_Babad_Dipanegara_LOr6547D.txt"
+    title: "Babad Dipanagara (LOr 6547), pupuh 43 - romanized transliteration"
+    author: "Prince Diponegoro"
+    date: "composed 1831-1832 (Manado)"
+    document_type: verse_chronicle_canto
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - capture-and-exile
+    curator_score: 9.0
+    signals:
+      - romanized macapat verse
+      - LOr 6547 Manado recension
+    why_keep: "The final canto, closing the chronicle in exile where it began."
+    metadata:
+      source_collection: "Internet Archive item babad-diponegoro (LOr. 6547 Hazeu / Transliteration)"
+      source_record_url: "https://archive.org/details/babad-diponegoro"
+      path_mapping_note: "Canto-to-episode path assignment is approximate: cantos 1-19 treated as lineage/pre-war history, 20-24 as the outbreak, 25-40 as the war years, 41-43 as capture and exile. Verify against fetched text before citing an episode location."
+      rights_note: "The 1831-1832 chronicle is public domain. The digital transliteration layer is uncredited, carries no stated license, and appears machine-generated (two cantos are error stubs), so download requires explicit user confirmation and the text stays local for personal indexing; philological quality is unvetted."
+  - id: eap:babad-diponegoro-translit-part1
+    source_type: catalog_only
+    url: "https://eap.bl.uk/archive-file/EAP1268-1-2"
+    title: "Babad Diponegoro, 1946 Latin-script transliteration, Part I (EAP1268/1/2)"
+    author: "Prince Diponegoro (original, 1831-1832); 1946 transliterators"
+    date: "transliteration 1946; original composed 1831-1832"
+    document_type: transliterated manuscript, digitized page images
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+      - guerrilla-years
+      - capture-and-exile
+      - prophecy-lineage-and-genre
+    curator_score: 5
+    signals:
+      - Latin-script transliteration
+      - Endangered Archives Programme
+      - page scans only
+    why_keep: "The 1946 hand-written transliteration is the scholarly-provenance Latin-script surface of the babad, and the natural check against the downloaded transliteration."
+    why_skip: "The British Library EAP viewer serves digitized page images behind a human-verification gate, not machine-readable text, so nothing is downloaded. Pointer only."
+    metadata:
+      source_collection: "British Library Endangered Archives Programme, project EAP1268"
+      access_note: "Page through the scans in the EAP web viewer. The site sits behind a human-verification gate, so it must be opened in a browser."
+      import_instructions: "Read the scans in the EAP viewer and type or obtain a transcription. Save it as UTF-8 .txt or .md files in this capsule's documents/ folder and run `dialogues corpus reindex babad-diponegoro`. Confirm the rights of any transcription you did not make yourself."
+  - id: eap:babad-diponegoro-translit-part2
+    source_type: catalog_only
+    url: "https://eap.bl.uk/archive-file/EAP1268-1-3"
+    title: "Babad Diponegoro, 1946 Latin-script transliteration, Part II (EAP1268/1/3)"
+    author: "Prince Diponegoro (original, 1831-1832); 1946 transliterators"
+    date: "transliteration 1946; original composed 1831-1832"
+    document_type: transliterated manuscript, digitized page images
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - guerrilla-years
+      - capture-and-exile
+      - prophecy-lineage-and-genre
+    curator_score: 5
+    signals:
+      - Latin-script transliteration
+      - Endangered Archives Programme
+      - page scans only
+    why_keep: "Second part of the same 1946 transliteration; together the two parts cover the whole chronicle."
+    why_skip: "Digitized page images in the EAP viewer, not machine-readable text. Pointer only."
+    metadata:
+      source_collection: "British Library Endangered Archives Programme, project EAP1268"
+      access_note: "Page through the scans in the EAP web viewer. The site sits behind a human-verification gate, so it must be opened in a browser."
+      import_instructions: "Same as Part I: transcribe from the viewer or import a rights-cleared transcription into documents/ and run `dialogues corpus reindex babad-diponegoro`."
+  - id: commons:babad-diponegoro-lor6547
+    source_type: catalog_only
+    url: "https://commons.wikimedia.org/wiki/File:Babad_Diponegoro_L.Or._6547.pdf"
+    title: "Babad Diponegoro manuscript scan (L.Or. 6547), Wikimedia Commons"
+    author: "Prince Diponegoro (text); manuscript copyists"
+    date: "nineteenth century"
+    document_type: manuscript, scanned page images (PDF)
+    rights_level: public_domain
+    selected: true
+    paths:
+      - prophecy-lineage-and-genre
+      - tegalrejo-and-the-outbreak
+    curator_score: 4
+    signals:
+      - pegon script manuscript
+      - public domain images
+      - no text layer
+    why_keep: "An openly hosted scan of the Babad Diponegoro manuscript (shelfmark L.Or. 6547), useful for checking the downloaded transliteration against the manuscript itself."
+    why_skip: "The PDF is an image-only scan with no extractable text layer, so it must stay catalog-only: there is no machine-readable text to download or index."
+    metadata:
+      source_collection: "Wikimedia Commons"
+      access_note: "The scanned images are public domain reproductions of a nineteenth-century manuscript; reading them requires pegon/Javanese script."
+      import_instructions: "If you produce or obtain a transcription of this manuscript, import it as UTF-8 text into documents/ and run `dialogues corpus reindex babad-diponegoro`."
+  - id: user:babad-romanized-edition
+    source_type: user_supplied_only
+    title: "Your own transcription or a published romanized edition or translation of the Babad Diponegoro"
+    author: "Prince Diponegoro"
+    date: "original 1831-1832; editions vary"
+    document_type: verse chronicle text
+    rights_level: user_supplied_only
+    selected: true
+    paths:
+      - tegalrejo-and-the-outbreak
+      - guerrilla-years
+      - capture-and-exile
+      - prophecy-lineage-and-genre
+    curator_score: 4
+    signals:
+      - user supplied text
+      - scholarly editions under copyright
+      - translations under copyright
+    why_keep: "A vetted scholarly edition or translation (for example Peter Carey's work) remains the quality benchmark; users who own one can import permitted text alongside the downloaded transliteration."
+    why_skip: "Nothing is bundled or fetched. Published scholarly editions and translations are modern copyrighted work; the user must confirm rights before importing."
+    metadata:
+      access_note: "The 1830s text is public domain; modern transliteration, edition, and translation layers usually are not."
+      import_instructions: "Place UTF-8 .txt or .md files (one canto per file works well) in this capsule's documents/ folder and run `dialogues corpus reindex babad-diponegoro`."

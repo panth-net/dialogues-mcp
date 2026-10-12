@@ -1,0 +1,181 @@
+version: 1
+corpus_id: gandhi-collected-works
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Five CWMG volumes downloaded as OCR text from openly hosted archive.org scans of the Publications Division print edition, after an explicit rights confirmation, plus catalog pointers to session-gated Gandhi Heritage Portal volumes that have no verified open mirror."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for wider CWMG coverage."
+paths:
+  south-africa-satyagraha:
+    title: "South Africa Satyagraha"
+    point: "Follow the method being invented: Durban petitions in the 1890s, the Transvaal struggle of 1908, and Hind Swaraj written on the voyage home in 1909."
+  salt-march-and-civil-disobedience:
+    title: "Salt March and Civil Disobedience"
+    point: "Read March-December 1930: Sabarmati to Dandi, the salt law broken, the country following, the arrest of 5 May, and the Yeravda prison letters."
+  quit-india:
+    title: "Quit India"
+    point: "Track April-December 1942: the Quit India resolution, 'do or die', mass arrests, and detention in the Aga Khan Palace. Pointer-only: no open mirror of vol. 76 has been verified, so this path has no downloadable text yet."
+items:
+  - id: dli:cwmg-vol-1
+    source_type: static_text_url
+    url: "https://archive.org/download/in.ernet.dli.2015.227126/2015.227126.The-Collected_djvu.txt"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 1: 1884 - June 4, 1896"
+    author: "M. K. Gandhi"
+    date: "1884-1896"
+    document_type: collected_works_volume
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - south-africa-satyagraha
+    curator_score: 8.6
+    signals:
+      - Durban law office
+      - 1894 franchise petitions
+      - Natal Indian Congress
+      - indentured labour cases
+    why_keep: "The beginning of the public record: the young Durban lawyer, the franchise petitions, and the founding of the Natal Indian Congress. Verified July 2026: the archive.org OCR text opens with the 1958 first-edition front matter and carries the franchise-era documents (409 'Natal' hits)."
+    metadata:
+      source_collection: "Internet Archive (Digital Library of India scan of the Publications Division print edition, 1958)"
+      source_record_url: "https://archive.org/details/in.ernet.dli.2015.227126"
+      license: "CWMG is published by the Gandhi Heritage Portal under CC BY-NC-ND 4.0; local personal indexing only, no redistribution, no commercial use."
+      ocr_note: "Uncorrected OCR of old typesetting; expect character errors and hyphenation artifacts."
+  - id: dli:cwmg-vol-8
+    source_type: static_text_url
+    url: "https://archive.org/download/in.ernet.dli.2015.175005/2015.175005.The-Collected-Works-Of-Mahatma-Gandhi-Vol-viii-jan--aug-1908_djvu.txt"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 8: January - August 1908"
+    author: "M. K. Gandhi"
+    date: "1908"
+    document_type: collected_works_volume
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - south-africa-satyagraha
+    curator_score: 9.0
+    signals:
+      - first Transvaal imprisonment
+      - Gandhi-Smuts settlement and its breach
+      - Mir Alam assault
+      - registration certificates burned August 1908
+    why_keep: "The Transvaal satyagraha at full intensity: the first jail term of January 1908, the settlement with Smuts and its collapse, and the mass burning of registration certificates that August. Verified July 2026: the OCR text carries the 1962 preface ('covers the first eight months of 1908') and 403 'Transvaal' hits."
+    metadata:
+      source_collection: "Internet Archive (Digital Library of India scan of the Publications Division print edition, 1962)"
+      source_record_url: "https://archive.org/details/in.ernet.dli.2015.175005"
+      license: "CWMG is published by the Gandhi Heritage Portal under CC BY-NC-ND 4.0; local personal indexing only, no redistribution, no commercial use."
+      ocr_note: "Uncorrected OCR of old typesetting; expect character errors and hyphenation artifacts."
+  - id: dli:cwmg-vol-10
+    source_type: static_text_url
+    url: "https://archive.org/download/in.ernet.dli.2015.32785/2015.32785.Collected-Works-Of-Mahatma-Gandhi--Vol10_djvu.txt"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 10: November 1909 - March 1911 (includes Hind Swaraj)"
+    author: "M. K. Gandhi"
+    date: "1909-1911"
+    document_type: collected_works_volume
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - south-africa-satyagraha
+    curator_score: 9.2
+    signals:
+      - Hind Swaraj complete English text
+      - Indian Home Rule 1910 Phoenix edition
+      - Tolstoy Farm founded
+      - passive resistance debated
+    why_keep: "The volume that carries the complete English Hind Swaraj (Indian Home Rule), Gandhi's 1909 manifesto written aboard the Kildonan Castle, plus the Tolstoy Farm months — the closest thing to a standalone Hind Swaraj in the verified open set. Verified July 2026: the OCR text opens with the 1910 Phoenix 'Indian Home Rule' title page."
+    metadata:
+      source_collection: "Internet Archive (Digital Library of India scan of the Publications Division print edition)"
+      source_record_url: "https://archive.org/details/in.ernet.dli.2015.32785"
+      license: "CWMG is published by the Gandhi Heritage Portal under CC BY-NC-ND 4.0; local personal indexing only, no redistribution, no commercial use."
+      ocr_note: "Uncorrected OCR of old typesetting; expect character errors and hyphenation artifacts."
+  - id: dli:cwmg-vol-43
+    source_type: static_text_url
+    url: "https://archive.org/download/in.ernet.dli.2015.47021/2015.47021.Collected-Works-Of-Mahatma-Gandhi--Vol43_djvu.txt"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 43: March 2, 1930 - June 30, 1930"
+    author: "M. K. Gandhi"
+    date: "1930"
+    document_type: collected_works_volume
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - salt-march-and-civil-disobedience
+    curator_score: 9.5
+    signals:
+      - letter to Lord Irwin
+      - Sabarmati to Dandi march
+      - salt law broken 6 April
+      - arrest 5 May 1930
+    why_keep: "The Salt March volume: the ultimatum letter to Irwin, the daily march speeches, salt made at Dandi, and the midnight arrest. Verified July 2026: the OCR text carries the march narrative ('breaking of the salt law', Dandi, the 6 April aftermath)."
+    metadata:
+      source_collection: "Internet Archive (Digital Library of India scan of the Publications Division print edition, 1971)"
+      source_record_url: "https://archive.org/details/in.ernet.dli.2015.47021"
+      license: "CWMG is published by the Gandhi Heritage Portal under CC BY-NC-ND 4.0; local personal indexing only, no redistribution, no commercial use."
+      ocr_note: "Uncorrected OCR of old typesetting; expect character errors and hyphenation artifacts."
+  - id: dli:cwmg-vol-44
+    source_type: static_text_url
+    url: "https://archive.org/download/in.ernet.dli.2015.47022/2015.47022.Collected-Works-Of-Mahatma-Gandhi--Vol44_djvu.txt"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 44: July 1, 1930 - December 15, 1930"
+    author: "M. K. Gandhi"
+    date: "1930"
+    document_type: collected_works_volume
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - salt-march-and-civil-disobedience
+    curator_score: 8.2
+    signals:
+      - Yeravda prison letters
+      - civil disobedience continued
+      - Ashram discipline from jail
+    why_keep: "The Yeravda prison months after the Salt March arrest: letters from jail carrying the campaign and the Ashram's discipline through the second half of 1930. Verified July 2026: the OCR text carries the preface ('the five and a half months from July 1 to December 15, 1930... letters that Gandhiji wrote from Yeravda')."
+    metadata:
+      source_collection: "Internet Archive (Digital Library of India scan of the Publications Division print edition)"
+      source_record_url: "https://archive.org/details/in.ernet.dli.2015.47022"
+      license: "CWMG is published by the Gandhi Heritage Portal under CC BY-NC-ND 4.0; local personal indexing only, no redistribution, no commercial use."
+      ocr_note: "Uncorrected OCR of old typesetting; expect character errors and hyphenation artifacts."
+  - id: ghp:cwmg-vol-9
+    source_type: catalog_only
+    url: "https://www.gandhiheritageportal.org/cwmg_volume_thumbview/OQ%3D%3D"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 9: September 1, 1908 - November 12, 1909"
+    author: "M. K. Gandhi"
+    date: "1908-1909"
+    document_type: collected_works_volume
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - south-africa-satyagraha
+    curator_score: 8.8
+    signals:
+      - Transvaal satyagraha
+      - jail terms and deportations
+      - 1909 London deputation
+    why_keep: "Bridges vol. 8 and vol. 10: the deportations of 1909 and the London mission just before Hind Swaraj."
+    why_skip: "The portal's downloadPDF endpoint is session-gated, and both archive.org uploads labeled 'Vol IX' were verified July 2026 to actually contain the February-June 1926 volume, so no open mirror exists. Import manually via browser."
+    metadata:
+      source_collection: "Gandhi Heritage Portal"
+      license: "CC BY-NC-ND 4.0 (portal hosting of CWMG); local personal indexing only"
+      import_instructions: "Open the volume page in a browser, click the Download PDF button, save the PDF into a local folder, then run `dialogues import-folder <folder>`."
+  - id: ghp:cwmg-vol-76
+    source_type: catalog_only
+    url: "https://www.gandhiheritageportal.org/cwmg_volume_thumbview/NzY%3D"
+    title: "The Collected Works of Mahatma Gandhi, Vol. 76: April 1, 1942 - December 17, 1942"
+    author: "M. K. Gandhi"
+    date: "1942"
+    document_type: collected_works_volume
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - quit-india
+    curator_score: 9.3
+    signals:
+      - Quit India resolution
+      - do or die speech 8 August 1942
+      - arrest and Aga Khan Palace
+      - correspondence with Linlithgow
+    why_keep: "The Quit India volume: the Bombay speeches of 8 August 1942, the arrests of 9 August, and the detention correspondence that followed."
+    why_skip: "Session-gated portal download, and no open English mirror of vol. 76 was found (July 2026: archive.org's only 'Vol 76' upload has an unusable Devanagari-mode OCR layer and mismatched contents; the DLI run stops at vol. 74; gandhiashramsevagram.in no longer resolves in DNS). Import manually via browser."
+    metadata:
+      source_collection: "Gandhi Heritage Portal"
+      license: "CC BY-NC-ND 4.0 (portal hosting of CWMG); local personal indexing only"
+      import_instructions: "Open the volume page in a browser, click the Download PDF button, save the PDF into a local folder, then run `dialogues import-folder <folder>`."

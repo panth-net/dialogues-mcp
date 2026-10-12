@@ -1,0 +1,43 @@
+id: evliya-celebi-travels
+title: Evliya Celebi Travels
+subtitle: The opening of the Seyahatname — Istanbul described, then the first roads east
+tagline: "Ottoman gentleman-traveler who spent forty years wandering three continents and wrote ten volumes of it — wit, tall tales, and detail nobody else recorded."
+description: >
+  A curated-source capsule for the first two volumes of Evliya Celebi's
+  Seyahatname in the von Hammer English translation: the dream that
+  licensed a life of travel, Constantinople's walls, talismans, sieges,
+  mosques, and sultans, and the first journeys out — Bursa, Trabzon,
+  Georgia and Mingrelia, Azov, the Crimea, the siege of Canea on Crete,
+  Erzurum, and the Persian mission to Tabriz.
+languages:
+  - en
+type: travel_narrative
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Seyahatname text is bundled. Users download the two public-domain Project Gutenberg volumes of the von Hammer translation locally after reviewing source terms."

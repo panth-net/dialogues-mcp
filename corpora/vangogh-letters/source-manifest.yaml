@@ -1,0 +1,25 @@
+# The official Van Gogh letters XML edition is published as a single archive file.
+version: 1
+corpus_id: vangogh-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: all-letters
+download_modes:
+  all-letters:
+    visible_to_users: true
+    description: The official XML edition of Vincent van Gogh - The Letters (one
+      archive file, about 9.6 MB), under CC BY-NC-SA 4.0.
+paths: {}
+items:
+  - id: vangogh:xml-archive
+    source_type: vangogh_xml_zip
+    url: https://vangoghletters.org/vg/vangoghxml.zip
+    title: Vincent van Gogh - The Letters (XML edition)
+    author: Vincent van Gogh
+    date: 1872-1890
+    document_type: letters_archive
+    rights_level: noncommercial_open_license
+    selected: true
+    metadata:
+      license: CC BY-NC-SA 4.0
+      publisher: Van Gogh Museum and Huygens ING
+      archive_bytes: 9636556

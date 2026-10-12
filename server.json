@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.panth-net/dialogues",
+  "title": "Dialogues",
+  "description": "Guided conversations with historical diaries, letters, and papers stored on your computer.",
+  "version": "0.1.0",
+  "websiteUrl": "https://panth-net.github.io/dialogues-mcp-landing-page/",
+  "repository": {
+    "url": "https://github.com/panth-net/dialogues-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "dialogues-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        { "type": "positional", "value": "mcp" },
+        { "type": "positional", "value": "serve" },
+        {
+          "type": "named",
+          "name": "--data-dir",
+          "description": "Folder for document collections and search files (default: ~/Dialogues).",
+          "format": "filepath",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

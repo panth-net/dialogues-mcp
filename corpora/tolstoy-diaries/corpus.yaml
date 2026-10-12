@@ -1,0 +1,42 @@
+id: tolstoy-diaries
+title: Leo Tolstoy Diaries
+subtitle: Sixty years of moral self-accounting in Russian, from Kazan student to the flight from Yasnaya Polyana
+tagline: "Tolstoy kept diaries for over sixty years — moral self-accounting, vows, failures, and the private struggle behind the novels, in the original Russian."
+description: >
+  A curated-source capsule for Leo Tolstoy's diaries in the original Russian,
+  drawn from the 90-volume Jubilee edition digitized by the "Vsyo Tolstoy v
+  odin klik" project: rules of life and gambling losses in the Caucasus,
+  famine relief and the renunciation of copyright in the 1890s, the war with
+  his own appetites, and the final 1910 diary that ends at Astapovo station.
+languages:
+  - ru
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. Users download Jubilee-edition volume PDFs locally from tolstoy.ru, the Tolstoy Museum's free 'All of Tolstoy in one click' digitization. Tolstoy's own text is public domain; Soviet-era editorial prefaces and commentary in the same volumes may carry separate rights, so keep use local and personal."

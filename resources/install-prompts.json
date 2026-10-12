@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "package": "dialogues-mcp",
+  "node_minimum": "22.16.0",
+  "node_recommended": "24",
+  "clients": ["claude-desktop", "claude-code", "codex", "cursor", "vscode", "antigravity"],
+  "install_prompt": "Install Dialogues MCP on this computer (`npm install -g dialogues-mcp`) and connect it to the app I'm talking to you in (`dialogues setup --client <app>`, where <app> is claude-desktop, claude-code, codex, cursor, vscode, or antigravity). If you aren't sure which app I'm using, ask me first. If Node.js is missing, or the install tells you it's too old, stop and help me fix that first.\n\nWhen you're done, tell me in plain English whether it worked, which app you connected, where my files are, and whether I should quit and reopen the app. Then give me a short message I can send after I restart, a clear table of which documents are downloaded and which are available but not downloaded yet, and a few example questions I could ask about a collection (showcasing some nuanced uses not just the obvious ones).",
+  "first_message": "Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything.",
+  "example_questions": [
+    "What did Pepys actually do on the day of the Great Fire of London?",
+    "How did Van Gogh talk about money with his brother Theo?",
+    "What did Darwin worry about before publishing On the Origin of Species?"
+  ]
+}

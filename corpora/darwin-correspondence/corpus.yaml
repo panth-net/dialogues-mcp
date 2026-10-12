@@ -1,0 +1,44 @@
+id: darwin-correspondence
+title: Darwin Correspondence and Working Science
+subtitle: Letters, observations, experiments, marginalia references, and scientific networks
+tagline: "Darwin working out evolution by mail — decades of letters to Hooker, Huxley, Lyell, and Wallace, with the Origin controversy in real time."
+description: >
+  A curated-source capsule for recovering Darwin's thinking before it became a
+  finished theory: questions, observations, correspondent networks,
+  experiments, marginal notes, delays, doubts, illness, domestic life, and
+  revision.
+languages:
+  - en
+type: correspondence
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+sample_profile: sample.yaml
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1500
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Darwin source text is bundled. Users download selected permitted public-source texts locally after reviewing source terms."

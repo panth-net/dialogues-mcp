@@ -1,0 +1,43 @@
+id: naser-al-din-shah-diary
+title: Naser al-Din Shah Diary
+subtitle: The 1873 European grand tour of the Shah of Persia, in his own day-by-day account
+tagline: "A Persian Shah's personal diary of his 1873 grand tour of Europe — railways, ballets, battleships, and empires seen through curious royal eyes."
+description: >
+  A curated-source capsule for the diary Naser al-Din Shah Qajar kept on his
+  first journey to Europe in 1873, in J. W. Redhouse's English translation:
+  the Caspian crossing and the Volga, the Winter Palace and Tsar Alexander II,
+  Berlin and Wilhelm I, Queen Victoria's Britain with its naval reviews and
+  arsenals, Paris after the Commune, Vienna's World Exhibition, and a
+  monarch's running commentary on trains, ballets, factories, and courts.
+languages:
+  - en
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. Users download the public-domain 1874 Redhouse translation locally from archive.org after reviewing source terms."

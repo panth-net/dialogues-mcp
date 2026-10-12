@@ -1,0 +1,47 @@
+id: gandhi-collected-works
+title: Gandhi Collected Works
+subtitle: Letters, speeches, and articles from the Collected Works of Mahatma Gandhi, volume by volume
+tagline: "The written record of Gandhi's campaigns — letters, speeches, and articles tracing nonviolence from a Durban law office to Indian independence."
+description: >
+  A curated-source capsule for the Collected Works of Mahatma Gandhi (CWMG),
+  the roughly 100-volume English edition of everything recoverable that
+  Gandhi wrote or said: the Durban and Johannesburg satyagraha years, Hind
+  Swaraj, and the Salt March and Yeravda months of 1930. Five volumes
+  download as OCR text from openly hosted archive.org scans of the
+  Publications Division print edition after a rights confirmation; the
+  Quit India volume and vol. 9 remain catalog pointers because the Gandhi
+  Heritage Portal's PDF download is session-gated and no open mirror of
+  them has been verified.
+languages:
+  - en
+type: collected_works
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+sample_profile: sample.yaml
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No CWMG text is bundled. Five volumes download as OCR text from openly hosted archive.org scans of the print edition only after the user confirms the rights notice: the Gandhi Heritage Portal publishes CWMG under CC BY-NC-ND 4.0, which permits local personal indexing with attribution and forbids redistribution of the files, commercial use, and transformed republication of the edition."

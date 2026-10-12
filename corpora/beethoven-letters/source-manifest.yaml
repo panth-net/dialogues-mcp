@@ -1,0 +1,85 @@
+version: 1
+corpus_id: beethoven-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected public-domain Beethoven letter volumes for composition, patronage, illness, family, and publishing questions."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for original-language or fuller Beethoven letter work."
+paths:
+  composition-and-publishers:
+    title: "Composition and Publishers"
+    point: "Track scores, proofing, arrangements, publishers, dedications, and practical music work."
+  patrons-money-and-obligation:
+    title: "Patrons, Money, and Obligation"
+    point: "Recover the economic and social machinery around composition."
+  illness-deafness-and-isolation:
+    title: "Illness, Deafness, and Isolation"
+    point: "Use letters to ground claims about health and social pressure."
+  family-guardianship-and-conflict:
+    title: "Family, Guardianship, and Conflict"
+    point: "Follow family duties, nephew Karl, legal strain, and household conflict."
+  translation-and-editorial-filter:
+    title: "Translation and Editorial Filter"
+    point: "Keep translation, selection, and edition limits visible."
+items:
+  - id: pg:beethoven-letters-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/13065.txt.utf-8"
+    title: "Beethoven's Letters 1790-1826, Volume 1"
+    author: "Ludwig van Beethoven"
+    recipient: "various"
+    date: "1790-1815"
+    document_type: letters_translated_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - composition-and-publishers
+      - patrons-money-and-obligation
+      - illness-deafness-and-isolation
+      - translation-and-editorial-filter
+    curator_score: 9.0
+    signals:
+      - correspondence
+      - composition
+      - patrons
+      - health
+      - translation
+    why_keep: "Early and middle-period correspondence in a downloadable public-domain edition."
+    metadata:
+      gutenberg_id: "13065"
+      source_title: "Beethoven's Letters 1790-1826, Volume 1"
+      translator: "Grace, Lady Wallace"
+      source_language_note: "English translation from German correspondence"
+  - id: pg:beethoven-letters-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/13272.txt.utf-8"
+    title: "Beethoven's Letters 1790-1826, Volume 2"
+    author: "Ludwig van Beethoven"
+    recipient: "various"
+    date: "1816-1826"
+    document_type: letters_translated_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - composition-and-publishers
+      - patrons-money-and-obligation
+      - illness-deafness-and-isolation
+      - family-guardianship-and-conflict
+      - translation-and-editorial-filter
+    curator_score: 9.0
+    signals:
+      - correspondence
+      - late work
+      - nephew Karl
+      - health
+      - translation
+    why_keep: "Late correspondence with strong evidence around family, health, publishing, and patronage."
+    metadata:
+      gutenberg_id: "13272"
+      source_title: "Beethoven's Letters 1790-1826, Volume 2"
+      translator: "Grace, Lady Wallace"
+      source_language_note: "English translation from German correspondence"

@@ -1,0 +1,43 @@
+id: ida-b-wells-writings
+title: Ida B. Wells Writings
+subtitle: The anti-lynching investigations, 1892-1900, with the case lists that made denial impossible
+tagline: "Investigative journalist who documented American lynching with names, dates, and statistics when publishing them got her presses destroyed."
+description: >
+  A curated-source capsule for Ida B. Wells's three anti-lynching pamphlets:
+  Southern Horrors (1892), The Red Record (1895), and Mob Rule in New Orleans
+  (1900). Documented cases with names, dates, and places; tabulated statistics;
+  the dismantling of the "usual charge" pretext; the economics of racial
+  terror; boycotts and the Black press; and calls to investigation, publicity,
+  and self-defense.
+languages:
+  - en
+type: pamphlets
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No pamphlet text is bundled. Users download the public-domain Project Gutenberg editions locally after reviewing source terms. The unpublished Wells papers at the University of Chicago are catalog-only."

@@ -1,0 +1,43 @@
+id: douglass-papers
+title: Frederick Douglass Papers
+subtitle: Correspondence, speeches, newspapers, family papers, and Reconstruction records
+tagline: "Frederick Douglass from fugitive to statesman — speeches, letters, and newspaper work spanning abolition, war, and Reconstruction."
+description: >
+  A curated-source capsule for recovering Douglass as a working mind inside
+  abolition, journalism, oratory, public argument, institution-building, and
+  Reconstruction, not only as the author of an autobiography.
+languages:
+  - en
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_collection
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1500
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Douglass source text is bundled. Users download selected public-source items locally from original repositories after reviewing source terms."

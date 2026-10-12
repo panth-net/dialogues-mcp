@@ -1,0 +1,44 @@
+id: lincoln-papers
+title: Abraham Lincoln Papers
+subtitle: Letters, drafts, legal papers, war paperwork, and public-pressure records
+tagline: "Lincoln in his own words — speeches, letters, telegrams, and drafts from New Salem to the second inaugural, plus original manuscripts from the Library of Congress."
+description: >
+  A curated-source capsule for recovering how Lincoln thought as a person:
+  legal and constitutional reasoning, revision, pressure, humor, moral
+  constraint, and the translation of public crisis into letters, drafts,
+  decisions, and paperwork.
+languages:
+  - en
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+sample_profile: sample.yaml
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Lincoln source text is bundled. Users download selected public-source items locally from original repositories after reviewing source terms."

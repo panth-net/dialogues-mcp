@@ -1,0 +1,180 @@
+version: 1
+corpus_id: tolstoy-diaries
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Three Jubilee-edition diary volumes spanning youth (1847-1854), the 1890s crisis years (1891-1894), and the final year (1910), as searchable PDFs from tolstoy.ru."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates including further diary volumes of the Jubilee edition."
+paths:
+  youth-and-self-making:
+    title: "Youth and Self-Making"
+    point: "Watch the young Tolstoy invent himself: rules of life, gambling losses, the Caucasus, army service, and the first published fiction."
+  moral-accounting-and-vows:
+    title: "Moral Accounting and Vows"
+    point: "Follow sixty years of vows, graded failures, and self-reproach — the diary as a ledger of the soul."
+  famine-and-social-conscience:
+    title: "Famine and Social Conscience"
+    point: "Read the 1891-1893 famine relief at Begichevka, the renunciation of copyright, and the guilt of privilege."
+  art-and-the-writing-life:
+    title: "Art and the Writing Life"
+    point: "Trace fiction and the war against fiction: Detstvo and Sovremennik in the 1850s, the struggle to write about art in the 1890s."
+  last-year-and-departure:
+    title: "The Last Year and the Departure"
+    point: "Live through 1910 day by day: Sofia Andreevna, Chertkov, the secret will, the flight from Yasnaya Polyana, Astapovo."
+items:
+  - id: tolstoyru:jubilee-vol-46
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/849/8497fc57f09b5a7ba385605ac418859a.pdf"
+    title: "PSS (Jubilee edition), vol. 46: Dnevnik 1847-1854"
+    author: "Leo Tolstoy"
+    date: "1847-1854"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - youth-and-self-making
+      - moral-accounting-and-vows
+      - art-and-the-writing-life
+    curator_score: 9.0
+    signals:
+      - rules of life
+      - gambling debts
+      - Caucasus and army
+      - Detstvo and Sovremennik
+      - Franklin-style self-accounting
+    why_keep: "The opening diary: Kazan 1847 through the Caucasus and Crimea-bound army years, where the lifelong machinery of rules, failures, and self-reproach is built."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 46, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1013/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 46057763
+      language: "ru"
+  - id: tolstoyru:jubilee-vol-52
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/fc1/fc112c96b2018a082c1c22207338bf0b.pdf"
+    title: "PSS (Jubilee edition), vol. 52: Dnevniki i zapisnye knizhki 1891-1894"
+    author: "Leo Tolstoy"
+    date: "1891-1894"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - moral-accounting-and-vows
+      - famine-and-social-conscience
+      - art-and-the-writing-life
+    curator_score: 9.2
+    signals:
+      - Begichevka famine kitchens
+      - renunciation of copyright
+      - non-resistance
+      - vegetarianism
+      - writing about art
+    why_keep: "The crisis decade in daily entries: famine relief, the copyright renunciation, property division with the family, and the fight to say what art is for."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 52, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1017/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 28006778
+      language: "ru"
+  - id: tolstoyru:jubilee-vol-58
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/f67/f67aa31c2286282f78a2c85df914e6a7.pdf"
+    title: "PSS (Jubilee edition), vol. 58: Dnevniki i zapisnye knizhki 1910"
+    author: "Leo Tolstoy"
+    date: "1910"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - moral-accounting-and-vows
+      - last-year-and-departure
+    curator_score: 9.5
+    signals:
+      - Sofia Andreevna conflict
+      - Chertkov
+      - secret will
+      - diary for myself alone
+      - flight to Astapovo
+    why_keep: "The famous final year: the battle over the diaries, the secret will, the hidden 'diary for myself alone', and the last entries before Astapovo."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 58, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1023/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 52263325
+      language: "ru"
+  - id: tolstoyru:jubilee-vol-47
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/112/1127b4ee12523171efaf99d1ecf30598.pdf"
+    title: "PSS (Jubilee edition), vol. 47: Dnevniki i zapisnye knizhki 1854-1857"
+    author: "Leo Tolstoy"
+    date: "1854-1857"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: false
+    paths:
+      - youth-and-self-making
+      - moral-accounting-and-vows
+    curator_score: 8.5
+    signals:
+      - Sevastopol
+      - Petersburg literary circle
+      - European travel
+    why_keep: "Curator candidate: Sevastopol under siege, the Petersburg literary debut, and the first European journey."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 47, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1014/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 47630612
+      language: "ru"
+  - id: tolstoyru:jubilee-vol-53
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/48a/48a848d488fdae07d6af0acf3bbc0124.pdf"
+    title: "PSS (Jubilee edition), vol. 53: Dnevniki i zapisnye knizhki 1895-1899"
+    author: "Leo Tolstoy"
+    date: "1895-1899"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: false
+    paths:
+      - moral-accounting-and-vows
+      - art-and-the-writing-life
+    curator_score: 8.6
+    signals:
+      - What Is Art
+      - Dukhobors
+      - Resurrection
+    why_keep: "Curator candidate: the What Is Art years, the Dukhobor resettlement, and Resurrection written to pay for it."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 53, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1018/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 41035379
+      language: "ru"
+  - id: tolstoyru:jubilee-vol-54
+    source_type: static_pdf_url
+    url: "https://www.tolstoy.ru/upload/iblock/d7e/d7e9b15e48bdfcb1f1f07fa10e641272.pdf"
+    title: "PSS (Jubilee edition), vol. 54: Dnevnik, zapisnye knizhki i otdelnye zapisi 1900-1903"
+    author: "Leo Tolstoy"
+    date: "1900-1903"
+    document_type: diary
+    rights_level: no_known_restrictions
+    selected: false
+    paths:
+      - moral-accounting-and-vows
+      - art-and-the-writing-life
+    curator_score: 8.4
+    signals:
+      - excommunication 1901
+      - Crimean illness
+      - Hadji Murat notes
+    why_keep: "Curator candidate: the excommunication by the Holy Synod, near-fatal illness in Crimea, and late fiction notes."
+    metadata:
+      edition: "Polnoe sobranie sochinenii (Jubilee edition), vol. 54, Moscow"
+      volume_page_url: "https://www.tolstoy.ru/creativity/90-volume-collection-of-the-works/1019/"
+      digitization: "Vsyo Tolstoy v odin klik (Tolstoy Museum + ABBYY)"
+      file_size_bytes: 53724866
+      language: "ru"

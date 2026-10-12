@@ -1,0 +1,41 @@
+id: thoreau-writings
+title: Henry David Thoreau Journals and Letters
+subtitle: Journals, familiar letters, and public essays as evidence of thought in practice
+tagline: "Journals and letters from the Walden naturalist who turned daily walks, bean fields, and tax refusals into a philosophy of attention."
+description: >
+  A curated-source capsule for recovering how Thoreau thought through daily
+  observation, walking, labor, solitude, friendship, conscience, publication,
+  and the conversion of field notes into public prose.
+languages:
+  - en
+type: journals_correspondence_essays
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Thoreau source text is bundled. Users download selected Project Gutenberg public-domain texts locally after reviewing source terms."

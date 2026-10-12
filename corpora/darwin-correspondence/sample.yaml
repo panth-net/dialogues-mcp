@@ -1,0 +1,15 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Darwin sample: six letters around the Origin of Species"
+summary: "From the 1844 'like confessing a murder' letter to Hooker, through Wallace's 1858 essay, to the debates after publication."
+# Measured size of these six letter pages on 2026-10-08.
+download_bytes: 723433
+download_note: "Six letter pages from the Darwin Correspondence Project (about 0.7 MB)."
+items:
+  - id: darwin:729
+  - id: darwin:2285
+  - id: darwin:2294
+  - id: darwin:2457
+  - id: darwin:2814
+  - id: darwin:6058

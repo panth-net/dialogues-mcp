@@ -1,0 +1,46 @@
+id: kartini-letters
+title: Kartini Letters
+subtitle: Letters of Raden Adjeng Kartini on seclusion, education, and colonial Java, 1899-1904
+tagline: "A Javanese noblewoman writing Dutch pen friends about colonialism, seclusion, and women's education — she died at 25 and the letters became a national cause."
+description: >
+  A curated-source capsule for the letters of Raden Adjeng Kartini
+  (1879-1904), daughter of the Regent of Japara: seclusion inside the
+  regency house, the fight to study, Dutch pen friends and colonial
+  society, the case against polygamy and her own marriage to the Regent
+  of Rembang, Javanese art and belief, and the school for girls she
+  opened before dying at twenty-five — in the Dutch original and the
+  shorter English translation.
+languages:
+  - nl
+  - en
+type: correspondence
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No letter text is bundled. Users download the public-domain Project Gutenberg editions (Abendanon's Dutch collection and the Symmers English translation) locally after reviewing source terms."

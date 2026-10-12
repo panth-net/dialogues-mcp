@@ -1,0 +1,41 @@
+id: newton-papers
+title: Isaac Newton Papers
+subtitle: Drafts, revisions, mathematics, natural philosophy, theology, chronology, and chymistry
+tagline: "Newton beyond the Principia — alchemy, heretical theology, and Mint work, from scholarly transcriptions of his private papers."
+description: >
+  A curated-source capsule for recovering Newton's mind through drafts,
+  corrections, alternate versions, unfinished systems, and the overlap between
+  mathematics, natural philosophy, theology, chronology, and alchemy.
+languages:
+  - en
+  - la
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Newton source text is bundled. Users download selected permitted source texts locally from original repositories after reviewing source terms."

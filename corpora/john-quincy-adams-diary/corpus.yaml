@@ -1,0 +1,44 @@
+id: john-quincy-adams-diary
+title: John Quincy Adams Diary
+subtitle: Sixty-eight years of the early republic in one relentless daily record
+tagline: "A U.S. president who kept a diary for 68 years — Congress, courts, slavery fights, and self-scolding, the longest inside record of the early republic."
+description: >
+  A curated-source capsule for the diary John Quincy Adams kept from 1779 to 1848:
+  diplomacy in Europe, the State Department, the presidency, the House antislavery
+  years, the Amistad argument, dawn swims in the Potomac, astronomy, and a
+  lifetime of merciless self-assessment. The searchable text is the public-domain
+  twelve-volume Memoirs (ed. Charles Francis Adams, 1874-1877) downloaded from the
+  Internet Archive; catalog records point to the complete modern Digital Diary
+  transcription online.
+languages:
+  - en
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. Users download the public-domain twelve-volume Memoirs of John Quincy Adams (ed. Charles Francis Adams, 1874-1877) locally from the Internet Archive after reviewing source terms. The JQA Digital Diary and Adams Papers records stay catalog-only: read them online and import text yourself only after confirming permission with the Massachusetts Historical Society and the Primary Source Cooperative."

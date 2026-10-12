@@ -1,0 +1,667 @@
+version: 1
+corpus_id: whitman-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Curated Walt Whitman Archive TEI transcriptions: Civil War hospital letters, Doyle letters, Emerson's 1855 greeting, late Camden letters, and five working notebooks."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Whitman source work."
+paths:
+  civil-war-hospitals:
+    title: "Civil War Hospitals"
+    point: "Follow 1863-1864 Washington: hospital rounds, wounded soldiers named bed by bed, and family news in letters to his mother Louisa."
+  doyle-and-comradeship:
+    title: "Doyle and Comradeship"
+    point: "Read the 'Dear Pete' letters to horsecar conductor Peter Doyle, the fullest record of Whitman's affections."
+  emerson-and-recognition:
+    title: "Emerson and Recognition"
+    point: "Start from Emerson's 1855 greeting 'at the beginning of a great career' and his 1863 introductions for Whitman in Washington."
+  camden-and-last-years:
+    title: "Camden and Last Years"
+    point: "Watch the paralyzed poet at 328 Mickle Street manage editions, visitors, symptoms, and reputation, 1873-1892."
+  notebooks-and-drafts:
+    title: "Notebooks and Drafts"
+    point: "Trace Leaves of Grass and the hospital visits back to pencil drafts and field notes in Whitman's working notebooks."
+items:
+  - id: wwa:loc.00762
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00762.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 6 February 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-02-06"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.8
+    signals:
+      - Washington arrival period
+      - hospitals
+      - family news
+    why_keep: "Early Washington letter to his mother: hospital visiting and the wartime household economy in one document."
+    metadata:
+      whitman_archive_id: "loc.00762"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00766
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00766.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 15 April 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-04-15"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.6
+    signals:
+      - hospital rounds
+      - money and rent
+      - Brooklyn family
+    why_keep: "Spring 1863 report to his mother from the middle of the hospital-visiting routine."
+    metadata:
+      whitman_archive_id: "loc.00766"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00773
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00773.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 9 June 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-06-09"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.7
+    signals:
+      - hospital scenes
+      - soldiers by name
+      - war weariness
+    why_keep: "June 1863 letter to his mother as the hospital work deepens and the war drags."
+    metadata:
+      whitman_archive_id: "loc.00773"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00774
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00774.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 22 June 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-06-22"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.6
+    signals:
+      - hospitals
+      - Washington life
+      - George at the front
+    why_keep: "Summer 1863 letter home; hospitals, heat, and worry about brother George in the 51st New York."
+    metadata:
+      whitman_archive_id: "loc.00774"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00785
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00785.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 1 September 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-09-01"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.6
+    signals:
+      - hospital visiting
+      - dying soldiers
+      - family economy
+    why_keep: "Autumn 1863 letter home from the long middle of the hospital service."
+    metadata:
+      whitman_archive_id: "loc.00785"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00800
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00800.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 27 October 1863"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1863-10-27"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.5
+    signals:
+      - hospitals
+      - Washington autumn
+      - homesickness
+    why_keep: "Late October 1863 letter to his mother shortly before his Brooklyn furlough."
+    metadata:
+      whitman_archive_id: "loc.00800"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00811
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00811.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 2 March 1864"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1864-03-02"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.6
+    signals:
+      - 1864 campaigns approaching
+      - front visit aftermath
+      - hospitals
+    why_keep: "1864 letter home after Whitman's visit to the Culpeper front, as the spring campaigns loom."
+    metadata:
+      whitman_archive_id: "loc.00811"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00818
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00818.xml"
+    title: "Walt Whitman to Louisa Van Velsor Whitman, 19 April 1864"
+    author: "Walt Whitman"
+    recipient: "Louisa Van Velsor Whitman"
+    date: "1864-04-19"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.5
+    signals:
+      - hospital strain
+      - health beginning to break
+      - war news
+    why_keep: "Spring 1864 letter home as the hospital work starts to wear Whitman's own health down."
+    metadata:
+      whitman_archive_id: "loc.00818"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:nyp.00180
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/nyp.00180.xml"
+    title: "Walt Whitman to Thomas P. Sawyer, 21 April 1863"
+    author: "Walt Whitman"
+    recipient: "Thomas P. Sawyer"
+    date: "1863-04-21"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+      - doyle-and-comradeship
+    curator_score: 9.2
+    signals:
+      - soldier comradeship
+      - direct affection
+      - Calamus evidence
+    why_keep: "One of the famous letters to the wounded Massachusetts soldier Tom Sawyer: Whitman's affection for a soldier said plainly, key evidence for the comradeship questions."
+    metadata:
+      whitman_archive_id: "nyp.00180"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:nyp.00181
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/nyp.00181.xml"
+    title: "Walt Whitman to Thomas P. Sawyer, 26 April 1863"
+    author: "Walt Whitman"
+    recipient: "Thomas P. Sawyer"
+    date: "1863-04-26"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+      - doyle-and-comradeship
+    curator_score: 9.0
+    signals:
+      - soldier comradeship
+      - hospital friendship
+      - postwar hopes
+    why_keep: "Second Sawyer letter of April 1863, continuing the plans and affection of the first."
+    metadata:
+      whitman_archive_id: "nyp.00181"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00782
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00782.xml"
+    title: "Walt Whitman to Nathaniel Bloom, 15 August 1863"
+    author: "Walt Whitman"
+    recipient: "Nathaniel Bloom"
+    date: "1863-08-15"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.7
+    signals:
+      - New York bohemian circle
+      - hospital description for outsiders
+      - self-presentation
+    why_keep: "Letter to a New York friend from the Pfaff's circle: Whitman explains his hospital life to the peacetime world he left."
+    metadata:
+      whitman_archive_id: "loc.00782"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:nyp.00188
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/nyp.00188.xml"
+    title: "Walt Whitman to William D. O'Connor, 25 June 1864"
+    author: "Walt Whitman"
+    recipient: "William D. O'Connor"
+    date: "1864-06-25"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - civil-war-hospitals
+    curator_score: 8.6
+    signals:
+      - health collapse
+      - return to Brooklyn
+      - O'Connor friendship
+    why_keep: "Written after Whitman's health broke and he left Washington for Brooklyn: the cost of the hospital years in his own words."
+    metadata:
+      whitman_archive_id: "nyp.00188"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.02109
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.02109.xml"
+    title: "Ralph Waldo Emerson to Walt Whitman, 21 July 1855"
+    author: "Ralph Waldo Emerson"
+    recipient: "Walt Whitman"
+    date: "1855-07-21"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - emerson-and-recognition
+    curator_score: 9.8
+    signals:
+      - I greet you at the beginning of a great career
+      - Leaves of Grass reception
+      - founding document of Whitman's fame
+    why_keep: "The most famous letter in American literary history: Emerson greets the unknown author of Leaves of Grass 'at the beginning of a great career.'"
+    metadata:
+      whitman_archive_id: "loc.02109"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00760
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00760.xml"
+    title: "Ralph Waldo Emerson to William H. Seward, 10 January 1863"
+    author: "Ralph Waldo Emerson"
+    recipient: "William H. Seward"
+    date: "1863-01-10"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - emerson-and-recognition
+      - civil-war-hospitals
+    curator_score: 8.4
+    signals:
+      - patronage letter
+      - Washington job hunt
+      - Emerson vouches for Whitman
+    why_keep: "Emerson's introduction of Whitman to Secretary of State Seward: how a poet sought government work in wartime Washington."
+    metadata:
+      whitman_archive_id: "loc.00760"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00761
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.00761.xml"
+    title: "Ralph Waldo Emerson to Walt Whitman, 12 January 1863"
+    author: "Ralph Waldo Emerson"
+    recipient: "Walt Whitman"
+    date: "1863-01-12"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - emerson-and-recognition
+      - civil-war-hospitals
+    curator_score: 8.4
+    signals:
+      - Emerson-Whitman relationship in 1863
+      - introductions enclosed
+      - Washington beginnings
+    why_keep: "Emerson writes directly to Whitman about the introductions, joining the 1855 greeting to the wartime years."
+    metadata:
+      whitman_archive_id: "loc.00761"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.01581
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.01581.xml"
+    title: "Walt Whitman to Peter Doyle, 25 September 1868"
+    author: "Walt Whitman"
+    recipient: "Peter Doyle"
+    date: "1868-09-25"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - doyle-and-comradeship
+    curator_score: 9.0
+    signals:
+      - early Doyle letters
+      - New York visit
+      - Dear Pete
+    why_keep: "From the first run of letters to Doyle, written while Whitman visited New York: the tone of the friendship set early."
+    metadata:
+      whitman_archive_id: "loc.01581"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.01518
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.01518.xml"
+    title: "Walt Whitman to Peter Doyle, 21 August [1869]"
+    author: "Walt Whitman"
+    recipient: "Peter Doyle"
+    date: "1869-08-21"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - doyle-and-comradeship
+    curator_score: 9.3
+    signals:
+      - my darling boy
+      - illness and worry
+      - Brooklyn to Washington
+    why_keep: "Sick in Brooklyn, Whitman writes 'I have thought of you, my darling boy, very much of the time' — a centerpiece of the Doyle correspondence."
+    metadata:
+      whitman_archive_id: "loc.01518"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.01520
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.01520.xml"
+    title: "Walt Whitman to Peter Doyle, 3 September 1869"
+    author: "Walt Whitman"
+    recipient: "Peter Doyle"
+    date: "1869-09-03"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - doyle-and-comradeship
+    curator_score: 8.9
+    signals:
+      - counsel and care
+      - Doyle's troubles
+      - steady affection
+    why_keep: "September 1869 letter in the same anxious stretch of the correspondence, Whitman steadying Doyle from a distance."
+    metadata:
+      whitman_archive_id: "loc.01520"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.01535
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.01535.xml"
+    title: "Walt Whitman to Peter Doyle, 21-23 June 1871"
+    author: "Walt Whitman"
+    recipient: "Peter Doyle"
+    date: "1871-06-21/1871-06-23"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - doyle-and-comradeship
+    curator_score: 8.7
+    signals:
+      - multi-day letter
+      - daily life detail
+      - horsecar world
+    why_keep: "A multi-day 1871 letter showing the settled rhythm of the friendship: news, jokes, and the horsecar world."
+    metadata:
+      whitman_archive_id: "loc.01535"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.01624
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.01624.xml"
+    title: "Walt Whitman to Peter Doyle, 28 [November 1873]"
+    author: "Walt Whitman"
+    recipient: "Peter Doyle"
+    date: "1873-11-28"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - doyle-and-comradeship
+      - camden-and-last-years
+    curator_score: 8.8
+    signals:
+      - after the stroke
+      - Camden exile
+      - changed life
+    why_keep: "Written from Camden months after Whitman's paralytic stroke and his mother's death: the Doyle correspondence under the shadow of the last phase."
+    metadata:
+      whitman_archive_id: "loc.01624"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.03121
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.03121.xml"
+    title: "Walt Whitman to William Sloane Kennedy, 20-21 January 1891"
+    author: "Walt Whitman"
+    recipient: "William Sloane Kennedy"
+    date: "1891-01-20/1891-01-21"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camden-and-last-years
+    curator_score: 8.5
+    signals:
+      - late Camden
+      - literary business
+      - failing body
+    why_keep: "Last-years letter to the disciple-biographer Kennedy: reputation management and daily symptoms in one note."
+    metadata:
+      whitman_archive_id: "loc.03121"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.04293
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.04293.xml"
+    title: "Walt Whitman to Horace Traubel, 31 March 1891"
+    author: "Walt Whitman"
+    recipient: "Horace Traubel"
+    date: "1891-03-31"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camden-and-last-years
+    curator_score: 8.6
+    signals:
+      - Traubel as daily companion
+      - Good-Bye My Fancy period
+      - deathbed edition work
+    why_keep: "Note to Horace Traubel, the young Camden disciple recording Whitman daily, during the Good-Bye My Fancy and deathbed-edition period."
+    metadata:
+      whitman_archive_id: "loc.04293"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.04782
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.04782.xml"
+    title: "Walt Whitman to Hannah Whitman Heyde, 28 January 1891"
+    author: "Walt Whitman"
+    recipient: "Hannah Whitman Heyde"
+    date: "1891-01-28"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camden-and-last-years
+    curator_score: 8.3
+    signals:
+      - family duty to the end
+      - sister in Burlington
+      - small kindnesses
+    why_keep: "Late letter to his troubled sister Hannah: the family caretaker role Whitman kept from the 1863 letters to the end."
+    metadata:
+      whitman_archive_id: "loc.04782"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.05877
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-correspondence/dev/source/tei/loc.05877.xml"
+    title: "Walt Whitman to Richard Maurice Bucke, 8 February 1892"
+    author: "Walt Whitman"
+    recipient: "Richard Maurice Bucke"
+    date: "1892-02-08"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camden-and-last-years
+    curator_score: 9.0
+    signals:
+      - weeks before death
+      - Bucke the biographer
+      - final voice
+    why_keep: "Written six weeks before Whitman's death on 26 March 1892, to his biographer and executor Bucke: the correspondence at its very end."
+    metadata:
+      whitman_archive_id: "loc.05877"
+      repository: "whitmanarchive/whitman-correspondence"
+  - id: wwa:loc.00141
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-notebooks/main/source/tei/loc.00141.xml"
+    title: "Talbot Wilson notebook (Notebook LC #80)"
+    author: "Walt Whitman"
+    date: "between 1847 and 1854"
+    document_type: notebook
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - notebooks-and-drafts
+      - emerson-and-recognition
+    curator_score: 9.7
+    signals:
+      - trial lines for Leaves of Grass
+      - I am the poet of the body
+      - the long foreground Emerson guessed at
+    why_keep: "The most famous Whitman notebook: pre-1855 trial lines where the Leaves of Grass voice first appears — the 'long foreground' behind Emerson's greeting."
+    metadata:
+      whitman_archive_id: "loc.00141"
+      repository: "whitmanarchive/whitman-notebooks"
+      holding: "Thomas Biggs Harned Collection, Library of Congress"
+  - id: wwa:loc.00346
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-notebooks/main/source/tei/loc.00346.xml"
+    title: "Poem incarnating the mind (Notebook LC #85)"
+    author: "Walt Whitman"
+    date: "before 1855"
+    document_type: notebook
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - notebooks-and-drafts
+    curator_score: 8.8
+    signals:
+      - pre-1855 poetics
+      - plans for poems
+      - self-instruction
+    why_keep: "Pre-1855 working notebook of poem plans and self-instructions, showing the program behind the first Leaves of Grass."
+    metadata:
+      whitman_archive_id: "loc.00346"
+      repository: "whitmanarchive/whitman-notebooks"
+      holding: "Thomas Biggs Harned Collection, Library of Congress"
+  - id: wwa:nyp.00129
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-notebooks/main/source/tei/nyp.00129.xml"
+    title: "I know a rich capitalist (notebook)"
+    author: "Walt Whitman"
+    date: "between about 1854 and 1860"
+    document_type: notebook
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - notebooks-and-drafts
+    curator_score: 8.5
+    signals:
+      - New York observation
+      - class and money
+      - draft prose and verse
+    why_keep: "Berg Collection notebook from the first-editions period: New York observation, money, and drafts between prose and verse."
+    metadata:
+      whitman_archive_id: "nyp.00129"
+      repository: "whitmanarchive/whitman-notebooks"
+      holding: "Henry W. and Albert A. Berg Collection, New York Public Library"
+  - id: wwa:uva.00053
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-notebooks/main/source/tei/uva.00053.xml"
+    title: "from Hookers command (Civil War hospital notebook)"
+    author: "Walt Whitman"
+    date: "1863"
+    document_type: notebook
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - notebooks-and-drafts
+      - civil-war-hospitals
+    curator_score: 9.4
+    signals:
+      - bedside pencil notes
+      - Ward E bed 47
+      - the bed of death
+    why_keep: "1863 hospital notebook with bedside notes on wounded soldiers ('this is the bed of death he is failing fast') — the raw material behind the wartime letters and Memoranda During the War."
+    metadata:
+      whitman_archive_id: "uva.00053"
+      repository: "whitmanarchive/whitman-notebooks"
+      holding: "Clifton Waller Barrett Library, University of Virginia"
+  - id: wwa:loc.05935
+    source_type: tei_xml_url
+    url: "https://raw.githubusercontent.com/whitmanarchive/whitman-notebooks/main/source/tei/loc.05935.xml"
+    title: "Autobiographical Data (Notebook LC #87)"
+    author: "Walt Whitman"
+    date: "between 1848 and 1856"
+    document_type: notebook
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - notebooks-and-drafts
+    curator_score: 8.7
+    signals:
+      - self-chronology
+      - New Orleans and Brooklyn years
+      - life into material
+    why_keep: "Notebook of autobiographical notes from the years the poet was inventing himself; Whitman turning his own life into material."
+    metadata:
+      whitman_archive_id: "loc.05935"
+      repository: "whitmanarchive/whitman-notebooks"
+      holding: "Thomas Biggs Harned Collection, Library of Congress"
+  - id: wwa:archive-downloads
+    source_type: catalog_only
+    url: "https://whitmanarchive.org/about/downloads"
+    title: "Walt Whitman Archive downloads (full corpus)"
+    author: "The Walt Whitman Archive"
+    document_type: archive_downloads_page
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - notebooks-and-drafts
+      - civil-war-hospitals
+      - doyle-and-comradeship
+      - emerson-and-recognition
+      - camden-and-last-years
+    curator_score: 7
+    signals:
+      - full corpus pointer
+      - thousands more letters
+      - TEI downloads
+    why_keep: "Points at the Archive's own downloads page for the complete corpora behind this curated sample — over six thousand correspondence TEI files alone."
+    why_skip: "Catalog-only pointer: a downloads landing page, not a text document; users who want the full corpus should fetch it from the Archive directly."
+    metadata:
+      access_note: "The Archive's data repositories at github.com/whitmanarchive hold the complete TEI; this capsule indexes only the curated selection above."

@@ -1,0 +1,169 @@
+version: 1
+corpus_id: thoreau-writings
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Thoreau public-domain texts that reveal daily observation, correspondence, conscience, and public prose."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of additional Thoreau candidates."
+paths:
+  journals-and-daily-observation:
+    title: "Journals and Daily Observation"
+    point: "Recover how Thoreau made thought out of repeated attention to ordinary days."
+  letters-and-relationships:
+    title: "Letters and Relationships"
+    point: "See Thoreau as correspondent, friend, brother, neighbor, and working writer."
+  work-solitude-and-economy:
+    title: "Work, Solitude, and Economy"
+    point: "Trace labor, money, necessity, shelter, and self-discipline."
+  conscience-and-public-duty:
+    title: "Conscience and Public Duty"
+    point: "Follow moral reasoning about state power, slavery, war, and public obligation."
+  nature-as-method:
+    title: "Nature as Method"
+    point: "Use field observation and walking as evidence of how thinking happens."
+  travel-and-field-notes:
+    title: "Travel and Field Notes"
+    point: "Read travel and excursion writing as observation under changing conditions."
+items:
+  - id: pg:thoreau-familiar-letters
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/43523.txt.utf-8"
+    title: "Familiar Letters"
+    author: "Henry David Thoreau"
+    date: "1906"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - letters-and-relationships
+      - work-solitude-and-economy
+      - nature-as-method
+    curator_score: 9.2
+    signals:
+      - correspondence
+      - friendship
+      - ordinary constraints
+      - intellectual exchange
+    why_keep: "Best compact public-domain source for Thoreau's correspondence and social voice."
+    metadata:
+      gutenberg_id: "43523"
+      source_title: "Familiar Letters"
+  - id: pg:thoreau-journal-01
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/57393.txt.utf-8"
+    title: "Journal 01, 1837-1846"
+    author: "Henry David Thoreau"
+    date: "1837-1846"
+    document_type: journal
+    rights_level: public_domain
+    selected: true
+    paths:
+      - journals-and-daily-observation
+      - nature-as-method
+      - work-solitude-and-economy
+    curator_score: 9.5
+    signals:
+      - journals
+      - early formation
+      - daily observation
+      - solitude
+    why_keep: "Early journal evidence for the formation of Thoreau's observational and reflective method."
+    metadata:
+      gutenberg_id: "57393"
+      source_title: "Journal 01, 1837-1846"
+  - id: pg:thoreau-journal-02
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/59031.txt.utf-8"
+    title: "Journal 02, 1850-September 15, 1851"
+    author: "Henry David Thoreau"
+    date: "1850-1851"
+    document_type: journal
+    rights_level: public_domain
+    selected: true
+    paths:
+      - journals-and-daily-observation
+      - nature-as-method
+      - work-solitude-and-economy
+    curator_score: 9.4
+    signals:
+      - journals
+      - daily observation
+      - Concord
+      - field vocabulary
+    why_keep: "Dense daily record from a mature observational period."
+    metadata:
+      gutenberg_id: "59031"
+      source_title: "Journal 02, 1850-September 15, 1851"
+  - id: pg:thoreau-walden-civil-disobedience
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/205.txt.utf-8"
+    title: "Walden, and On The Duty Of Civil Disobedience"
+    author: "Henry David Thoreau"
+    date: "1854; 1849"
+    document_type: essays_mixed_volume
+    rights_level: public_domain
+    selected: true
+    paths:
+      - work-solitude-and-economy
+      - conscience-and-public-duty
+      - nature-as-method
+    curator_score: 9.0
+    signals:
+      - public prose
+      - economy
+      - conscience
+      - solitude
+    why_keep: "Canonical public prose useful when read beside journals and letters rather than as a slogan source."
+    metadata:
+      gutenberg_id: "205"
+      source_title: "Walden, and On The Duty Of Civil Disobedience"
+  - id: pg:thoreau-walking
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/1022.txt.utf-8"
+    title: "Walking"
+    author: "Henry David Thoreau"
+    date: "1862"
+    document_type: essay
+    rights_level: public_domain
+    selected: true
+    paths:
+      - nature-as-method
+      - travel-and-field-notes
+      - journals-and-daily-observation
+    curator_score: 8.6
+    signals:
+      - walking
+      - wildness
+      - public lecture
+      - observation
+    why_keep: "Public essay shaped from repeated walking and journal-keeping."
+    metadata:
+      gutenberg_id: "1022"
+      source_title: "Walking"
+  - id: pg:thoreau-maine-woods
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/42500.txt.utf-8"
+    title: "The Maine Woods"
+    author: "Henry David Thoreau"
+    date: "1864"
+    document_type: travel_field_prose
+    rights_level: public_domain
+    selected: true
+    paths:
+      - travel-and-field-notes
+      - nature-as-method
+      - journals-and-daily-observation
+    curator_score: 8.4
+    signals:
+      - travel
+      - field notes
+      - observation
+      - encounter
+    why_keep: "Shows observation away from Concord and tests the method under travel conditions."
+    metadata:
+      gutenberg_id: "42500"
+      source_title: "The Maine Woods"

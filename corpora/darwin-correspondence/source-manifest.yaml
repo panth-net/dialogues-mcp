@@ -1,0 +1,426 @@
+version: 1
+corpus_id: darwin-correspondence
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Darwin documents that reveal questions, observations, experiments, correspondence, and revision."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  thought-before-theory:
+    title: "Thought before Theory"
+    point: "Find questions, doubts, and unfinished reasoning before later closure."
+  species-and-variation:
+    title: "Species and Variation"
+    point: "Trace species problems, variation, breeding, and selection."
+  experiments-and-observations:
+    title: "Experiments and Observations"
+    point: "Follow practical trials, measurements, specimens, and observations."
+  network-of-correspondents:
+    title: "Network of Correspondents"
+    point: "Read theory formation as exchange across people."
+  illness-work-and-family:
+    title: "Illness, Work, and Family"
+    point: "Track bodily and domestic constraints on scientific work."
+  marginalia-and-reading:
+    title: "Marginalia and Reading"
+    point: "Use notes and reading records as evidence of influence and reaction."
+  public-private-science:
+    title: "Public and Private Science"
+    point: "Compare private letters, drafts, reviews, and publication decisions."
+items:
+  - id: darwin:346
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-346.xml"
+    title: "To Caroline Darwin, 27 February 1837"
+    author: "Charles Darwin"
+    recipient: "Caroline Darwin"
+    date: "1837-02-27"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - illness-work-and-family
+      - experiments-and-observations
+      - public-private-science
+    curator_score: 7.8
+    signals:
+      - family correspondence
+      - early scientific work
+      - private context
+    why_keep: "Early family correspondence that places scientific work inside domestic and bodily context."
+    metadata:
+      letter_number: DCP-LETT-346
+  - id: darwin:729
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-729.xml"
+    title: "To J. D. Hooker, 11 January 1844"
+    author: "Charles Darwin"
+    recipient: "Joseph Dalton Hooker"
+    date: "1844-01-11"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - thought-before-theory
+      - species-and-variation
+      - network-of-correspondents
+      - marginalia-and-reading
+    curator_score: 10
+    signals:
+      - species not immutable
+      - private confession
+      - reading and fact gathering
+      - correspondent exchange
+    why_keep: "The 'confessing a murder' letter is central evidence for theory before public closure."
+    metadata:
+      letter_number: DCP-LETT-729
+  - id: darwin:1669
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-1669.xml"
+    title: "To J. D. Hooker, 19 April 1855"
+    author: "Charles Darwin"
+    recipient: "Joseph Dalton Hooker"
+    date: "1855-04-19"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - experiments-and-observations
+      - network-of-correspondents
+      - species-and-variation
+    curator_score: 8.5
+    signals:
+      - experiment planning
+      - seeds and distribution
+      - Hooker network
+    why_keep: "Shows Darwin turning distribution questions into practical experimental and correspondent work."
+    metadata:
+      letter_number: DCP-LETT-1669
+  - id: darwin:1924
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-1924.xml"
+    title: "To J. D. Hooker, 13 July 1856"
+    author: "Charles Darwin"
+    recipient: "Joseph Dalton Hooker"
+    date: "1856-07-13"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - thought-before-theory
+      - network-of-correspondents
+      - public-private-science
+    curator_score: 8.2
+    signals:
+      - theory discussion
+      - Huxley and Hooker network
+      - private scientific exchange
+    why_keep: "A pre-Origin network letter showing theory formation as private exchange among correspondents."
+    metadata:
+      letter_number: DCP-LETT-1924
+  - id: darwin:2125
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2125.xml"
+    title: "To Asa Gray, 20 July 1857"
+    author: "Charles Darwin"
+    recipient: "Asa Gray"
+    date: "1857-07-20"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - species-and-variation
+      - network-of-correspondents
+      - thought-before-theory
+    curator_score: 9
+    signals:
+      - species theory
+      - extinction and distribution
+      - transatlantic network
+    why_keep: "Pre-Origin exchange with Asa Gray where species and distribution problems are worked through in correspondence."
+    metadata:
+      letter_number: DCP-LETT-2125
+  - id: darwin:2176
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2176.xml"
+    title: "To Asa Gray, 29 November 1857"
+    author: "Charles Darwin"
+    recipient: "Asa Gray"
+    date: "1857-11-29"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - species-and-variation
+      - network-of-correspondents
+      - public-private-science
+    curator_score: 8.9
+    signals:
+      - natural selection
+      - private scientific explanation
+      - transatlantic network
+    why_keep: "A private explanation of developing species theory before the public book."
+    metadata:
+      letter_number: DCP-LETT-2176
+  - id: darwin:2285
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2285.xml"
+    title: "To Charles Lyell, 18 June 1858"
+    author: "Charles Darwin"
+    recipient: "Charles Lyell"
+    date: "1858-06-18"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - thought-before-theory
+      - network-of-correspondents
+      - public-private-science
+    curator_score: 9.7
+    signals:
+      - Wallace manuscript
+      - publication pressure
+      - priority crisis
+    why_keep: "A core Wallace/Lyell pressure letter where private theory becomes a publication problem."
+    metadata:
+      letter_number: DCP-LETT-2285
+  - id: darwin:2294
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2294.xml"
+    title: "To Charles Lyell, 25 June 1858"
+    author: "Charles Darwin"
+    recipient: "Charles Lyell"
+    date: "1858-06-25"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - network-of-correspondents
+      - public-private-science
+      - thought-before-theory
+    curator_score: 9.3
+    signals:
+      - priority crisis
+      - personal pressure
+      - publication decision
+    why_keep: "Shows the personal and ethical pressure around public presentation of the Wallace/Darwin problem."
+    metadata:
+      letter_number: DCP-LETT-2294
+  - id: darwin:2457
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2457.xml"
+    title: "To J. D. Hooker, 3 May 1859"
+    author: "Charles Darwin"
+    recipient: "Joseph Dalton Hooker"
+    date: "1859-05-03"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - marginalia-and-reading
+      - species-and-variation
+      - public-private-science
+    curator_score: 8.2
+    signals:
+      - reading and pamphlets
+      - plant distribution
+      - Origin preparation
+    why_keep: "A near-Origin letter connecting reading, plant evidence, and publication preparation."
+    metadata:
+      letter_number: DCP-LETT-2457
+  - id: darwin:2814
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-2814.xml"
+    title: "To Asa Gray, 22 May 1860"
+    author: "Charles Darwin"
+    recipient: "Asa Gray"
+    date: "1860-05-22"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - public-private-science
+      - network-of-correspondents
+      - species-and-variation
+    curator_score: 8.7
+    signals:
+      - Origin reception
+      - transatlantic defense
+      - public-private science
+    why_keep: "Post-Origin correspondence showing public reception being processed through private scientific networks."
+    metadata:
+      letter_number: DCP-LETT-2814
+  - id: darwin:5140
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-5140.xml"
+    title: "From A. R. Wallace, 2 July 1866"
+    author: "Alfred Russel Wallace"
+    recipient: "Charles Darwin"
+    date: "1866-07-02"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - network-of-correspondents
+      - species-and-variation
+      - public-private-science
+    curator_score: 8.4
+    signals:
+      - Wallace exchange
+      - natural selection reception
+      - disagreement and explanation
+    why_keep: "A later Wallace letter showing theory as continuing exchange, not a finished solitary doctrine."
+    metadata:
+      letter_number: DCP-LETT-5140
+  - id: darwin:6058
+    source_type: darwin_correspondence
+    url: "https://www.darwinproject.ac.uk/letter?docId=letters/DCP-LETT-6058.xml"
+    title: "To A. R. Wallace, 27 March 1868"
+    author: "Charles Darwin"
+    recipient: "Alfred Russel Wallace"
+    date: "1868-03-27"
+    document_type: letter
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - experiments-and-observations
+      - network-of-correspondents
+    curator_score: 7.8
+    signals:
+      - problem solving
+      - Wallace exchange
+      - practical calculation
+    why_keep: "A compact Wallace exchange showing scientific problems being handed through family and correspondent networks."
+    metadata:
+      letter_number: DCP-LETT-6058
+  - id: pg:darwin-life-letters-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2087.txt.utf-8"
+    title: "The Life and Letters of Charles Darwin - Volume 1 (edited by Francis Darwin)"
+    author: "Charles Darwin"
+    recipient: "various"
+    date: "1809-1859"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - thought-before-theory
+      - species-and-variation
+      - network-of-correspondents
+      - illness-work-and-family
+    curator_score: 9.4
+    signals:
+      - autobiographical chapter
+      - early life and Beagle voyage
+      - growth of the Origin of Species
+      - family and correspondent networks
+    why_keep: "Francis Darwin's edited life-and-letters volume gives bulk searchable coverage of the pre-Origin decades: autobiography, Beagle years, and the slow build toward natural selection through letters to Hooker and others."
+    metadata:
+      gutenberg_id: "2087"
+      editor: "Francis Darwin"
+      edition_note: "Victorian family edition; some material softened or omitted, especially on religion."
+  - id: pg:darwin-life-letters-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2088.txt.utf-8"
+    title: "The Life and Letters of Charles Darwin - Volume 2 (edited by Francis Darwin)"
+    author: "Charles Darwin"
+    recipient: "various"
+    date: "1859-1882"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - public-private-science
+      - species-and-variation
+      - experiments-and-observations
+      - network-of-correspondents
+    curator_score: 9.4
+    signals:
+      - publication and reception of the Origin
+      - spread of evolution
+      - Descent of Man and botanical experiments
+      - transatlantic and British correspondents
+    why_keep: "Covers the Origin controversy in real time and the decades after: reception, the Descent of Man, and the plant experiments, all in letters to Hooker, Huxley, Lyell, Gray, and Wallace."
+    metadata:
+      gutenberg_id: "2088"
+      editor: "Francis Darwin"
+      edition_note: "Victorian family edition; some material softened or omitted, especially on religion."
+  - id: pg:darwin-more-letters-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2739.txt.utf-8"
+    title: "More Letters of Charles Darwin - Volume 1 (edited by Francis Darwin and A. C. Seward)"
+    author: "Charles Darwin"
+    recipient: "various"
+    date: "1821-1882"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - thought-before-theory
+      - species-and-variation
+      - network-of-correspondents
+      - public-private-science
+    curator_score: 9.2
+    signals:
+      - hitherto unpublished letters
+      - autobiographical fragment and early letters
+      - evolution debated by correspondence
+      - geographical distribution
+    why_keep: "A second layer of edited correspondence gathering letters left out of the Life and Letters, thick with working evolution argument and exchange across Darwin's scientific network."
+    metadata:
+      gutenberg_id: "2739"
+      editor: "Francis Darwin and A. C. Seward"
+      edition_note: "Published 1903; letters classified by subject rather than strict chronology."
+  - id: pg:darwin-more-letters-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2740.txt.utf-8"
+    title: "More Letters of Charles Darwin - Volume 2 (edited by Francis Darwin and A. C. Seward)"
+    author: "Charles Darwin"
+    recipient: "various"
+    date: "1840-1882"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - experiments-and-observations
+      - species-and-variation
+      - network-of-correspondents
+    curator_score: 9.1
+    signals:
+      - geographical distribution
+      - descent of man
+      - geology and botany experiments
+      - technical correspondence
+    why_keep: "The companion volume of unpublished letters, strong on distribution, geology, and botanical experiment, showing theory as practical trials and correspondence."
+    metadata:
+      gutenberg_id: "2740"
+      editor: "Francis Darwin and A. C. Seward"
+      edition_note: "Published 1903; letters classified by subject rather than strict chronology."
+  - id: pg:darwin-autobiography
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2010.txt.utf-8"
+    title: "The Autobiography of Charles Darwin (edited by Francis Darwin)"
+    author: "Charles Darwin"
+    date: "1809-1882"
+    document_type: autobiography
+    rights_level: public_domain
+    selected: true
+    paths:
+      - illness-work-and-family
+      - thought-before-theory
+      - public-private-science
+    curator_score: 9.0
+    signals:
+      - retrospective life account
+      - habits of work and health
+      - religion and doubt
+      - reflections on reasoning
+    why_keep: "Darwin's own retrospective on how his mind and work developed; the fuller text restores the religion passages that the Victorian family editions cut."
+    metadata:
+      gutenberg_id: "2010"
+      editor: "Francis Darwin"
+      edition_note: "Written 1876; this edition restores passages omitted from earlier family printings."

@@ -1,0 +1,325 @@
+version: 1
+corpus_id: occom-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Occom Circle transcriptions (Dartmouth) plus the public-domain Moses Paul execution sermon."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Occom source work."
+paths:
+  two-worlds-and-identity:
+    title: "Two Worlds and Identity"
+    point: "Read Occom narrating himself: born 'a Heathen', made a minister, paid and trusted as neither."
+  occom-and-wheelock:
+    title: "Occom and Wheelock"
+    point: "Follow the relationship from student letters to the 1771-1772 break over school funds and Dartmouth."
+  mission-journals:
+    title: "Mission Journals"
+    point: "Ride with the itinerant ministry: Montauk, Oneida country, and decades of Sabbath-by-Sabbath preaching."
+  brothertown-and-land:
+    title: "Brothertown and Land"
+    point: "Trace the Brothertown migration, Mohegan land politics, leases, and petitions to legislatures."
+  preaching-and-print:
+    title: "Preaching and Print"
+    point: "Study the execution sermon for Moses Paul, the hymns, and Occom's voice as a published author."
+items:
+  - id: dartmouth:occom-768517
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/768517-normalized.html"
+    title: "A Short Narrative of My Life (autobiography)"
+    author: "Samson Occom"
+    date: "1768-09-17"
+    document_type: autobiography
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - two-worlds-and-identity
+      - occom-and-wheelock
+    curator_score: 9.8
+    signals:
+      - autobiographical narrative
+      - mission-world racism
+      - wage inequality
+      - self-defense
+    why_keep: "The central Occom document: 'I was Born a Heathen' — his own account of Mohegan childhood, conversion, Montauk service, and being paid a fraction of a white missionary's salary."
+    metadata:
+      occom_circle_id: "768517"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-765628-1
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/765628-1-normalized.html"
+    title: "Narrative of November 28, 1765"
+    author: "Samson Occom"
+    date: "1765-11-28"
+    document_type: autobiography
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - two-worlds-and-identity
+    curator_score: 8.6
+    signals:
+      - first autobiographical narrative
+      - ordination defense
+      - self-presentation
+    why_keep: "Occom's earlier short self-account, written as controversy gathered around his character and ordination; pairs with the sharper 1768 narrative."
+    metadata:
+      occom_circle_id: "765628-1"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-743656
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/743656-normalized.html"
+    title: "Journal, December 6, 1743 to November 29, 1748"
+    author: "Samson Occom"
+    date: "1743-1748"
+    document_type: journal
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - mission-journals
+      - occom-and-wheelock
+    curator_score: 8.7
+    signals:
+      - earliest journal
+      - Wheelock school years
+      - religious formation
+    why_keep: "The earliest surviving journal, covering Occom's years studying with Wheelock at Lebanon — the base document for the education that later became the quarrel."
+    metadata:
+      occom_circle_id: "743656"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-761330-1
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/761330-1-normalized.html"
+    title: "Journal, May 30 to July 7, 1761"
+    author: "Samson Occom"
+    date: "1761"
+    document_type: journal
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - mission-journals
+    curator_score: 8.8
+    signals:
+      - first Oneida mission
+      - travel journal
+      - intertribal diplomacy
+    why_keep: "The journey to Oneida country in 1761 — Occom's first mission beyond New England and the beginning of the connection that later granted the Brothertown lands."
+    metadata:
+      occom_circle_id: "761330-1"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-756612-3
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/756612-3-normalized.html"
+    title: "Letter to Eleazar Wheelock, November 12, 1756"
+    author: "Samson Occom"
+    recipient: "Eleazar Wheelock"
+    date: "1756-11-12"
+    document_type: letter
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - occom-and-wheelock
+      - two-worlds-and-identity
+    curator_score: 8.2
+    signals:
+      - early deference
+      - Montauk years
+      - patron relationship
+    why_keep: "An early letter from the Montauk years showing the deferential register Occom used with Wheelock before the break — the baseline for measuring 1771."
+    metadata:
+      occom_circle_id: "756612-3"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-766330
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/766330-normalized.html"
+    title: "Letter to Eleazar Wheelock, May 30, 1766"
+    author: "Samson Occom"
+    recipient: "Eleazar Wheelock"
+    date: "1766-05-30"
+    document_type: letter
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - occom-and-wheelock
+      - two-worlds-and-identity
+    curator_score: 8.5
+    signals:
+      - England fundraising tour
+      - Boston Commissioners dispute
+      - accounts and money
+    why_keep: "Written during the England tour that raised the school's fortune: Occom asks for his education accounts because the Boston Commissioners 'have wrote against us' — money and reputation already entangled."
+    metadata:
+      occom_circle_id: "766330"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-771424
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/771424-normalized.html"
+    title: "Letter to Eleazar Wheelock, July 24, 1771"
+    author: "Samson Occom"
+    recipient: "Eleazar Wheelock"
+    date: "1771-07-24"
+    document_type: letter
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - occom-and-wheelock
+      - two-worlds-and-identity
+      - brothertown-and-land
+    curator_score: 9.7
+    signals:
+      - the break
+      - Dartmouth founding critique
+      - alba mater
+      - charity school funds
+    why_keep: "The break letter: Occom charges that the Indian charity money built a college 'too grand' for Indians and that Wheelock's alma mater has turned 'alba mater' — the central document of the Dartmouth quarrel."
+    metadata:
+      occom_circle_id: "771424"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-772127-1
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/772127-1-normalized.html"
+    title: "Letter to Eleazar Wheelock, January 27, 1772"
+    author: "Samson Occom"
+    recipient: "Eleazar Wheelock"
+    date: "1772-01-27"
+    document_type: letter
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - occom-and-wheelock
+    curator_score: 8.4
+    signals:
+      - aftermath of the break
+      - poverty
+      - Moses Paul year
+    why_keep: "Correspondence from the winter before the Moses Paul execution, as the Wheelock relationship froze and Occom preached on at Mohegan in poverty."
+    metadata:
+      occom_circle_id: "772127-1"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-784308
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/784308-normalized.html"
+    title: "Journal, May 8, 1784 to April 26, 1785"
+    author: "Samson Occom"
+    date: "1784-1785"
+    document_type: journal
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - mission-journals
+      - brothertown-and-land
+    curator_score: 8.9
+    signals:
+      - Brothertown preparation
+      - postwar itinerancy
+      - Christian Indian network
+    why_keep: "The long journal of the year before Brothertown: constant travel and preaching among New England Indian communities preparing the migration to Oneida lands."
+    metadata:
+      occom_circle_id: "784308"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-785554
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/785554-normalized.html"
+    title: "Journal, October 4, 1785 to December 4, 1786"
+    author: "Samson Occom"
+    date: "1785-1786"
+    document_type: journal
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - mission-journals
+      - brothertown-and-land
+    curator_score: 9.2
+    signals:
+      - Brothertown founding
+      - Oneida lands
+      - town government
+    why_keep: "Covers the founding weeks of Brothertown in November 1785, when the emigrants organized their town on the Oneida grant with Occom presiding."
+    metadata:
+      occom_circle_id: "785554"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-785340
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/785340-normalized.html"
+    title: "Petition to the Connecticut General Assembly, 1785"
+    author: "Samson Occom"
+    date: "1785"
+    document_type: petition
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - brothertown-and-land
+      - two-worlds-and-identity
+    curator_score: 8.3
+    signals:
+      - legal advocacy
+      - Mohegan land
+      - legislative petition
+    why_keep: "Occom in his legislative register: petitioning Connecticut over Mohegan affairs, evidence of land politics conducted on paper against a colonial legal system."
+    metadata:
+      occom_circle_id: "785340"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-754900-2
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/754900-2-normalized.html"
+    title: "Herbal remedies and letter fragment"
+    author: "Samson Occom"
+    date: "1754"
+    document_type: notes
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - two-worlds-and-identity
+    curator_score: 7.6
+    signals:
+      - Mohegan medicine
+      - traditional knowledge
+      - everyday practice
+    why_keep: "Occom's notes on herbal remedies — traditional Mohegan knowledge kept alongside the ministry, useful evidence against reading him as wholly assimilated."
+    metadata:
+      occom_circle_id: "754900-2"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: dartmouth:occom-000194
+    source_type: static_html_url
+    url: "https://collections.dartmouth.edu/archive/text/occom/normalized/000194-normalized.html"
+    title: "Hymns: 'Come all my young companions, come' and 'The Slow Traveller'"
+    author: "Samson Occom"
+    document_type: hymns
+    rights_level: noncommercial_open_license
+    selected: true
+    paths:
+      - preaching-and-print
+    curator_score: 7.8
+    signals:
+      - hymnody
+      - devotional verse
+      - 1774 hymnal context
+    why_keep: "Manuscript hymns from the author of the 1774 'Choice Collection of Hymns and Spiritual Songs' — Occom's most widely sung, least cited genre."
+    metadata:
+      occom_circle_id: "000194"
+      edition: "Occom Circle normalized transcription, Dartmouth College Library"
+  - id: ia:occom-moses-paul-sermon
+    source_type: static_text_url
+    url: "https://archive.org/download/sermonatexecutio01occo/sermonatexecutio01occo_djvu.txt"
+    title: "A Sermon at the Execution of Moses Paul, an Indian (preached New Haven, September 2, 1772)"
+    author: "Samson Occom"
+    date: "1772-09-02"
+    document_type: published_sermon
+    rights_level: public_domain
+    selected: true
+    paths:
+      - preaching-and-print
+      - two-worlds-and-identity
+    curator_score: 9.5
+    signals:
+      - first Native American book in English
+      - execution sermon
+      - temperance address
+      - Romans 6:23
+    why_keep: "The sermon that made Occom the first Native American to publish in English: preached at the hanging of the Mohegan Moses Paul, on 'the wages of sin is death', with a direct address to 'my poor kindred' on drink and colonial ruin."
+    metadata:
+      ia_identifier: "sermonatexecutio01occo"
+      edition: "Public-domain scan of a London reprint; OCR text with long-s errors"
+      access_note: "The reprint's preface misdates Occom's England tour to 1776-1777; the tour was 1766-1768."

@@ -1,0 +1,43 @@
+id: xu-xiake-travels
+title: Xu Xiake Travel Diaries
+subtitle: Thirty years of Ming-dynasty travel diaries with proto-geographic field observation
+tagline: "Ming-dynasty travel writer who walked China for thirty years, taking geographic field notes — caves, rivers, mountains — centuries ahead of their time."
+description: >
+  A curated-source capsule for the Xu Xiake Youji (徐霞客遊記), the travel
+  diaries of Xu Xiake (1587-1641): day-by-day records of some thirty years of
+  journeys across Ming China, from the early mountain trips (Tiantai 1613,
+  Yandang, Huangshan) to the great southwest expedition of 1636-1640 through
+  Hunan, Guangxi, Guizhou, and Yunnan, with systematic field observation of
+  karst caves, river courses, and mountain topography.
+languages:
+  - zh
+type: travel_diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. Users download curated chapters locally from Chinese Wikisource (public-domain Ming text; transcription reusable under CC BY-SA 4.0) after reviewing source terms. The Chinese Text Project transcription remains catalog-only under its terms of use."

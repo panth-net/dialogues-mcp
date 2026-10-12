@@ -1,0 +1,12 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Van Gogh sample: about 30 letters spread across his whole correspondence"
+summary: "Every thirtieth letter in the official edition, from the early London and Hague years to Arles, Saint-Remy, and Auvers."
+# Measured upstream size on 2026-10-08 (HTTP Content-Length).
+download_bytes: 9636556
+download_note: "The Van Gogh Museum publishes the letters as one archive file, so the whole archive (about 9.2 MB) is downloaded; only the sampled letters are made searchable until you ask for all of them. The letters are CC BY-NC-SA 4.0 (non-commercial, share-alike)."
+items:
+  - id: vangogh:xml-archive
+    document_filter:
+      every_nth: 30

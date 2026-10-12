@@ -1,0 +1,61 @@
+name: CI
+
+# Offline checks only: no collection downloads, no real app settings, no publishing.
+# Runs only when started by hand (Actions tab > CI > Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Node ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        # 22.16.0 is the supported floor; 24.x is the current long-term-support line.
+        node: ["22.16.0", "24.x"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Prompt copies in sync
+        run: node scripts/sync-prompts.mjs --check
+      - name: Registry metadata
+        run: npm run validate:server-json
+      - name: Privacy and artifact scan
+        run: npm run privacy-scan
+      - name: Package, install outside the checkout, and exercise
+        run: npm run pack:check
+
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24.x"
+          cache: npm
+      - run: npm ci
+      # Fails on any high or critical advisory in production dependencies.
+      # Moderate findings are assessed in docs/SECURITY_REVIEW.md.
+      - run: npm audit --omit=dev --audit-level=high

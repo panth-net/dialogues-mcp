@@ -1,0 +1,101 @@
+{
+  "name": "dialogues-mcp",
+  "version": "0.1.0",
+  "description": "Guided conversations with historical diaries, letters, and papers. A local-first MCP server: collections and search files stay on your computer.",
+  "type": "module",
+  "mcpName": "io.github.panth-net/dialogues",
+  "bin": {
+    "dialogues": "dist/cli/index.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "dist/builtin-catalog.json",
+    "corpora/*/corpus.yaml",
+    "corpora/*/guide.md",
+    "corpora/*/search-rules.md",
+    "corpora/*/source-notes.md",
+    "corpora/*/citation-rules.md",
+    "corpora/*/selection-rules.md",
+    "corpora/*/source-manifest.yaml",
+    "corpora/*/sample.yaml",
+    "corpora/*/scripts/README.md",
+    "templates/",
+    "integrations/",
+    "resources/",
+    "docs/CORPUS_CAPSULES.md",
+    "docs/CORPUS_DATA_POLICY.md",
+    "docs/CREATE_A_CORPUS.md",
+    "docs/CURATING_A_BUILTIN_CORPUS.md",
+    "docs/MCP_SETUP.md",
+    "docs/SECURITY_REVIEW.md",
+    "examples/",
+    "mcp-config/",
+    "README.md",
+    "PRIVACY.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean-dist.mjs",
+    "build": "node scripts/clean-dist.mjs && tsc -p tsconfig.json && node scripts/build-catalog.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:live": "npm run build && node --test test/live/*.test.mjs",
+    "privacy-scan": "node scripts/privacy-scan.mjs",
+    "pack:check": "node scripts/pack-check.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "prepack": "npm run build",
+    "mcp": "node dist/cli/index.js mcp serve",
+    "doctor": "node dist/cli/index.js doctor",
+    "validate:server-json": "node scripts/validate-server-json.mjs",
+    "sync-prompts": "node scripts/sync-prompts.mjs",
+    "check": "npm run typecheck && npm test && npm run privacy-scan && node scripts/sync-prompts.mjs --check && npm run validate:server-json"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "corpus",
+    "sqlite",
+    "archives",
+    "primary-sources",
+    "history"
+  ],
+  "author": "panth-net",
+  "license": "MIT",
+  "homepage": "https://panth-net.github.io/dialogues-mcp-landing-page/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panth-net/dialogues-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/panth-net/dialogues-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "@modelcontextprotocol/server": "2.3.1",
+    "adm-zip": "^0.6.1",
+    "commander": "^14.0.2",
+    "fast-xml-parser": "^5.11.2",
+    "html-to-text": "^10.0.1",
+    "jsonc-parser": "^3.3.1",
+    "mammoth": "^1.13.0",
+    "pdfjs-dist": "^6.4.299",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.8",
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "~24.0.0",
+    "@types/pdfkit": "^0.17.6",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "pdfkit": "^0.18.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

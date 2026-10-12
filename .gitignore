@@ -1,0 +1,52 @@
+node_modules/
+dist/
+
+# Packed releases and audit/test artifacts.
+*.tgz
+npm-audit*.json
+coverage/
+.release/
+.export/
+
+# Local corpus data and generated indexes (older layouts kept data in the checkout).
+corpora/*/data/
+corpora/*/index.sqlite
+corpora/*/index.sqlite-*
+corpora/*/source-cache/
+user-corpora/
+!user-corpora/.gitkeep
+
+# Contributor data folder (DIALOGUES_WORKSPACE_MODE=repo).
+workspace/
+workspace/indexes/
+workspace/imports/
+workspace/logs/
+workspace/mcp/
+workspace/exports/
+workspace/harvests/
+workspace/curation/
+workspace/selection/
+workspace/source-cache/
+workspace/installed-corpora.json
+workspace/preferences.json
+
+# Generated repo dumps and local planning notes.
+repomix-output.xml
+gameplan*.md
+
+# Tool scratch output and editor state.
+.playwright-mcp/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local environment files.
+.env
+.env.*
+!.env.example
+
+# Shared assistant skills are intentionally tracked.
+!integrations/skills/
+.privacy-scan.local.json

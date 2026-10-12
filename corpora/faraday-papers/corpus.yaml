@@ -1,0 +1,42 @@
+id: faraday-papers
+title: Michael Faraday Papers
+subtitle: Notebooks, instruments, demonstrations, letters, lectures, and experimental trials
+tagline: "The bookbinder's apprentice who became the greatest experimentalist of his century — electricity and magnetism worked out trial by trial, in his own words."
+description: >
+  A curated-source capsule for recovering Faraday's experimental mind: how he
+  observed, repeated, revised, drew, demonstrated, corresponded, and converted
+  instruments and lectures into understanding.
+languages:
+  - en
+type: documentary_archive
+status: source_manifest_ready
+data_policy: public_domain_downloads_plus_catalog_or_user_supplied_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Faraday source text is bundled. Public-domain Project Gutenberg texts may be downloaded locally; manuscript, correspondence, and apparatus records remain catalog-only or user-supplied until clean permitted transcripts are identified."

@@ -1,0 +1,80 @@
+version: 1
+corpus_id: witbooi-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The DBNL digitization of the 1929 Van Riebeeck Society edition of Witbooi's captured letter-book, downloaded after an explicit rights confirmation."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Witbooi source work."
+paths:
+  land-treaties-and-sovereignty:
+    title: "Land, Treaties, and Sovereignty"
+    point: "Follow Witbooi's legal-moral argument: land, regeringsreg, protection treaties, and the warning that signing them away will be eternally regretted."
+  german-colonial-confrontation:
+    title: "German Colonial Confrontation"
+    point: "Read the exchanges with Goering, von Francois, and Leutwein, and the road from refusal of the Schutzvertrag to the storm of Hoornkrans."
+  naukluft-war-and-surrender:
+    title: "Naukluft War and Surrender"
+    point: "Trace the Naauwkloof letters of May-August 1894 and the campaign that ended in surrender to Leutwein on 15 September 1894."
+  nama-herero-diplomacy:
+    title: "Nama-Herero Diplomacy"
+    point: "Watch letters to Jan Jonker Afrikaner, Maharero, and other kapteins manage war, peace, and rivalry inside Namaland and Hereroland."
+  faith-and-calling:
+    title: "Faith and Calling"
+    point: "See how Witbooi reasons from God's will and his own calling when he explains war, peace, and refusal to submit."
+  capture-and-afterlife:
+    title: "Capture and Afterlife of the Letter-Book"
+    point: "Understand how the book was seized at Hoornkrans in 1893, edited by settlers in 1929, and later honored as UNESCO Memory of the World."
+items:
+  - id: dbnl:witbooi-dagboek-1929
+    source_type: static_text_url
+    url: "https://www.dbnl.org/nieuws/text.php?id=witb002dagb01"
+    title: "Die dagboek van Hendrik Witbooi, Kaptein van die Witbooi-Hottentotte 1884-1905 (1929 Van Riebeeck Society edition)"
+    author: "Hendrik Witbooi"
+    date: "1884-1894 (edition 1929)"
+    document_type: letter_book_and_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - land-treaties-and-sovereignty
+      - german-colonial-confrontation
+      - naukluft-war-and-surrender
+      - nama-herero-diplomacy
+      - faith-and-calling
+      - capture-and-afterlife
+    curator_score: 9.5
+    signals:
+      - captured letter-book
+      - Hoornkrans 1893
+      - Naukluft 1894
+      - protection treaty refusal
+      - Cape Dutch voice
+    why_keep: "The only substantial public digitization of Witbooi's own words: 120 numbered letters and documents plus diary notes, with the famous warning to Maharero against giving land and regeringsreg into the hands of the white men."
+    metadata:
+      dbnl_id: "witb002dagb01"
+      edition: "The Van Riebeeck Society, Cape Town, 1929; edited from the original documents in the government archive, Windhoek; foreword by Gustav Voigts"
+      source_record_url: "https://www.dbnl.org/tekst/witb002dagb01_01/"
+      rights_note: "DBNL labels this edition as possibly copyright protected; download requires explicit confirmation, and reuse beyond local personal indexing must be cleared with DBNL and the Van Riebeeck Society."
+  - id: unesco:witbooi-memory-of-the-world
+    source_type: catalog_only
+    url: "https://www.unesco.org/en/memory-world/letter-journals-hendrik-witbooi?hub=1081"
+    title: "Letter Journals of Hendrik Witbooi (UNESCO Memory of the World register)"
+    author: "UNESCO"
+    date: "inscribed 2005"
+    document_type: heritage_register_record
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - capture-and-afterlife
+    curator_score: 6
+    signals:
+      - Memory of the World
+      - National Archives of Namibia
+      - documentary heritage
+    why_keep: "Anchors the afterlife of the letter-books: the originals, held by the National Archives of Namibia, are inscribed on the UNESCO Memory of the World register."
+    why_skip: "Register record only; it describes the documentary heritage and provides no full text to download."
+    metadata:
+      access_note: "Catalog-only pointer. The original letter-journals are held by the National Archives of Namibia, Windhoek."

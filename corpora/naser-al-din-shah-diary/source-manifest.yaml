@@ -1,0 +1,51 @@
+version: 1
+corpus_id: naser-al-din-shah-diary
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The public-domain 1874 Redhouse translation of the Shah's 1873 European tour diary, from archive.org."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Qajar source work."
+paths:
+  russia-leg:
+    title: "The Russia Leg"
+    point: "Cross the Caspian and ride the Volga to Moscow and the Winter Palace: the tour's Russian opening."
+  britain-leg:
+    title: "The Britain Leg"
+    point: "Inspect British power up close: Windsor, the naval review, ironclads, Woolwich, and industry."
+  continental-courts:
+    title: "Continental Courts and Diplomacy"
+    point: "Follow the receptions at Berlin, Paris after the Commune, Italy, and Vienna's World Exhibition."
+  technology-and-spectacle:
+    title: "Technology and Spectacle"
+    point: "Track the running commentary on railways, telegraphs, machines, ballets, theatres, and crowds."
+items:
+  - id: ia:shah-diary-europe-1873
+    source_type: static_text_url
+    url: "https://archive.org/download/diaryofhmshahofp00nasi/diaryofhmshahofp00nasi_djvu.txt"
+    title: "The Diary of H.M. the Shah of Persia, during his Tour through Europe in A.D. 1873"
+    author: "Naser al-Din Shah Qajar"
+    date: "1873"
+    document_type: travel_diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - russia-leg
+      - britain-leg
+      - continental-courts
+      - technology-and-spectacle
+    curator_score: 9.0
+    signals:
+      - first Qajar tour of Europe
+      - Winter Palace
+      - naval review
+      - Vienna Exhibition 1873
+      - royal travel genre
+    why_keep: "The complete 1873 tour diary in the only public-domain English translation; the first sustained first-person record of a reigning Persian monarch examining industrial Europe."
+    metadata:
+      archive_org_identifier: "diaryofhmshahofp00nasi"
+      translator: "J. W. Redhouse (London, 1874)"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."

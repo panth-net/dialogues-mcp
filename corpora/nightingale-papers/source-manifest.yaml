@@ -1,0 +1,178 @@
+version: 1
+corpus_id: nightingale-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Public-domain Project Gutenberg editions of Nightingale's published works, plus Wellcome Collection catalog records for the manuscript letters."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  crimea-and-army-health:
+    title: "Crimea and Army Health"
+    point: "Follow Scutari, the Barrack Hospital, and the post-war program to reform military nursing and army sanitation."
+  the-notes-on-nursing-voice:
+    title: "The Notes on Nursing Voice"
+    point: "Read the 1859 handbook that made nursing observational: ventilation, noise, light, food, and 'petty management'."
+  data-as-argument:
+    title: "Data as Argument"
+    point: "Watch mortality returns, comparative tables, and death rates being turned into public-policy weapons."
+  training-a-profession:
+    title: "Training a Profession"
+    point: "Trace the Nightingale Training School and what she demanded of matrons and probationers."
+  letters-and-the-sickroom:
+    title: "Letters and the Sickroom"
+    point: "See the bedridden decades: addresses and letters written from the room she ran her campaigns from."
+items:
+  - id: pg:nightingale-notes-on-nursing
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/12439.txt.utf-8"
+    title: "Notes on Nursing: What It Is, and What It Is Not"
+    author: "Florence Nightingale"
+    date: "1860"
+    document_type: handbook
+    rights_level: public_domain
+    selected: true
+    paths:
+      - the-notes-on-nursing-voice
+      - training-a-profession
+      - data-as-argument
+    curator_score: 9.8
+    signals:
+      - ventilation and warming
+      - observation of the sick
+      - petty management
+      - noise and light
+    why_keep: "The foundational text of modern nursing and the clearest sample of her voice: aphoristic, empirical, and unsparing about wards, air, food, and inattentive care."
+    metadata:
+      gutenberg_id: "12439"
+  - id: pg:nightingale-to-her-nurses
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/49732.txt.utf-8"
+    title: "Florence Nightingale to Her Nurses"
+    author: "Florence Nightingale"
+    date: "1872-1900"
+    document_type: addresses
+    rights_level: public_domain
+    selected: true
+    paths:
+      - training-a-profession
+      - letters-and-the-sickroom
+      - the-notes-on-nursing-voice
+    curator_score: 8.9
+    signals:
+      - St Thomas' probationers
+      - annual addresses
+      - vocation and discipline
+      - sickroom decades
+    why_keep: "Her addresses to the Nightingale Training School nurses at St Thomas' — profession-building in her own late voice, composed across the bedridden decades."
+    metadata:
+      gutenberg_id: "49732"
+  - id: pg:nightingale-subsidiary-notes
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/52877.txt.utf-8"
+    title: "Subsidiary Notes as to the Introduction of Female Nursing into Military Hospitals in Peace and War"
+    author: "Florence Nightingale"
+    date: "1858"
+    document_type: report
+    rights_level: public_domain
+    selected: true
+    paths:
+      - crimea-and-army-health
+      - training-a-profession
+      - data-as-argument
+    curator_score: 9.1
+    signals:
+      - post-Crimea blueprint
+      - military hospitals
+      - female nursing service
+      - wards and orderlies
+    why_keep: "The direct policy product of Scutari: her 1858 program for what a trained female nursing service in military hospitals should be, written while the Royal Commission fight was live."
+    metadata:
+      gutenberg_id: "52877"
+  - id: pg:nightingale-lying-in-institutions
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/73878.txt.utf-8"
+    title: "Introductory Notes on Lying-in Institutions"
+    author: "Florence Nightingale"
+    date: "1871"
+    document_type: statistical_study
+    rights_level: public_domain
+    selected: true
+    paths:
+      - data-as-argument
+      - training-a-profession
+    curator_score: 8.8
+    signals:
+      - childbed mortality
+      - comparative death rates
+      - hospital design
+      - midwifery training
+    why_keep: "Her statistical method in miniature: death rates in childbirth compared across institutions to argue that the buildings and their management, not the mothers, were killing patients."
+    metadata:
+      gutenberg_id: "73878"
+  - id: pg:nightingale-cooking-for-troops
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/49833.txt.utf-8"
+    title: "Directions for Cooking by Troops, in Camp and Hospital"
+    author: "Florence Nightingale"
+    date: "1861"
+    document_type: manual
+    rights_level: public_domain
+    selected: true
+    paths:
+      - crimea-and-army-health
+      - letters-and-the-sickroom
+    curator_score: 7.7
+    signals:
+      - hospital diet
+      - camp kitchens
+      - practical reform
+      - Civil War reprint
+    why_keep: "The diet-kitchen end of her reforms: practical cooking directions for soldiers' camps and hospitals, reprinted for American Civil War use — evidence that her program ran from statistics down to beef tea."
+    metadata:
+      gutenberg_id: "49833"
+  - id: wellcome:nightingale-archive-khuduwmj
+    source_type: catalog_only
+    url: "https://wellcomecollection.org/works/khuduwmj"
+    title: "Nightingale, Florence (1820-1910): archive collection"
+    author: "Florence Nightingale"
+    date: "1820-1910"
+    document_type: archive_collection_record
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - letters-and-the-sickroom
+      - crimea-and-army-health
+    curator_score: 8.6
+    signals:
+      - manuscript correspondence
+      - whole-life span
+      - Wellcome Collection
+    why_keep: "The Wellcome collection record for her papers: chiefly correspondence spanning her whole life, from the fight to become a nurse onward — the map of the manuscript surface this capsule does not download."
+    why_skip: "A catalog description of the collection, not letter text; most constituent letter records carry descriptions rather than transcriptions."
+    metadata:
+      wellcome_work_id: "khuduwmj"
+      access_note: "Use the Wellcome Catalogue API (https://developers.wellcomecollection.org/docs/catalogue) to enumerate letter records and check for digitized or transcribed items."
+  - id: wellcome:nightingale-letters-kk7m75gx
+    source_type: catalog_only
+    url: "https://wellcomecollection.org/works/kk7m75gx"
+    title: "Letters from Florence Nightingale to various correspondents"
+    author: "Florence Nightingale"
+    document_type: correspondence_collection_record
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - letters-and-the-sickroom
+    curator_score: 8.2
+    signals:
+      - letters to correspondents
+      - catalog descriptions
+      - sickroom campaigns
+    why_keep: "The Wellcome record for her letters to assorted correspondents — the evidence class (thousands of letters written from her room) that the printed addresses can only sample."
+    why_skip: "The letter records are catalog descriptions, not transcriptions; downloading would index archivists' summaries as if they were Nightingale's words."
+    metadata:
+      wellcome_work_id: "kk7m75gx"
+      access_note: "Check individual records via the Wellcome Catalogue API before importing anything as user-supplied text."

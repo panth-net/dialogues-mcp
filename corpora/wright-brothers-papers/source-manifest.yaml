@@ -1,0 +1,218 @@
+version: 1
+corpus_id: wright-brothers-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The Wright brothers' public-domain published accounts and Chanute's 1894 survey, plus catalog records for the LOC manuscript diaries and correspondence."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  wrights-in-their-own-words:
+    title: "The Wrights in Their Own Words"
+    point: "Read the brothers' own narratives of how they worked out lift, control, and propulsion."
+  glider-years-at-kitty-hawk:
+    title: "Glider Years at Kitty Hawk"
+    point: "Follow 1900-1902: kites, gliders, disappointing lift tables, the wind tunnel, and the control problem."
+  first-flight-1903:
+    title: "First Flight, 1903"
+    point: "Reconstruct December 14-17, 1903: motor, propellers, the launching track, four flights, and the telegram home."
+  aeronautical-inheritance:
+    title: "Aeronautical Inheritance"
+    point: "Study what the brothers started from: Lilienthal, Chanute, Langley, and the Smithsonian reading list of 1899."
+items:
+  - id: gutenberg:wright-early-history-airplane
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/25420.txt.utf-8"
+    title: "The Early History of the Airplane"
+    author: "Orville Wright; Wilbur Wright"
+    date: "1901-1913"
+    document_type: published_accounts
+    rights_level: public_domain
+    selected: true
+    paths:
+      - wrights-in-their-own-words
+      - glider-years-at-kitty-hawk
+      - first-flight-1903
+    curator_score: 9.6
+    signals:
+      - How We Made the First Flight
+      - Some Aeronautical Experiments 1901
+      - Century Magazine 1908
+      - four flights December 17
+    why_keep: "The brothers in their own words: Orville's fullest narrative of December 17, 1903, Wilbur's 1901 lecture on the glider experiments, and the joint 1908 Century article — the only substantial Wright-authored text cleanly in the public domain."
+    metadata:
+      gutenberg_id: "25420"
+      contents: "The Wright Brothers' Aeroplane (Century, 1908); How We Made the First Flight (Orville); Some Aeronautical Experiments (Wilbur, 1901)"
+  - id: ia:chanute-progress-flying-machines
+    source_type: static_text_url
+    url: "https://archive.org/download/progressinflying0000chan/progressinflying0000chan_djvu.txt"
+    title: "Progress in Flying Machines"
+    author: "Octave Chanute"
+    date: "1894"
+    document_type: engineering_survey
+    rights_level: public_domain
+    selected: true
+    paths:
+      - aeronautical-inheritance
+      - glider-years-at-kitty-hawk
+    curator_score: 8.4
+    signals:
+      - pre-Wright flight survey
+      - Lilienthal gliding
+      - the brothers' starting library
+      - Chanute mentorship
+    why_keep: "The 1894 survey of every serious flight experiment that the Smithsonian's reading list pointed Wilbur toward in 1899; its author became the brothers' chief correspondent and visitor at Kitty Hawk."
+    metadata:
+      ia_identifier: "progressinflying0000chan"
+      access_note: "OCR text of a public-domain scanned book; expect OCR noise in tables and figures."
+  - id: loc:wright002238
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002238/"
+    title: "Diaries and Notebooks: 1903, Orville Wright"
+    author: "Orville Wright"
+    date: "1903"
+    document_type: diary
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - first-flight-1903
+      - wrights-in-their-own-words
+    curator_score: 9.9
+    signals:
+      - December 17 1903 entry
+      - first flight diary
+      - Kitty Hawk camp
+    why_keep: "The manuscript anchor of the whole collection: Orville's 1903 pocket diary with the entry for December 17, 1903 — kept as a catalog record so the archive location stays visible."
+    why_skip: "Digitized as page images and a scan-only PDF; the loc.gov item JSON exposes no transcription or OCR service, so a download yields collection boilerplate instead of diary text."
+    metadata:
+      loc_item_id: wright002238
+      access_note: "Handwritten diary; read via the LOC page images. Orville's published 'How We Made the First Flight' covers the same events in searchable text."
+  - id: loc:wright002239
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002239/"
+    title: "Diaries and Notebooks: 1903-1909, Wilbur Wright"
+    author: "Wilbur Wright"
+    date: "1903-1909"
+    document_type: diary
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - first-flight-1903
+      - wrights-in-their-own-words
+    curator_score: 9.0
+    signals:
+      - Wilbur's flight-era notebooks
+      - Huffman Prairie seasons
+      - European demonstrations
+    why_keep: "Wilbur's notebook spanning the first-flight and demonstration years, the manuscript counterpart to Orville's 1903 diary."
+    why_skip: "Scans only; no transcription or OCR text is exposed through the loc.gov API."
+    metadata:
+      loc_item_id: wright002239
+  - id: loc:wright002232
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002232/"
+    title: "Diaries and Notebooks: 1900-1901, Wilbur Wright"
+    author: "Wilbur Wright"
+    date: "1900-1901"
+    document_type: diary
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - glider-years-at-kitty-hawk
+      - wrights-in-their-own-words
+    curator_score: 9.1
+    signals:
+      - first Kitty Hawk camps
+      - glider trials
+      - lift measurements
+    why_keep: "The diary of the first two Kitty Hawk seasons — kites, the 1900 and 1901 gliders, and the disappointing lift data that sent the brothers to their wind tunnel."
+    why_skip: "Scans only; no transcription or OCR text is exposed through the loc.gov API."
+    metadata:
+      loc_item_id: wright002232
+  - id: loc:wright002240
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002240/"
+    title: "Diaries and Notebooks: 1904, Orville Wright"
+    author: "Orville Wright"
+    date: "1904"
+    document_type: diary
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - first-flight-1903
+      - wrights-in-their-own-words
+    curator_score: 8.3
+    signals:
+      - Huffman Prairie
+      - first circle flight
+      - practical airplane
+    why_keep: "The 1904 Huffman Prairie diary, the season the brothers turned a first hop into a practical circling airplane near Dayton."
+    why_skip: "Scans only; no transcription or OCR text is exposed through the loc.gov API."
+    metadata:
+      loc_item_id: wright002240
+  - id: loc:wright002544
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002544/"
+    title: "General Correspondence: Smithsonian Institution, 1899-1909"
+    author: "Wilbur and Orville Wright and correspondents"
+    date: "1899-1909"
+    document_type: correspondence_folder
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - aeronautical-inheritance
+    curator_score: 9.3
+    signals:
+      - May 30 1899 letter
+      - reading list request
+      - Smithsonian relationship
+    why_keep: "Contains Wilbur's May 30, 1899 letter asking the Smithsonian for reading on flight — 'I am an enthusiast, but not a crank' — the documented start of the project."
+    why_skip: "Scans only; verified by test download that the loc.gov JSON yields collection boilerplate, not letter text."
+    metadata:
+      loc_item_id: wright002544
+  - id: loc:wright002400
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/wright002400/"
+    title: "General Correspondence: Chanute, Octave, 1900"
+    author: "Wilbur Wright; Octave Chanute"
+    date: "1900"
+    document_type: correspondence_folder
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - aeronautical-inheritance
+      - glider-years-at-kitty-hawk
+    curator_score: 9.2
+    signals:
+      - May 13 1900 first letter
+      - flight is possible to man
+      - mentorship begins
+    why_keep: "The first year of the Chanute correspondence, opening with Wilbur's May 13, 1900 letter: 'For some years I have been afflicted with the belief that flight is possible to man.'"
+    why_skip: "Scans only; no transcription or OCR text is exposed through the loc.gov API."
+    metadata:
+      loc_item_id: wright002400
+  - id: loc:mcc.061
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/mcc.061/"
+    title: "Telegram, Orville Wright to Bishop Milton Wright announcing the first successful powered flight"
+    author: "Orville Wright"
+    recipient: "Milton Wright"
+    date: "1903-12-17"
+    document_type: telegram
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - first-flight-1903
+    curator_score: 9.4
+    signals:
+      - success four flights
+      - inform press
+      - home Christmas
+    why_keep: "The famous December 17, 1903 telegram home ('Success four flights thursday morning... inform Press home Christmas'), presented in the LOC 'Words and Deeds' exhibit."
+    why_skip: "The item record carries curatorial description, not a transcription service; keeping it catalog-only prevents exhibit notes from being indexed as if they were the telegram."
+    metadata:
+      loc_item_id: mcc.061
+

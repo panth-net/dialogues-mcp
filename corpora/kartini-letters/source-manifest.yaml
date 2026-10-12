@@ -1,0 +1,105 @@
+version: 1
+corpus_id: kartini-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The public-domain Dutch collection and English translation of Kartini's letters from Project Gutenberg."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Kartini source work."
+paths:
+  seclusion-and-freedom:
+    title: "Seclusion and Freedom"
+    point: "Read the cage years: taken from school at twelve, locked in the regency, and writing her way out."
+  education-and-the-school-plan:
+    title: "Education and the School Plan"
+    point: "Follow the fight to study — Holland, the scholarship won and renounced — and the school for girls she actually opened."
+  colonial-java:
+    title: "Colonial Java"
+    point: "See Dutch rule in the ethical-policy years from inside a Javanese regent's house: officials, etiquette, opium, and the people's poverty."
+  marriage-and-polygamy:
+    title: "Marriage and Polygamy"
+    point: "Track the case against polygamy from the first letter to Stella through her own marriage to the Regent of Rembang."
+  javanese-art-and-culture:
+    title: "Javanese Art and Culture"
+    point: "Find gamelan, batik, wajang, and the Japara wood-carvers she championed for Dutch audiences."
+items:
+  - id: pg:kartini-door-duisternis-tot-licht
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/35220.txt.utf-8"
+    title: "Door Duisternis tot Licht: Gedachten over en voor het Javaansche volk"
+    author: "Raden Adjeng Kartini"
+    recipient: "various"
+    date: "1899-1904"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - seclusion-and-freedom
+      - education-and-the-school-plan
+      - colonial-java
+      - marriage-and-polygamy
+      - javanese-art-and-culture
+    curator_score: 9.4
+    signals:
+      - Dutch original
+      - fuller collection
+      - letters to Stella and Moedertje
+      - Abendanon edition of 1911
+    why_keep: "The Dutch original as Abendanon published it in 1911 — the fuller of the two collections and the language Kartini actually wrote."
+    metadata:
+      gutenberg_id: "35220"
+      language: "nl"
+      editor: "J.H. Abendanon (1911)"
+  - id: pg:kartini-letters-javanese-princess
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/34647.txt.utf-8"
+    title: "Letters of a Javanese Princess"
+    author: "Raden Adjeng Kartini"
+    recipient: "various"
+    date: "1899-1904"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - seclusion-and-freedom
+      - education-and-the-school-plan
+      - colonial-java
+      - marriage-and-polygamy
+      - javanese-art-and-culture
+    curator_score: 8.8
+    signals:
+      - English translation
+      - about two-thirds of the Dutch collection
+      - Couperus foreword
+    why_keep: "The 1920 English translation for quoting in English — about two-thirds of the Dutch collection, translated by Agnes Louise Symmers with Louis Couperus's foreword."
+    metadata:
+      gutenberg_id: "34647"
+      language: "en"
+      translator: "Agnes Louise Symmers (1920)"
+  - id: dbnl:kartini-author-page
+    source_type: catalog_only
+    url: "https://www.dbnl.org/auteurs/auteur.php?id=kart003"
+    title: "R.A. Kartini at the DBNL (Digital Library of Dutch Literature)"
+    author: "DBNL"
+    document_type: author_catalog_page
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - seclusion-and-freedom
+      - education-and-the-school-plan
+      - colonial-java
+      - marriage-and-polygamy
+      - javanese-art-and-culture
+    curator_score: 4
+    signals:
+      - fuller Dutch record
+      - later editions
+      - scholarly context
+    why_keep: "Maps the fuller Dutch textual record around this capsule, including later and more complete editions of the correspondence."
+    why_skip: "Catalog page, not a clean plain-text download; the complete unabridged correspondence (Jaquet's 1987 edition of the letters to the Abendanons) remains in copyright and cannot be included."
+    metadata:
+      source_collection: "DBNL"
+      access_note: "Catalog-only pointer. Do not treat as passage evidence."

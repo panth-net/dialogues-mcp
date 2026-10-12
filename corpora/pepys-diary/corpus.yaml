@@ -1,0 +1,42 @@
+id: pepys-diary
+title: Samuel Pepys Diary
+subtitle: Nine years of Restoration London in the most candid diary in English
+tagline: "Naval administrator who recorded 1660s London without self-censorship: the plague, the Great Fire, court politics, marriage fights, and his own money, day by day."
+description: >
+  A curated-source capsule for the complete diary of Samuel Pepys, 1660-1669:
+  the Restoration court, Navy Office work, the 1665 plague, the 1666 Great Fire,
+  the Dutch war, marriage and household life, theatre, music, food, money,
+  ambition, and a mind narrating itself with unusual honesty.
+languages:
+  - en
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+sample_profile: sample.yaml
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. Users download the public-domain Project Gutenberg edition (Wheatley transcription) locally after reviewing source terms."

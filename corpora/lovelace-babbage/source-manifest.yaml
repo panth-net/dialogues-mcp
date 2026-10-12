@@ -1,0 +1,235 @@
+version: 1
+corpus_id: lovelace-babbage
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Lovelace/Babbage documents that reveal learning, collaboration, design, notation, and contested credit."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  lovelace-learning-math:
+    title: "Lovelace Learning Math"
+    point: "Recover mathematical learning as a documented process."
+  babbage-machine-thinking:
+    title: "Babbage Machine Thinking"
+    point: "Follow mechanical design, diagrams, notebooks, and calculation."
+  collaboration-and-credit:
+    title: "Collaboration and Credit"
+    point: "Trace dependency, exchange, attribution, and dispute."
+  notes-before-computing-myth:
+    title: "Notes before Computing Myth"
+    point: "Read the Notes before later programming myths harden."
+  program-traces-and-engine-design:
+    title: "Program Traces and Engine Design"
+    point: "Track operations, tables, cards, drawings, and machine logic."
+items:
+  - id: clay:lovelace-transcripts-folios-1-179
+    source_type: clay_lovelace_item
+    url: https://www.claymath.org/wp-content/uploads/2023/04/transcripts-of-folions-1-179.pdf
+    title: "Transcripts of Folios 1-179, Box 170, The Lovelace Byron Papers"
+    author: "Ada Lovelace; Augustus De Morgan; Christopher Hollings"
+    document_type: "transcription"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - lovelace-learning-math
+      - collaboration-and-credit
+      - notes-before-computing-myth
+    curator_score: 5
+    signals:
+      - mathematical_reasoning
+      - dialogue_with_others
+      - learning_process
+      - myth_breaker
+    why_keep: "The strongest Lovelace source for seeing mathematical learning, De Morgan's correction style, and Lovelace's work before later computing myths."
+    metadata:
+      source_collection: "Clay Mathematics Institute Ada Lovelace's Mathematical Papers"
+      holding_collection: "Lovelace Byron Papers, Box 170, Bodleian Library"
+      access_note: "Transcripts provided by Clay; reuse requires source-holder permission."
+  - id: clay:lovelace-early-mathematical-education
+    source_type: clay_lovelace_item
+    url: https://www.claymath.org/wp-content/uploads/2023/04/the_early_mathematical_education_of_ada_lovelace.pdf
+    title: "The early mathematical education of Ada Lovelace"
+    author: "Christopher Hollings; Ursula Martin; Adrian Rice"
+    document_type: "article"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - lovelace-learning-math
+      - notes-before-computing-myth
+      - collaboration-and-credit
+    curator_score: 4
+    signals:
+      - mathematical_reasoning
+      - learning_process
+      - contextual_source
+    why_keep: "Contextualizes Lovelace's patchwork mathematical education and keeps searches grounded in documented study instead of retrospective myth."
+    metadata:
+      source_collection: "Clay Mathematics Institute Ada Lovelace's Mathematical Papers"
+      journal: "Journal of the British Society for the History of Mathematics"
+      access_note: "Clay-hosted PDF; local user download only."
+  - id: clay:lovelace-demorgan-correspondence-reappraisal
+    source_type: clay_lovelace_item
+    url: https://www.claymath.org/wp-content/uploads/2023/04/Lovelace-De-Morgan-correspondence.pdf
+    title: "The Lovelace-De Morgan mathematical correspondence: a critical re-appraisal"
+    author: "Christopher Hollings; Ursula Martin; Adrian Rice"
+    document_type: "article"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - lovelace-learning-math
+      - collaboration-and-credit
+      - notes-before-computing-myth
+    curator_score: 4
+    signals:
+      - dialogue_with_others
+      - mathematical_reasoning
+      - credit_context
+    why_keep: "Frames the correspondence as a teaching and collaboration record, useful for searching Lovelace, De Morgan, Babbage, and credit claims together."
+    metadata:
+      source_collection: "Clay Mathematics Institute Ada Lovelace's Mathematical Papers"
+      journal: "Historia Mathematica"
+      access_note: "Clay-hosted PDF; local user download only."
+  - id: science:babbage-papers-archive
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/documents/aa110000003/the-babbage-papers
+    title: "The Babbage Papers"
+    author: "Charles Babbage"
+    date: "1821-1905"
+    document_type: "archive record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - babbage-machine-thinking
+      - program-traces-and-engine-design
+      - collaboration-and-credit
+    curator_score: 5
+    signals:
+      - machine_design
+      - program_trace
+      - practical_logistics
+      - working_system
+    why_keep: "The archive record names notebooks, engineering drawings, notations, and calculation traces, making it the map for Babbage machine-thinking searches."
+    metadata:
+      science_museum_identifier: BAB
+      source_collection: "Science Museum Group Collection"
+      access_note: "Science Museum public collection record; local user download only."
+  - id: science:difference-engine-no-1
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/objects/co62243/difference-engine-no-1-difference-engine-portion-only
+    title: "Difference Engine No. 1"
+    author: "Charles Babbage"
+    date: "1832"
+    document_type: "object record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - babbage-machine-thinking
+      - program-traces-and-engine-design
+    curator_score: 4
+    signals:
+      - machine_design
+      - object_metadata
+      - working_system
+    why_keep: "Anchors Babbage's machine design in the actual surviving Difference Engine object rather than later abstractions."
+    metadata:
+      science_museum_identifier: co62243
+      source_collection: "Science Museum Group Collection"
+      access_note: "Science Museum public object record; local user download only."
+  - id: science:analytical-engine-notations
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/documents/aa110000014
+    title: "Notations of the Analytical Engine"
+    author: "Charles Babbage"
+    document_type: "document record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - babbage-machine-thinking
+      - program-traces-and-engine-design
+      - notes-before-computing-myth
+    curator_score: 5
+    signals:
+      - program_trace
+      - machine_design
+      - notation
+    why_keep: "Core Babbage record for notations as functional descriptions of machine behavior."
+    metadata:
+      science_museum_identifier: aa110000014
+      source_collection: "Science Museum Group Collection"
+      archive_part: "The Babbage Papers"
+      access_note: "Science Museum public document record; local user download only."
+  - id: science:card-counting-apparatus
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/documents/aa110000276
+    title: "Elevation of parts of the card counting apparatus for operation and variable cards"
+    author: "Charles Babbage"
+    date: "1845-02"
+    document_type: "document record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - babbage-machine-thinking
+      - program-traces-and-engine-design
+      - notes-before-computing-myth
+    curator_score: 5
+    signals:
+      - program_trace
+      - machine_design
+      - cards
+      - drawing_metadata
+    why_keep: "High-signal record for operation cards and variable cards as machine design evidence."
+    metadata:
+      science_museum_identifier: "BAB/A/133"
+      source_collection: "Science Museum Group Collection"
+      archive_part: "Drawings of the Analytical Engine"
+      access_note: "Science Museum public document record; local user download only."
+  - id: science:algebraic-addition-cards
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/documents/aa110000691
+    title: "Notation of cards for algebraic addition"
+    author: "Charles Babbage"
+    document_type: "document record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - program-traces-and-engine-design
+      - notes-before-computing-myth
+      - babbage-machine-thinking
+    curator_score: 5
+    signals:
+      - program_trace
+      - cards
+      - notation
+      - machine_design
+    why_keep: "Keeps the card/operation vocabulary searchable for tracing program-like notation without overstating later programming categories."
+    metadata:
+      science_museum_identifier: aa110000691
+      source_collection: "Science Museum Group Collection"
+      archive_part: "The Babbage Papers"
+      access_note: "Science Museum public document record; local user download only."
+  - id: science:difference-engine-no-2-elevation
+    source_type: science_museum_item
+    url: https://collection.sciencemuseumgroup.org.uk/documents/aa110117998
+    title: "Elevation of Difference Engine No. 2"
+    author: "Charles Babbage"
+    document_type: "document record"
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - babbage-machine-thinking
+      - program-traces-and-engine-design
+    curator_score: 4
+    signals:
+      - machine_design
+      - drawing_metadata
+      - working_system
+    why_keep: "Represents the Difference Engine No. 2 drawing sequence and gives searches a second machine-design anchor."
+    metadata:
+      science_museum_identifier: aa110117998
+      source_collection: "Science Museum Group Collection"
+      archive_part: "Drawings and tracings of Difference Engine No. 2"
+      access_note: "Science Museum public document record; local user download only."

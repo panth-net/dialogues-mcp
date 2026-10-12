@@ -1,0 +1,118 @@
+version: 1
+corpus_id: maimonides-geniza
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Downloads public-domain English translations of Maimonides' major works (the Guide for the Perplexed and the Eight Chapters). The Geniza fragment records stay catalog-only pointers to the Princeton Geniza Project with import instructions."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Geniza source work."
+paths:
+  drafts-and-works:
+    title: "Drafts and Works"
+    point: "Trace autograph drafts of the Mishneh Torah, the Guide of the Perplexed, and the Commentary on the Mishnah being made."
+  letters-and-loss:
+    title: "Letters and Loss"
+    point: "Follow the correspondence around David's death at sea and the personal letters of a working household."
+  physician-and-community:
+    title: "Physician and Community"
+    point: "Read medical opinions, responsa answered in his own hand, and the communal leadership paperwork of Fustat."
+  works-in-translation:
+    title: "Works in Translation"
+    point: "Read the finished books behind the Geniza drafts: the Guide for the Perplexed and the Eight Chapters in public-domain English translation."
+items:
+  - id: pg:guide-for-the-perplexed-friedlander
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/73584.txt.utf-8"
+    title: "The Guide for the Perplexed (M. Friedländer translation)"
+    author: "Moses Maimonides; translated by M. Friedländer"
+    date: "composed c. 1190; translation 1881-1885, revised edition printed 1910"
+    document_type: philosophical treatise
+    rights_level: public_domain
+    selected: true
+    paths:
+      - works-in-translation
+    curator_score: 9
+    signals:
+      - complete English text
+      - Aristotle and the Law
+      - negative theology
+      - prophecy and providence
+    why_keep: "The complete Guide in the standard public-domain English translation: the finished book whose Judeo-Arabic drafts the Geniza preserves in fragments, and the only way this capsule can quote Maimonides' philosophy at length."
+    metadata:
+      gutenberg_id: "73584"
+      edition: "Friedländer's revised one-volume edition (London: George Routledge & Sons, 1910), without the notes of the 1881-1885 three-volume edition"
+      translation_note: "A Victorian translation from the Judeo-Arabic; quote it as Friedländer's rendering, not as Maimonides' own wording."
+  - id: ia:eight-chapters-gorfinkle
+    source_type: static_text_url
+    url: "https://archive.org/download/eightchaptersofm00maim/eightchaptersofm00maim_djvu.txt"
+    title: "The Eight Chapters on Ethics (Shemonah Perakim, Joseph I. Gorfinkle translation)"
+    author: "Moses Maimonides; translated by Joseph I. Gorfinkle"
+    date: "composed c. 1168; translation 1912"
+    document_type: ethical treatise
+    rights_level: public_domain
+    selected: true
+    paths:
+      - works-in-translation
+    curator_score: 8
+    signals:
+      - ethics of the soul
+      - doctrine of the mean
+      - free will
+      - OCR text with Hebrew apparatus
+    why_keep: "The introduction to the Mishnah tractate Avot in Gorfinkle's public-domain translation (Columbia University Press, 1912): Maimonides' ethics of the soul, the middle way, and free will in compact form."
+    why_skip: "An OCR text of a library scan: the English translation and introduction read well, but the Hebrew text pages at the back of the volume OCR to gibberish and page furniture survives here and there."
+    metadata:
+      archive_identifier: "eightchaptersofm00maim"
+      edition: "Gorfinkle's edition with English translation (New York: Columbia University Press, 1912); scan of the University of Illinois copy"
+      translation_note: "Translated from Samuel ibn Tibbon's medieval Hebrew version of the Judeo-Arabic original; two removes from Maimonides' own words."
+  - id: pgp:database
+    source_type: catalog_only
+    url: "https://geniza.princeton.edu/en/"
+    title: "Princeton Geniza Project database"
+    author: "Princeton Geniza Lab"
+    document_type: "document database"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - drafts-and-works
+      - letters-and-loss
+      - physician-and-community
+    curator_score: 5
+    signals:
+      - per_document_records
+      - scholarly_descriptions
+      - some_transcriptions_translations
+      - classmark_joins
+    why_keep: "The central scholarly database over the dispersed Geniza fragments: per-document records with descriptions, classmarks, joins, bibliography, and a growing set of transcriptions and translations."
+    why_skip: "PGP documents no public bulk export, and its transcriptions belong to contributing scholars and host collections; crawling the site is not a permitted download path, so no text is fetched."
+    metadata:
+      source_collection: "Princeton Geniza Project"
+      access_note: "Catalog-only record. Browse and read online; nothing is downloaded."
+      import_instructions: "Browse PGP document records and note the classmarks and records you need. For research corpora, request bulk or reuse access from the Princeton Geniza Lab rather than crawling the site. Save permitted transcription/translation files (one file per document works well, named by classmark) into a local folder and run `dialogues import-folder <folder>` to index them here."
+  - id: pgp:maimonides-tag-search
+    source_type: catalog_only
+    url: "https://geniza.princeton.edu/en/documents/?q=tag%3A%22maimonides%22"
+    title: "Princeton Geniza Project: documents tagged Maimonides"
+    author: "Princeton Geniza Lab"
+    document_type: "database search record"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - drafts-and-works
+      - letters-and-loss
+      - physician-and-community
+    curator_score: 5
+    signals:
+      - maimonides_tag
+      - autograph_candidates
+      - responsa_and_letters
+      - curated_entry_point
+    why_keep: "The working entry point for this capsule: the PGP search for documents tagged Maimonides — drafts, responsa, letters, and material about him — each with its own record and, sometimes, transcription."
+    why_skip: "A search URL over the same database: records and any transcriptions are for on-site reading, with no bulk export documented, so no text is downloaded."
+    metadata:
+      source_collection: "Princeton Geniza Project"
+      access_note: "Catalog-only search record over PGP; results and rights are per-document."
+      import_instructions: "Work through the tagged results, open each document record, and check whether a transcription or translation exists and who contributed it. Request permission via the Princeton Geniza Lab for the texts you need, save permitted files into a local folder, and run `dialogues import-folder <folder>` (or `dialogues corpus import`) to index them."

@@ -1,0 +1,12 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Jesuit Relations sample: three volumes from three eras"
+summary: "Volume 1 (the first Acadian mission, 1610-1613), volume 34 (the destruction of the Huron missions, 1649), and volume 59 (Marquette's journey down the Mississippi, 1673)."
+# Measured upstream size on 2026-10-08 (HTTP Content-Length).
+download_bytes: 1418504
+download_note: "Three of the 73 volumes, as Internet Archive OCR text (about 1.4 MB)."
+items:
+  - id: jesuits01jesuuoft
+  - id: jesuits34jesuuoft
+  - id: jesuits59jesuuoft

@@ -1,0 +1,41 @@
+id: vangogh-letters
+title: Van Gogh Letters
+subtitle: Downloadable or local user-supplied letters by Vincent van Gogh
+tagline: "Vincent's letters, mostly to his brother Theo — the complete inner record of an artist's development, poverty, doubt, and conviction."
+description: >
+  A local corpus for Vincent van Gogh's letters. The guide treats the letters
+  as intimate, practical, artistic, financial, spiritual, and social documents
+  whose meaning depends on date, recipient, place, language, editorial
+  handling, and translation.
+languages:
+  - unknown
+type: correspondence
+status: download_or_local_import_required
+data_policy: official_download_or_user_supplied_local_import
+downloadable: true
+download_policy: public_source
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+sample_profile: sample.yaml
+fields:
+  - letter_id
+  - title
+  - author
+  - recipient
+  - date
+  - place
+  - language
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1600
+  overlap_chars: 150
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Van Gogh letter data is bundled. Users can download the official XML source files under CC BY-NC-SA 4.0 or import local files, after confirming source terms."

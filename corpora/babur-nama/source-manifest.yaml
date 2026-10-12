@@ -1,0 +1,80 @@
+version: 1
+corpus_id: babur-nama
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The complete public-domain Beveridge translation of the Baburnama from Project Gutenberg."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Babur source work."
+paths:
+  fergana-and-exile:
+    title: "Fergana and Exile"
+    point: "Follow the eleven-year-old ruler of Fergana through Samarkand won and lost, Uzbek conquest, and the throneless wandering years."
+  kabul-kingdom:
+    title: "The Kabul Kingdom"
+    point: "Watch Babur take Kabul in 1504 and rule it: gardens, raids, the Herat visit, and the base for Hindustan."
+  conquest-of-hindustan:
+    title: "Conquest of Hindustan"
+    point: "Read Panipat 1526 and Khanua 1527, the fall of the Ludi sultanate, and the founding of Mughal rule at Agra."
+  gardens-and-natural-world:
+    title: "Gardens and the Natural World"
+    point: "Track gardens laid out, fruits ranked, animals described, and the famous homesickness for melons."
+  the-man-himself:
+    title: "The Man Himself"
+    point: "Meet the self-portrait: defeats admitted, wine renounced, verses judged, friends mourned, faults recorded."
+items:
+  - id: pg:babur-nama-beveridge
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/44608.txt.utf-8"
+    title: "The Babur-nama in English (Memoirs of Babur)"
+    author: "Babur, Emperor of Hindustan"
+    date: "1494-1529"
+    document_type: memoir
+    rights_level: public_domain
+    selected: true
+    paths:
+      - fergana-and-exile
+      - kabul-kingdom
+      - conquest-of-hindustan
+      - gardens-and-natural-world
+      - the-man-himself
+    curator_score: 9.5
+    signals:
+      - Fergana and Samarkand
+      - taking of Kabul
+      - Panipat and Khanua
+      - gardens and melons
+      - unguarded self-portrait
+    why_keep: "The complete memoirs in the standard public-domain English translation; the only searchable full text of Babur's own record of founding the Mughal Empire."
+    metadata:
+      gutenberg_id: "44608"
+      edition: "Annette S. Beveridge translation (1912-1921), from the Chagatai Haydarabad Codex"
+      translator: "Annette Susannah Beveridge"
+  - id: ia:babar-nama-manuscript-materials
+    source_type: catalog_only
+    url: "https://archive.org/details/babarnamamateri00bevegoog"
+    title: "The Babar-nama: The Material Now Available for a Definitive Text of that Book"
+    author: "Annette S. Beveridge"
+    date: "1900"
+    document_type: manuscript_survey
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - fergana-and-exile
+      - kabul-kingdom
+      - conquest-of-hindustan
+      - gardens-and-natural-world
+      - the-man-himself
+    curator_score: 4
+    signals:
+      - manuscript tradition
+      - Haydarabad Codex
+      - textual gaps
+    why_keep: "Beveridge's own survey of the Chagatai manuscript tradition behind the translation — which codices survive and where the gaps fall — for anyone checking what the English text rests on."
+    why_skip: "Scanned page images of a 1900 scholarly pamphlet with no clean plain text to index; it points at the Chagatai manuscript record, which this English-language capsule does not download."
+    metadata:
+      source_collection: "Internet Archive"
+      access_note: "Catalog-only pointer. Do not treat as passage evidence."

@@ -1,0 +1,45 @@
+id: libanius-letters
+title: Libanius Letters
+subtitle: The largest surviving letter collection from antiquity, from fourth-century Antioch
+tagline: "The best-connected professor of the late Roman Empire — 1,500+ Greek letters working favors, students, and politics in fourth-century Antioch."
+description: >
+  A curated-source capsule for the letters of Libanius of Antioch (314-c.393),
+  Greek rhetorician and correspondent of the emperor Julian: some 1,544 letters
+  survive, the largest letter collection from antiquity — recommendations,
+  favors, complaints, and networking across the late Roman East under
+  Constantius, Julian, and Theodosius. The searchable core is OCR text of the
+  two letter volumes (X-XI) of Foerster's Teubner edition (1921-1922) from the
+  Internet Archive; the polytonic Greek OCR is heavily degraded, so hits are
+  pointers into the page scans, not clean quotable text.
+languages:
+  - grc
+type: letters
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No letter text is bundled. Users download the public-domain OCR text of Foerster's Teubner letter volumes (1921-1922) from the Internet Archive locally after reviewing source terms; the OCR of polytonic Greek is heavily degraded and must be verified against the scans before quoting."

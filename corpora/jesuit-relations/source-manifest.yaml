@@ -1,0 +1,961 @@
+# Generated list of the 73 Thwaites volumes on the Internet Archive. Text downloads only after the user agrees.
+version: 1
+corpus_id: jesuit-relations
+source_policy: user_downloaded_from_original_sources
+default_mode: all-volumes
+download_modes:
+  all-volumes:
+    visible_to_users: true
+    description: All 73 volumes of the Thwaites edition (1896-1901) as Internet
+      Archive OCR text.
+paths: {}
+items:
+  - id: jesuits01jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits01jesuuoft/jesuits01jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 1
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 1
+      archive_url: https://archive.org/details/jesuits01jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits02jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits02jesuuoft/jesuits02jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 2
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 2
+      archive_url: https://archive.org/details/jesuits02jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits03jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits03jesuuoft/jesuits03jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 3
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 3
+      archive_url: https://archive.org/details/jesuits03jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits04jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits04jesuuoft/jesuits04jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 4
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 4
+      archive_url: https://archive.org/details/jesuits04jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits05jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits05jesuuoft/jesuits05jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 5
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 5
+      archive_url: https://archive.org/details/jesuits05jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits06jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits06jesuuoft/jesuits06jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 6
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 6
+      archive_url: https://archive.org/details/jesuits06jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits07jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits07jesuuoft/jesuits07jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 7
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 7
+      archive_url: https://archive.org/details/jesuits07jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits08jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits08jesuuoft/jesuits08jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 8
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 8
+      archive_url: https://archive.org/details/jesuits08jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits09jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits09jesuuoft/jesuits09jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 9
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 9
+      archive_url: https://archive.org/details/jesuits09jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits10jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits10jesuuoft/jesuits10jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 10
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 10
+      archive_url: https://archive.org/details/jesuits10jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits11jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits11jesuuoft/jesuits11jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 11
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 11
+      archive_url: https://archive.org/details/jesuits11jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits12jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits12jesuuoft/jesuits12jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 12
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 12
+      archive_url: https://archive.org/details/jesuits12jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits13jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits13jesuuoft/jesuits13jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 13
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 13
+      archive_url: https://archive.org/details/jesuits13jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits14jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits14jesuuoft/jesuits14jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 14
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 14
+      archive_url: https://archive.org/details/jesuits14jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits15jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits15jesuuoft/jesuits15jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 15
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 15
+      archive_url: https://archive.org/details/jesuits15jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits16jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits16jesuuoft/jesuits16jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 16
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 16
+      archive_url: https://archive.org/details/jesuits16jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits17jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits17jesuuoft/jesuits17jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 17
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 17
+      archive_url: https://archive.org/details/jesuits17jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits18jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits18jesuuoft/jesuits18jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 18
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 18
+      archive_url: https://archive.org/details/jesuits18jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits19jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits19jesuuoft/jesuits19jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 19
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 19
+      archive_url: https://archive.org/details/jesuits19jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits20jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits20jesuuoft/jesuits20jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 20
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 20
+      archive_url: https://archive.org/details/jesuits20jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits21jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits21jesuuoft/jesuits21jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 21
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 21
+      archive_url: https://archive.org/details/jesuits21jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits22jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits22jesuuoft/jesuits22jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 22
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 22
+      archive_url: https://archive.org/details/jesuits22jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits23jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits23jesuuoft/jesuits23jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 23
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 23
+      archive_url: https://archive.org/details/jesuits23jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits24jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits24jesuuoft/jesuits24jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 24
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 24
+      archive_url: https://archive.org/details/jesuits24jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits25jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits25jesuuoft/jesuits25jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 25
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 25
+      archive_url: https://archive.org/details/jesuits25jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits26jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits26jesuuoft/jesuits26jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 26
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 26
+      archive_url: https://archive.org/details/jesuits26jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits27jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits27jesuuoft/jesuits27jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 27
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 27
+      archive_url: https://archive.org/details/jesuits27jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits28jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits28jesuuoft/jesuits28jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 28
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 28
+      archive_url: https://archive.org/details/jesuits28jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits29jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits29jesuuoft/jesuits29jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 29
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 29
+      archive_url: https://archive.org/details/jesuits29jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits30jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits30jesuuoft/jesuits30jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 30
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 30
+      archive_url: https://archive.org/details/jesuits30jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits31jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits31jesuuoft/jesuits31jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 31
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 31
+      archive_url: https://archive.org/details/jesuits31jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits32jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits32jesuuoft/jesuits32jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 32
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 32
+      archive_url: https://archive.org/details/jesuits32jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits33jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits33jesuuoft/jesuits33jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 33
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 33
+      archive_url: https://archive.org/details/jesuits33jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits34jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits34jesuuoft/jesuits34jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 34
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 34
+      archive_url: https://archive.org/details/jesuits34jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits35jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits35jesuuoft/jesuits35jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 35
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 35
+      archive_url: https://archive.org/details/jesuits35jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits36jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits36jesuuoft/jesuits36jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 36
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 36
+      archive_url: https://archive.org/details/jesuits36jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits37jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits37jesuuoft/jesuits37jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 37
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 37
+      archive_url: https://archive.org/details/jesuits37jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits38jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits38jesuuoft/jesuits38jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 38
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 38
+      archive_url: https://archive.org/details/jesuits38jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits39jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits39jesuuoft/jesuits39jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 39
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 39
+      archive_url: https://archive.org/details/jesuits39jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits40jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits40jesuuoft/jesuits40jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 40
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 40
+      archive_url: https://archive.org/details/jesuits40jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits41jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits41jesuuoft/jesuits41jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 41
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 41
+      archive_url: https://archive.org/details/jesuits41jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits42jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits42jesuuoft/jesuits42jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 42
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 42
+      archive_url: https://archive.org/details/jesuits42jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits43jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits43jesuuoft/jesuits43jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 43
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 43
+      archive_url: https://archive.org/details/jesuits43jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits44jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits44jesuuoft/jesuits44jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 44
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 44
+      archive_url: https://archive.org/details/jesuits44jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits45jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits45jesuuoft/jesuits45jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 45
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 45
+      archive_url: https://archive.org/details/jesuits45jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits46jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits46jesuuoft/jesuits46jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 46
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 46
+      archive_url: https://archive.org/details/jesuits46jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits47jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits47jesuuoft/jesuits47jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 47
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 47
+      archive_url: https://archive.org/details/jesuits47jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits48jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits48jesuuoft/jesuits48jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 48
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 48
+      archive_url: https://archive.org/details/jesuits48jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits49jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits49jesuuoft/jesuits49jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 49
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 49
+      archive_url: https://archive.org/details/jesuits49jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits50jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits50jesuuoft/jesuits50jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 50
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 50
+      archive_url: https://archive.org/details/jesuits50jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits51jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits51jesuuoft/jesuits51jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 51
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 51
+      archive_url: https://archive.org/details/jesuits51jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits52jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits52jesuuoft/jesuits52jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 52
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 52
+      archive_url: https://archive.org/details/jesuits52jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits53jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits53jesuuoft/jesuits53jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 53
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 53
+      archive_url: https://archive.org/details/jesuits53jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits54jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits54jesuuoft/jesuits54jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 54
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 54
+      archive_url: https://archive.org/details/jesuits54jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits55jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits55jesuuoft/jesuits55jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 55
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 55
+      archive_url: https://archive.org/details/jesuits55jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits56jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits56jesuuoft/jesuits56jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 56
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 56
+      archive_url: https://archive.org/details/jesuits56jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits57jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits57jesuuoft/jesuits57jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 57
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 57
+      archive_url: https://archive.org/details/jesuits57jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits58jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits58jesuuoft/jesuits58jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 58
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 58
+      archive_url: https://archive.org/details/jesuits58jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits59jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits59jesuuoft/jesuits59jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 59
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 59
+      archive_url: https://archive.org/details/jesuits59jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits60jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits60jesuuoft/jesuits60jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 60
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 60
+      archive_url: https://archive.org/details/jesuits60jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits61jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits61jesuuoft/jesuits61jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 61
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 61
+      archive_url: https://archive.org/details/jesuits61jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits62jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits62jesuuoft/jesuits62jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 62
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 62
+      archive_url: https://archive.org/details/jesuits62jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits63jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits63jesuuoft/jesuits63jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 63
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 63
+      archive_url: https://archive.org/details/jesuits63jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits64jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits64jesuuoft/jesuits64jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 64
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 64
+      archive_url: https://archive.org/details/jesuits64jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits65jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits65jesuuoft/jesuits65jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 65
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 65
+      archive_url: https://archive.org/details/jesuits65jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits66jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits66jesuuoft/jesuits66jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 66
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 66
+      archive_url: https://archive.org/details/jesuits66jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits67jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits67jesuuoft/jesuits67jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 67
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 67
+      archive_url: https://archive.org/details/jesuits67jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits68jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits68jesuuoft/jesuits68jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 68
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 68
+      archive_url: https://archive.org/details/jesuits68jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits69jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits69jesuuoft/jesuits69jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 69
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 69
+      archive_url: https://archive.org/details/jesuits69jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits70jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits70jesuuoft/jesuits70jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 70
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 70
+      archive_url: https://archive.org/details/jesuits70jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits71jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits71jesuuoft/jesuits71jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 71
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 71
+      archive_url: https://archive.org/details/jesuits71jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits72jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits72jesuuoft/jesuits72jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 72
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 72
+      archive_url: https://archive.org/details/jesuits72jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines
+  - id: jesuits73jesuuoft
+    source_type: static_text_url
+    url: https://archive.org/download/jesuits73jesuuoft/jesuits73jesuuoft_djvu.txt
+    title: The Jesuit Relations and Allied Documents, Volume 73
+    author: Reuben Gold Thwaites (ed.)
+    document_type: missionary_relation_volume
+    rights_level: public_domain
+    selected: true
+    metadata:
+      volume: 73
+      archive_url: https://archive.org/details/jesuits73jesuuoft
+      source: internet_archive_djvu_text
+      text_cleanup: collapse_blank_lines

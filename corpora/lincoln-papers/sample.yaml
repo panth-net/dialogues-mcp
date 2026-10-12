@@ -1,0 +1,16 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Lincoln sample: seven drafts and working papers"
+summary: "The preliminary draft of the Emancipation Proclamation, the Gettysburg Address, the unsent letter to Meade, the reply to Corning, his autobiographical sketch, Douglass's letter, and the 1864 memorandum on probable defeat."
+# Measured size of these Library of Congress records and transcriptions on 2026-10-08.
+download_bytes: 436568
+download_note: "Seven Library of Congress item records with their transcriptions (about 0.4 MB)."
+items:
+  - id: loc:mal1723200
+  - id: loc:mal4356500
+  - id: loc:mal2480600
+  - id: loc:mal2399500
+  - id: loc:mal4339100
+  - id: loc:mal3565200
+  - id: loc:mal4359700

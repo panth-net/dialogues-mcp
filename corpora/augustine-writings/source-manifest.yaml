@@ -1,0 +1,138 @@
+version: 1
+corpus_id: augustine-writings
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Public-domain Augustine core: Confessions in English and Latin, The City of God in two volumes, and a letters selection."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Augustine source work."
+paths:
+  conversion-and-the-will:
+    title: "Conversion and the Will"
+    point: "Follow the divided will to the garden in Milan: Books VI-VIII of the Confessions."
+  memory-and-time:
+    title: "Memory and Time"
+    point: "Read the philosophical core: the palaces of memory in Book X and the analysis of time in Book XI."
+  grief-and-friendship:
+    title: "Grief and Friendship"
+    point: "Trace the friend's death in Book IV, Adeodatus, and Monica's death at Ostia in Book IX."
+  sack-of-rome-and-two-cities:
+    title: "The Sack of Rome and the Two Cities"
+    point: "Watch Augustine answer 410: the pagan accusation, and the earthly and heavenly cities."
+  pastoral-letters:
+    title: "Pastoral Letters"
+    point: "See the working bishop: Jerome, the Donatists, consolation, and church governance in the correspondence."
+items:
+  - id: pg:augustine-confessions-pusey
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3296.txt.utf-8"
+    title: "The Confessions of St. Augustine (Pusey translation)"
+    author: "Augustine of Hippo"
+    date: "c. 397-400"
+    document_type: autobiography
+    rights_level: public_domain
+    selected: true
+    paths:
+      - conversion-and-the-will
+      - memory-and-time
+      - grief-and-friendship
+    curator_score: 9.5
+    signals:
+      - garden scene
+      - memory Book X
+      - time Book XI
+      - Monica at Ostia
+      - divided will
+    why_keep: "The complete Confessions in the standard long-lived English translation; the anchor text for conversion, memory, time, and grief."
+    metadata:
+      gutenberg_id: "3296"
+      translator: "E. B. Pusey (1838)"
+  - id: pg:augustine-confessiones-latin
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/33849.txt.utf-8"
+    title: "Confessiones (Latin)"
+    author: "Augustine of Hippo"
+    date: "c. 397-400"
+    document_type: autobiography
+    rights_level: public_domain
+    selected: true
+    paths:
+      - conversion-and-the-will
+      - memory-and-time
+    curator_score: 8.5
+    signals:
+      - original language
+      - translation checking
+      - memoria
+      - tempus
+    why_keep: "Augustine's actual Latin, so English translation claims can be checked passage against passage (memoria, tempus, voluntas, tolle lege)."
+    metadata:
+      gutenberg_id: "33849"
+      edition: "Latin text, ed. Philippe Goibaud Du Bois"
+  - id: pg:augustine-city-of-god-v1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/45304.txt.utf-8"
+    title: "The City of God, Volume I (Books I-XIII)"
+    author: "Augustine of Hippo"
+    date: "413-426"
+    document_type: treatise
+    rights_level: public_domain
+    selected: true
+    paths:
+      - sack-of-rome-and-two-cities
+    curator_score: 9.0
+    signals:
+      - sack of Rome 410
+      - pagan accusation
+      - critique of Roman religion
+      - origin of the two cities
+    why_keep: "The direct answer to Alaric's sack of Rome: why the disaster was not Christianity's fault, and the critique of the gods Rome trusted."
+    metadata:
+      gutenberg_id: "45304"
+      translator: "Marcus Dods (1871)"
+  - id: pg:augustine-city-of-god-v2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/45305.txt.utf-8"
+    title: "The City of God, Volume II (Books XIV-XXII)"
+    author: "Augustine of Hippo"
+    date: "413-426"
+    document_type: treatise
+    rights_level: public_domain
+    selected: true
+    paths:
+      - sack-of-rome-and-two-cities
+    curator_score: 9.0
+    signals:
+      - two loves two cities
+      - earthly peace
+      - Book XIX
+      - last things
+    why_keep: "The constructive half: the two cities' origins, course, and ends, including Book XIX on peace and the ordered commonwealth."
+    metadata:
+      gutenberg_id: "45305"
+      translator: "Marcus Dods (1871)"
+  - id: ia:augustine-letters-sparrow-simpson
+    source_type: static_text_url
+    url: "https://archive.org/download/cu31924029218752/cu31924029218752_djvu.txt"
+    title: "The Letters of St. Augustine (Handbooks of Christian Literature)"
+    author: "Augustine of Hippo; W. J. Sparrow-Simpson (editor)"
+    date: "1919 (letters c. 386-430)"
+    document_type: letters_selection_with_commentary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - pastoral-letters
+      - grief-and-friendship
+    curator_score: 7.0
+    signals:
+      - Jerome correspondence
+      - Donatist controversy
+      - consolation letters
+      - uncorrected OCR
+    why_keep: "The only downloadable letters coverage in the corpus: substantial translated excerpts from the correspondence with Jerome, the Donatist material, and pastoral business, framed by a 1919 study."
+    metadata:
+      archive_org_identifier: "cu31924029218752"
+      access_note: "Uncorrected OCR of the Cornell Library scan; search quality is degraded and the 1919 commentary surrounds the letter excerpts."

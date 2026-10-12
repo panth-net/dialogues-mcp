@@ -1,0 +1,35 @@
+id: jesuit-relations
+title: The Jesuit Relations and Allied Documents
+subtitle: Missionary reports from New France, 1610-1791
+tagline: "Annual field reports from French missionaries in seventeenth-century North America — first-contact ethnography, winters, martyrdoms, and the collision of worlds."
+description: >
+  A bilingual French/English corpus of missionary reports and allied documents
+  from New France, useful for exploring Indigenous-European encounters,
+  governance, freedom, religion, colonial interpretation, and daily life.
+languages:
+  - en
+  - fr
+  - la
+  - it
+type: historical_archive
+status: built_in
+data_policy: curated_public_source_manifest_only
+downloadable: true
+download_policy: public_source
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+sample_profile: sample.yaml
+fields:
+  - doc_id
+  - title
+  - language
+  - page_num
+  - chunk_index
+license:
+  data_included: false
+  user_must_confirm_rights: false
+  notes: "The Thwaites Jesuit Relations are public domain; generated indexes are local artifacts."

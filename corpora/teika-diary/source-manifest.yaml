@@ -1,0 +1,77 @@
+version: 1
+corpus_id: teika-diary
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Catalog records plus import instructions only. Nothing downloads: the records point at manuscript image records for surviving autograph sections and explain how to obtain and import a permitted transcription."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Meigetsuki source work."
+paths:
+  sky-and-omens:
+    title: "Sky and Omens"
+    point: "Follow the 1204 red aurora nights, the 1230 guest-star list with the 1054 supernova record, comets, and eclipses."
+  court-and-career:
+    title: "Court and Career"
+    point: "Trace promotion anxieties, Go-Toba's favor and ban, the Jokyu War, and the long climb to middle counselor."
+  poetry-and-canon:
+    title: "Poetry and Canon"
+    point: "Watch the Shin Kokinshu commission, poetry contests, the Shin Chokusenshu, and the Hyakunin Isshu selection."
+  illness-and-daily-life:
+    title: "Illness and Daily Life"
+    point: "Read the health complaints, fires, famines, and Kyoto weather that fill the entries between ceremonies."
+items:
+  - id: emuseum:meigetsuki-tnm-100357
+    source_type: catalog_only
+    url: "https://emuseum.nich.go.jp/detail?content_base_id=100357&content_part_id=0&content_pict_id=0&langId=en"
+    title: "Meigetsuki (Bright Moon Diary), autograph section — Tokyo National Museum"
+    author: "Fujiwara no Teika"
+    date: "1180-1235 (section)"
+    document_type: "manuscript image record"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - sky-and-omens
+      - court-and-career
+      - poetry-and-canon
+      - illness-and-daily-life
+    curator_score: 5
+    signals:
+      - autograph_manuscript
+      - national_treasure
+      - iiif_images
+      - teika_hand
+    why_keep: "An e-Museum record for a National Treasure autograph section in Teika's own idiosyncratic hand, with high-resolution images and an IIIF manifest — the material anchor for what the diary physically is."
+    why_skip: "The record provides manuscript images and a catalog description, not a transcription; there is no text to download, and images are not imported as passage evidence."
+    metadata:
+      source_collection: "e-Museum (National Institutes for Cultural Heritage, Japan)"
+      holder: "Tokyo National Museum"
+      access_note: "Catalog-only manuscript image record with IIIF manifest; no transcription."
+      import_instructions: "This record documents images of an autograph section only. To make Meigetsuki searchable, obtain a printed Japanese transcription — e.g. the Kokusho Kankokai edition (1911-1912) or a later scholarly edition — purchase or borrow it, key in or otherwise obtain permitted digital text, save the files into a local folder, and run `dialogues import-folder <folder>` to index them here."
+  - id: emuseum:meigetsuki-knm-101080
+    source_type: catalog_only
+    url: "https://emuseum.nich.go.jp/detail?content_base_id=101080&content_part_id=000&content_pict_id=0&langId=en"
+    title: "Meigetsuki (Record of the Clear Moon), autograph section for the first to third months of 1199 — Kyoto National Museum"
+    author: "Fujiwara no Teika"
+    date: "1199 (Kenkyu 10, months 1-3)"
+    document_type: "manuscript image record"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - court-and-career
+      - illness-and-daily-life
+    curator_score: 5
+    signals:
+      - autograph_manuscript
+      - national_treasure
+      - yoritomo_death_entries
+      - clean_copy_volume
+    why_keep: "An e-Museum record for the National Treasure section covering early 1199, including Teika's unusually detailed entries on the death of Shogun Minamoto no Yoritomo — a datable, checkable anchor for the diary's historical value."
+    why_skip: "Manuscript images and catalog description only; no transcription is offered, so no text is downloaded from this record."
+    metadata:
+      source_collection: "e-Museum (National Institutes for Cultural Heritage, Japan)"
+      holder: "Kyoto National Museum"
+      access_note: "Catalog-only manuscript image record with IIIF manifest; no transcription."
+      import_instructions: "This record documents images of the 1199 section only. For searchable text, supply your own permitted transcription of Meigetsuki (see the Kokusho Kankokai or a later edition), save the text files into a local folder, and run `dialogues import-folder <folder>` (or `dialogues corpus import`) to index them."

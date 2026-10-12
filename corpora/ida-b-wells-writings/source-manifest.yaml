@@ -1,0 +1,120 @@
+version: 1
+corpus_id: ida-b-wells-writings
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The three public-domain anti-lynching pamphlets (1892, 1895, 1900) from Project Gutenberg."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Wells source work."
+paths:
+  case-lists-and-statistics:
+    title: "Case Lists and Statistics"
+    point: "Read the evidentiary core: named victims, dated cases, and the tabulated 1892-1894 lynching statistics."
+  unmasking-the-usual-charge:
+    title: "Unmasking the Usual Charge"
+    point: "Follow the argument that the rape accusation was a pretext, proven against the record's own alleged causes."
+  economics-boycott-and-press:
+    title: "Economics, Boycott, and the Press"
+    point: "Trace lynching as economic terror, the Memphis boycott and Oklahoma emigration, and what publishing cost Wells."
+  self-defense-and-remedies:
+    title: "Self-Defense and Remedies"
+    point: "Study the calls to action: investigation, publicity, agitation, and the Winchester rifle passage."
+items:
+  - id: pg:wells-southern-horrors
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/14975.txt.utf-8"
+    title: "Southern Horrors: Lynch Law in All Its Phases"
+    author: "Ida B. Wells-Barnett"
+    date: "1892"
+    document_type: pamphlet
+    rights_level: public_domain
+    selected: true
+    paths:
+      - case-lists-and-statistics
+      - unmasking-the-usual-charge
+      - economics-boycott-and-press
+      - self-defense-and-remedies
+    curator_score: 9.5
+    signals:
+      - Memphis 1892
+      - Free Speech destruction
+      - usual charge pretext
+      - Winchester passage
+      - Frederick Douglass letter
+    why_keep: "The founding pamphlet: written in exile after the People's Grocery lynchings and the destruction of her press, it sets out the pretext argument, the economics, and the self-defense case in her own voice."
+    metadata:
+      gutenberg_id: "14975"
+      edition: "New York Age Print, 1892; expanded from the June 1892 New York Age articles"
+  - id: pg:wells-red-record
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/14977.txt.utf-8"
+    title: "The Red Record: Tabulated Statistics and Alleged Causes of Lynchings in the United States, 1892-1893-1894"
+    author: "Ida B. Wells-Barnett"
+    date: "1895"
+    document_type: pamphlet
+    rights_level: public_domain
+    selected: true
+    paths:
+      - case-lists-and-statistics
+      - unmasking-the-usual-charge
+      - self-defense-and-remedies
+    curator_score: 9.5
+    signals:
+      - tabulated statistics
+      - Chicago Tribune counts
+      - alleged causes
+      - case documentation
+      - remedy chapter
+    why_keep: "The statistical centerpiece: three years of lynchings tabulated by alleged cause from the Chicago Tribune's own records, with documented case narratives and the closing remedy chapter."
+    metadata:
+      gutenberg_id: "14977"
+      edition: "Chicago, 1895"
+  - id: pg:wells-mob-rule-new-orleans
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/14976.txt.utf-8"
+    title: "Mob Rule in New Orleans: Robert Charles and His Fight to Death"
+    author: "Ida B. Wells-Barnett"
+    date: "1900"
+    document_type: pamphlet
+    rights_level: public_domain
+    selected: true
+    paths:
+      - case-lists-and-statistics
+      - economics-boycott-and-press
+      - self-defense-and-remedies
+    curator_score: 9.0
+    signals:
+      - Robert Charles
+      - July 1900 riot
+      - police violence
+      - press-account method
+    why_keep: "Her mature investigative method applied to one city: the Robert Charles affair and the New Orleans mob riots of July 1900, reconstructed from the city's own white daily papers."
+    metadata:
+      gutenberg_id: "14976"
+      edition: "Chicago, 1900; sources are the New Orleans Times-Democrat and Picayune"
+  - id: uchicago:ida-b-wells-papers
+    source_type: catalog_only
+    url: "https://www.lib.uchicago.edu/collex/collections/wells-ida-b-papers/"
+    title: "Ida B. Wells Papers, University of Chicago Library"
+    author: "Ida B. Wells-Barnett"
+    date: "1884-1976"
+    document_type: archive_collection
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - case-lists-and-statistics
+      - economics-boycott-and-press
+    curator_score: 8.0
+    signals:
+      - diaries
+      - correspondence
+      - Crusade for Justice manuscript
+      - Chicago organizing
+    why_keep: "Maps the manuscript surface beyond the pamphlets: diaries, correspondence, and the autobiography manuscript held at the University of Chicago."
+    why_skip: "The unpublished diaries and manuscripts are digitized for reading through the library's interface but are not bulk-downloadable, so no text can be indexed from this record."
+    metadata:
+      source_collection: "University of Chicago Library, Special Collections Research Center"
+      access_note: "Catalog-only pointer. Consult the collection online or in person; do not treat this record as passage evidence."

@@ -1,0 +1,13 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Pepys sample: the plague year and the Great Fire (1665-1666)"
+summary: "Two years of the diary: London in the plague of 1665 and the Great Fire of September 1666."
+# Measured upstream size on 2026-10-08 (HTTP Content-Length).
+download_bytes: 6800848
+download_note: "Project Gutenberg publishes the diary as one file, so the whole diary (about 6.5 MB) is downloaded; only January 1665 to December 1666 is made searchable until you ask for the full diary."
+items:
+  - id: pg:pepys-diary-complete
+    text_window:
+      start: "JANUARY 1664-1665"
+      end: "JANUARY 1666-1667"

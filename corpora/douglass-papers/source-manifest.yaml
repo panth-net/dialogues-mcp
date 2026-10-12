@@ -1,0 +1,299 @@
+version: 1
+corpus_id: douglass-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Douglass documents that reveal strategy, editing, argument, conflict, and Reconstruction work."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  douglass-as-strategist:
+    title: "Douglass as Strategist"
+    point: "Recover public argument as tactical and institutional work."
+  douglass-as-editor:
+    title: "Douglass as Editor"
+    point: "Follow newspaper labor, publication choices, and public platform building."
+  movement-conflict:
+    title: "Movement Conflict"
+    point: "Study disagreement, alliance, and pressure inside reform movements."
+  private-public-douglass:
+    title: "Private and Public Douglass"
+    point: "Compare public rhetoric with letters, family papers, and private constraints."
+  reconstruction-citizenship:
+    title: "Reconstruction Citizenship"
+    point: "Trace citizenship, voting, rights, and postwar institutional argument."
+  lost-early-douglass:
+    title: "Lost Early Douglass"
+    point: "Mark early-document loss and avoid false completeness."
+items:
+  - id: loc:mss1187900024
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900024/"
+    title: "General Correspondence, 1847"
+    author: "Frederick Douglass and correspondents"
+    date: "1847"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - private-public-douglass
+      - lost-early-douglass
+    curator_score: 8.3
+    signals:
+      - early surviving correspondence
+      - family and movement logistics
+      - source gap boundary
+    why_keep: "One of the earliest full-text correspondence folders; useful for showing both surviving evidence and the limits around earlier losses."
+    metadata:
+      loc_item_id: mss1187900024
+  - id: loc:mss1187900025
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900025/"
+    title: "General Correspondence, 1848"
+    author: "Frederick Douglass and correspondents"
+    date: "1848"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-editor
+      - private-public-douglass
+      - lost-early-douglass
+    curator_score: 8.8
+    signals:
+      - newspaper labor
+      - early surviving correspondence
+      - movement network
+    why_keep: "Includes early Rochester newspaper and organizing evidence soon after The North Star launch."
+    metadata:
+      loc_item_id: mss1187900025
+  - id: loc:sn84026365-18481229-p2
+    source_type: loc_item
+    url: "https://www.loc.gov/resource/sn84026365/1848-12-29/ed-1/?sp=2"
+    title: "The North Star, December 29, 1848, page 2"
+    author: "Frederick Douglass, editor"
+    date: "1848-12-29"
+    document_type: newspaper_page
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-editor
+      - douglass-as-strategist
+      - lost-early-douglass
+    curator_score: 8.2
+    signals:
+      - editorial platform
+      - abolition newspaper
+      - public argument
+    why_keep: "A full-text page from Douglass's early newspaper platform, useful for seeing argument as editorial infrastructure."
+    metadata:
+      loc_item_id: sn84026365-18481229-p2
+  - id: loc:sn84026366-18510626-p2
+    source_type: loc_item
+    url: "https://www.loc.gov/resource/sn84026366/1851-06-26/ed-1/?sp=2"
+    title: "Frederick Douglass' Paper, June 26, 1851, page 2"
+    author: "Frederick Douglass, editor"
+    date: "1851-06-26"
+    document_type: newspaper_page
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-editor
+      - movement-conflict
+      - douglass-as-strategist
+    curator_score: 8.4
+    signals:
+      - editorial platform
+      - movement pressure
+      - public strategy
+    why_keep: "A full-text page from Douglass's renamed paper for tracking editorial argument and movement-facing strategy."
+    metadata:
+      loc_item_id: sn84026366-18510626-p2
+  - id: loc:mss1187900033
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900033/"
+    title: "General Correspondence, 1861"
+    author: "Frederick Douglass and correspondents"
+    date: "1861"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - movement-conflict
+      - douglass-as-strategist
+      - private-public-douglass
+    curator_score: 8.6
+    signals:
+      - civil war crisis
+      - movement conflict
+      - private-public pressure
+    why_keep: "Civil War correspondence showing strategy and movement conflict as the political situation changed."
+    metadata:
+      loc_item_id: mss1187900033
+  - id: loc:mss1187900035
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900035/"
+    title: "General Correspondence, 1863"
+    author: "Frederick Douglass and correspondents"
+    date: "1863"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-strategist
+      - movement-conflict
+      - reconstruction-citizenship
+    curator_score: 9
+    signals:
+      - emancipation war
+      - Black enlistment
+      - institutional pressure
+    why_keep: "High-pressure wartime correspondence around emancipation, enlistment, and political strategy."
+    metadata:
+      loc_item_id: mss1187900035
+  - id: loc:mss1187900038
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900038/"
+    title: "General Correspondence, 1866"
+    author: "Frederick Douglass and correspondents"
+    date: "1866"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - reconstruction-citizenship
+      - douglass-as-strategist
+      - movement-conflict
+    curator_score: 9.1
+    signals:
+      - citizenship
+      - congressional pressure
+      - Reconstruction rights
+    why_keep: "Reconstruction correspondence with direct rights and citizenship pressure reaching Congress."
+    metadata:
+      loc_item_id: mss1187900038
+  - id: loc:mss1187900041
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900041/"
+    title: "General Correspondence, 1869"
+    author: "Frederick Douglass and correspondents"
+    date: "1869"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - reconstruction-citizenship
+      - private-public-douglass
+    curator_score: 8.4
+    signals:
+      - Freedmen's education
+      - family correspondence
+      - Reconstruction institutions
+    why_keep: "Shows Reconstruction institution-building and private family context around public work."
+    metadata:
+      loc_item_id: mss1187900041
+  - id: loc:sn84026753-18710720-p2
+    source_type: loc_item
+    url: "https://www.loc.gov/resource/sn84026753/1871-07-20/ed-1/?sp=2"
+    title: "New National Era, July 20, 1871, page 2"
+    author: "Frederick Douglass, editor"
+    date: "1871-07-20"
+    document_type: newspaper_page
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-editor
+      - reconstruction-citizenship
+      - douglass-as-strategist
+    curator_score: 8.5
+    signals:
+      - Reconstruction newspaper
+      - editorial platform
+      - citizenship politics
+    why_keep: "A Reconstruction-era editorial surface for reading Douglass's public platform after the war."
+    metadata:
+      loc_item_id: sn84026753-18710720-p2
+  - id: loc:mss1187900044
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900044/"
+    title: "General Correspondence, 1872"
+    author: "Frederick Douglass and correspondents"
+    date: "1872"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - movement-conflict
+      - douglass-as-strategist
+      - private-public-douglass
+    curator_score: 8.2
+    signals:
+      - political campaign
+      - movement disagreement
+      - lecture circuit
+    why_keep: "Postwar correspondence showing public speaking, politics, and reform-network tension."
+    metadata:
+      loc_item_id: mss1187900044
+  - id: loc:mss1187900046
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900046/"
+    title: "General Correspondence, 1874"
+    author: "Frederick Douglass and correspondents"
+    date: "1874"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - reconstruction-citizenship
+      - movement-conflict
+      - douglass-as-strategist
+    curator_score: 8.3
+    signals:
+      - Reconstruction rights
+      - public requests
+      - organizational pressure
+    why_keep: "Later Reconstruction correspondence with practical requests, rights claims, and public-pressure evidence."
+    metadata:
+      loc_item_id: mss1187900046
+  - id: loc:mss1187900075
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mss1187900075/"
+    title: "General Correspondence, January-February 1888"
+    author: "Frederick Douglass and correspondents"
+    date: "1888-01"
+    document_type: correspondence_folder
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - douglass-as-strategist
+      - reconstruction-citizenship
+      - private-public-douglass
+    curator_score: 7.9
+    signals:
+      - late public strategy
+      - rights memory
+      - institutional requests
+    why_keep: "Late-life correspondence for comparing Douglass's long strategic commitments with postwar memory and institutions."
+    metadata:
+      loc_item_id: mss1187900075
+  - id: loc:douglass-transcription-dataset
+    source_type: catalog_only
+    url: "https://www.loc.gov/item/2023514913/"
+    title: "Transcription dataset from the Frederick Douglass Papers (9,352 reviewed transcriptions)"
+    author: "Library of Congress By the People volunteers"
+    date: "2023"
+    document_type: transcription_dataset
+    rights_level: catalog_only
+    selected: false
+    curator_score: 8.0
+    signals:
+      - bulk transcriptions
+      - By the People crowdsourcing
+      - offline import candidate
+    why_skip: "A bulk ZIP dataset (CSV plus transcription files) covering 9,352 reviewed page transcriptions; it is not a per-item text service and is best downloaded and imported manually rather than fetched by the download engine."
+    metadata:
+      loc_item_id: "2023514913"
+      import_instructions: "Download 2023514913.zip from https://www.loc.gov/resource/gdcdatasets.2023514913/ , extract it locally, then run `dialogues import-folder <extracted-folder>` to index the transcriptions."

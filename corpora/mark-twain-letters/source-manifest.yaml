@@ -1,0 +1,176 @@
+version: 1
+corpus_id: mark-twain-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected public-domain Mark Twain letter volumes from 1853 to 1910."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Twain source work."
+paths:
+  apprenticeship-and-voice:
+    title: "Apprenticeship and Voice"
+    point: "Trace young Clemens learning work, place, ambition, and voice."
+  travel-lecture-and-public-persona:
+    title: "Travel, Lecture, and Public Persona"
+    point: "Read travel and platform work as the machinery behind Mark Twain."
+  authorship-and-publishing:
+    title: "Authorship and Publishing"
+    point: "Follow books, proofs, copyright, publishers, editors, and literary labor."
+  family-money-and-business-risk:
+    title: "Family, Money, and Business Risk"
+    point: "Connect domestic life, debt, investment, earning, and obligation."
+  grief-age-and-late-darkness:
+    title: "Grief, Age, and Late Darkness"
+    point: "Ground late-life bitterness and sorrow in dated letters."
+  humor-private-public-gap:
+    title: "Humor and the Private/Public Gap"
+    point: "Ask how comic performance, affection, anger, and self-presentation interact."
+items:
+  - id: pg:twain-letters-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3193.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 1 (1853-1866)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1853-1866"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - apprenticeship-and-voice
+      - travel-lecture-and-public-persona
+      - humor-private-public-gap
+    curator_score: 9.0
+    signals:
+      - early life
+      - apprenticeship
+      - travel
+      - persona formation
+    why_keep: "Early letters show Clemens before and during the formation of the Mark Twain persona."
+    metadata:
+      gutenberg_id: "3193"
+      compiler: "Albert Bigelow Paine"
+  - id: pg:twain-letters-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3194.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 2 (1867-1875)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1867-1875"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - travel-lecture-and-public-persona
+      - authorship-and-publishing
+      - humor-private-public-gap
+    curator_score: 9.0
+    signals:
+      - travel
+      - lecture circuit
+      - authorship
+      - public persona
+    why_keep: "Shows travel, lecture work, book-making, and persona under expansion."
+    metadata:
+      gutenberg_id: "3194"
+      compiler: "Albert Bigelow Paine"
+  - id: pg:twain-letters-vol-3
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3195.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 3 (1876-1885)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1876-1885"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - authorship-and-publishing
+      - family-money-and-business-risk
+      - humor-private-public-gap
+    curator_score: 8.9
+    signals:
+      - mature authorship
+      - Howells
+      - family
+      - publishing
+    why_keep: "Strong evidence for mature authorship, friendship with Howells, and domestic work context."
+    metadata:
+      gutenberg_id: "3195"
+      compiler: "Albert Bigelow Paine"
+  - id: pg:twain-letters-vol-4
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3196.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 4 (1886-1900)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1886-1900"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - authorship-and-publishing
+      - family-money-and-business-risk
+      - grief-age-and-late-darkness
+      - humor-private-public-gap
+    curator_score: 9.1
+    signals:
+      - business risk
+      - family
+      - publishing
+      - grief
+    why_keep: "Key period for business pressure, family life, publishing, and grief."
+    metadata:
+      gutenberg_id: "3196"
+      compiler: "Albert Bigelow Paine"
+  - id: pg:twain-letters-vol-5
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3197.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 5 (1901-1906)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1901-1906"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - family-money-and-business-risk
+      - grief-age-and-late-darkness
+      - humor-private-public-gap
+    curator_score: 8.7
+    signals:
+      - late life
+      - family
+      - reputation
+      - grief
+    why_keep: "Late correspondence where public reputation, family, and age begin to press hard."
+    metadata:
+      gutenberg_id: "3197"
+      compiler: "Albert Bigelow Paine"
+  - id: pg:twain-letters-vol-6
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/3198.txt.utf-8"
+    title: "Mark Twain's Letters - Volume 6 (1907-1910)"
+    author: "Mark Twain"
+    recipient: "various"
+    date: "1907-1910"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - grief-age-and-late-darkness
+      - humor-private-public-gap
+      - authorship-and-publishing
+    curator_score: 8.8
+    signals:
+      - late life
+      - grief
+      - public persona
+      - final years
+    why_keep: "Final-period letters for grounding late-life darkness, performance, and reputation."
+    metadata:
+      gutenberg_id: "3198"
+      compiler: "Albert Bigelow Paine"

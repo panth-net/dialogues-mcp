@@ -1,0 +1,43 @@
+id: augustine-writings
+title: Augustine of Hippo Writings
+subtitle: Confessions in English and Latin, The City of God, and the letters of a working bishop
+tagline: "The late-Roman bishop who invented introspective autobiography — conversion, grief, memory, and time, argued in the first person."
+description: >
+  A curated-source capsule for Augustine of Hippo (354-430): the Confessions
+  in Pusey's English translation and in Latin, both volumes of The City of God
+  in the Dods translation, and a selection of his letters. Conversion and the
+  divided will, memory and time, grief and friendship, the sack of Rome and
+  the two cities, and the pastoral business of a North African bishopric.
+languages:
+  - en
+  - la
+type: collected_writings
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No source text is bundled. Users download public-domain Project Gutenberg editions and a public-domain archive.org letters volume locally after reviewing source terms."

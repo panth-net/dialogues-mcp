@@ -1,0 +1,115 @@
+version: 1
+corpus_id: libanius-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "OCR text of the two letter volumes (X-XI) of Foerster's public-domain Teubner edition from the Internet Archive, plus catalog-only pointers for verification."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Libanius source work (orations volumes, declamations, future clean digital texts)."
+paths:
+  recommendation-and-patronage:
+    title: "Recommendation and Patronage"
+    point: "Read the social engine of the late-antique elite: letters recommending students, begging favors from governors, and calling in debts of friendship."
+  julian-and-the-court:
+    title: "Julian and the Court"
+    point: "Follow the correspondence with the emperor Julian and with prefects, governors, and officials across the Roman East."
+  antioch-and-the-school:
+    title: "Antioch and the School"
+    point: "Watch Antioch and the rhetoric school at work: recruiting students, fighting rivals, managing a city's grandees."
+  pagan-twilight:
+    title: "Pagan Twilight"
+    point: "Trace the lament of a Hellene as temples close and the empire Christianizes under Theodosius."
+items:
+  - id: ia:foerster-libanii-opera-10
+    source_type: static_text_url
+    url: "https://archive.org/download/foerster-libanii-opera/Foerster%20%281921%29%2C%20Libanii%20opera%2010_djvu.txt"
+    title: "Libanii Opera, vol. X: Epistulae 1-839 (Foerster, Teubner 1921) — OCR text"
+    author: "Libanius; Richard Foerster (editor)"
+    date: "letters c. 355-393; edition 1921"
+    document_type: critical edition, OCR text
+    rights_level: public_domain
+    selected: true
+    paths:
+      - recommendation-and-patronage
+      - julian-and-the-court
+      - antioch-and-the-school
+      - pagan-twilight
+    curator_score: 4
+    signals:
+      - largest ancient letter collection
+      - Julian correspondence
+      - polytonic Greek OCR
+    why_keep: "The only rights-clear machine text of letters 1-839; the OCR is rough, but it puts Foerster's Greek within keyword reach and points into the page scans."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/foerster-libanii-opera"
+      ocr_warning: "Polytonic Greek OCR is heavily degraded; the Latin apparatus criticus is largely garbled into pseudo-Greek. Treat every hit as a pointer to the printed page and verify against the scan before quoting."
+  - id: ia:foerster-libanii-opera-11
+    source_type: static_text_url
+    url: "https://archive.org/download/foerster-libanii-opera/Foerster%20%281922%29%2C%20Libanii%20opera%2011_djvu.txt"
+    title: "Libanii Opera, vol. XI: Epistulae 840-1544 (Foerster, Teubner 1922) — OCR text"
+    author: "Libanius; Richard Foerster (editor)"
+    date: "letters c. 355-393; edition 1922"
+    document_type: critical edition, OCR text
+    rights_level: public_domain
+    selected: true
+    paths:
+      - recommendation-and-patronage
+      - julian-and-the-court
+      - antioch-and-the-school
+      - pagan-twilight
+    curator_score: 4
+    signals:
+      - largest ancient letter collection
+      - late letters under Theodosius
+      - polytonic Greek OCR
+    why_keep: "Completes the letter collection (840-1544) in the same public-domain edition, with the same OCR caveats."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/foerster-libanii-opera"
+      ocr_warning: "Same as volume X: heavily degraded polytonic Greek OCR; verify against the scan before quoting."
+  - id: ia:foerster-libanii-opera-set
+    source_type: catalog_only
+    url: "https://archive.org/details/foerster-libanii-opera"
+    title: "Foerster, Libanii Opera (Teubner, 1903-1922) — Internet Archive item with page scans"
+    author: "Libanius; Richard Foerster (editor)"
+    date: "edition 1903-1922"
+    document_type: scanned critical edition, multi-volume
+    rights_level: public_domain
+    selected: true
+    paths:
+      - antioch-and-the-school
+      - pagan-twilight
+    curator_score: 4
+    signals:
+      - page scans for verification
+      - orations and declamations volumes
+    why_keep: "The scan set is the verification surface for every OCR hit, and it holds the volumes beyond the letters (orations, declamations) that this capsule does not index."
+    why_skip: "Catalog pointer: the non-letter volumes are out of scope for this capsule, and the scans themselves are images — only the two letter-volume OCR files above are downloaded as text."
+    metadata:
+      source_collection: "Internet Archive"
+      access_note: "Use the per-volume PDFs here to check any OCR hit before quoting."
+  - id: perseids:libanius-reading-env
+    source_type: catalog_only
+    url: "https://fgh.perseids.org/read/greekLit/tlg2200/tlg001/opp-grc1/489.4-490.3"
+    title: "Perseids reading environment for Libanius (TLG 2200)"
+    author: "Perseids Project"
+    document_type: online reading environment
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - recommendation-and-patronage
+      - julian-and-the-court
+    curator_score: 3
+    signals:
+      - cleaner presented Greek
+      - passage-by-passage reading
+    why_keep: "A browsable presentation of Libanius's Greek for cross-checking a passage found through the degraded OCR."
+    why_skip: "Reading environment only: no bulk text download is offered or taken, so it stays a catalog pointer."
+    metadata:
+      source_collection: "Perseids / Perseus ecosystem"
+      access_note: "Open in a browser and navigate to the passage; useful for verifying wording when the scan is hard to read."
+      import_instructions: "If you obtain rights-cleared digital Greek text of the letters from any source, place UTF-8 .txt files in this capsule's documents/ folder and run `dialogues corpus reindex libanius-letters`."

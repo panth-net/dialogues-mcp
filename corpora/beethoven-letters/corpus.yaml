@@ -1,0 +1,43 @@
+id: beethoven-letters
+title: Beethoven Letters
+subtitle: Correspondence about composition, patrons, money, illness, family, and conflict
+tagline: "Beethoven in his own hand — patrons, publishers, the encroaching deafness, the nephew fight, and the Immortal Beloved."
+description: >
+  A curated-source capsule for recovering Beethoven's thinking from letters:
+  composing under constraint, publishing, patronage, illness, deafness, money,
+  family conflict, reputation, and the limits of translated and edited editions.
+languages:
+  - en
+  - de
+type: correspondence
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+selection_rules: selection-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Beethoven source text is bundled. Users download selected Project Gutenberg public-domain texts locally after reviewing source terms; original-language local imports are also supported by the corpus workflow."

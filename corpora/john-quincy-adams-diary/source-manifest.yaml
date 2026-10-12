@@ -1,0 +1,331 @@
+version: 1
+corpus_id: john-quincy-adams-diary
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The complete twelve-volume public-domain Memoirs of John Quincy Adams (ed. Charles Francis Adams, 1874-1877), downloaded as OCR text from the Internet Archive, plus catalog pointers to the complete modern Digital Diary transcription."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Adams source work."
+paths:
+  diplomacy-and-cabinet:
+    title: "Diplomacy and Cabinet"
+    point: "Follow The Hague, Berlin, St. Petersburg, Ghent, and the State Department under Monroe from the inside."
+  presidency-and-party-battles:
+    title: "Presidency and Party Battles"
+    point: "Watch the 1824 election decided in the House, the 'corrupt bargain' charge, the embattled presidency, and the 1828 defeat by Jackson."
+  antislavery-house-years:
+    title: "Antislavery House Years"
+    point: "Track petitions, the gag rule fight of 1836-1844, the Amistad argument, and the censure battles."
+  self-scrutiny-and-science:
+    title: "Self-Scrutiny and Science"
+    point: "Read the self-assessments, Potomac swims, Bible reading, and the astronomy and observatory obsession."
+items:
+  - id: ia:memoirs-v01
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui01adam/memoirsofjohnqui01adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. I (1795-1809)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1795-1809"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+      - self-scrutiny-and-science
+    curator_score: 8.5
+    signals:
+      - The Hague and Berlin missions
+      - Senate years
+      - early self-assessments
+    why_keep: "Opens the record: Charles Francis Adams's introductory memoir of the early years, then the diary from 1795 — The Hague, the Berlin mission, the Senate years, and the first of a lifetime of merciless self-scoldings."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui01adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. I"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v02
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui02adam/memoirsofjohnqui02adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. II (1809-1814)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1809-1814"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+    curator_score: 8.5
+    signals:
+      - St. Petersburg mission
+      - Tsar Alexander I
+      - War of 1812 from Russia
+    why_keep: "The Russia years: minister at St. Petersburg from 1809, walks with Tsar Alexander I, Napoleon's invasion watched from the Russian side, and the start of the peace overtures that led to Ghent."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui02adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. II"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v03
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui03adam/memoirsofjohnqui03adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. III (1814-1817)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1814-1817"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+    curator_score: 9.0
+    signals:
+      - Treaty of Ghent negotiations
+      - London mission
+      - day-by-day diplomacy
+    why_keep: "The Ghent volume: the day-by-day record of negotiating the peace with Britain in 1814 — the fisheries, the Mississippi, the wrangling inside the American commission — then the London mission."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui03adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. III"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v04
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui04adam/memoirsofjohnqui04adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. IV (1817-1820)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1817-1820"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+    curator_score: 9.0
+    signals:
+      - Secretary of State
+      - Adams-Onis Treaty
+      - Missouri crisis begins
+    why_keep: "Secretary of State under Monroe: the Adams-Onis negotiations for Florida and the transcontinental line, cabinet fights over Jackson in Florida, and the opening of the Missouri crisis."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui04adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. IV"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v05
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui05adam/memoirsofjohnqui05adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. V (1820-1822)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1820-1822"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+    curator_score: 8.5
+    signals:
+      - Missouri Compromise reflections
+      - slavery in the cabinet
+      - weights and measures report
+    why_keep: "The Missouri Compromise years at the State Department: the cabinet arguments over slavery that drew some of the diary's most prophetic passages, and the report on weights and measures he prized."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui05adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. V"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v06
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui06adam/memoirsofjohnqui06adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. VI (1822-1825)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1822-1825"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+      - presidency-and-party-battles
+    curator_score: 9.0
+    signals:
+      - Monroe Doctrine cabinet debates
+      - 1824 election
+      - House election of 1825
+    why_keep: "The cabinet debates behind the Monroe Doctrine in 1823 and the whole 1824 campaign — the four-way race, the deadlock, and the House election of February 1825 that made him president."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui06adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. VI"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v07
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui07adam/memoirsofjohnqui07adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. VII (1825-1828)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1825-1828"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - presidency-and-party-battles
+      - self-scrutiny-and-science
+    curator_score: 9.0
+    signals:
+      - the presidency from inside
+      - corrupt bargain siege
+      - Potomac swims
+    why_keep: "The presidency from the inside: a hostile Congress, the 'corrupt bargain' siege, internal improvements refused, and the private routine — dawn swims in the Potomac, early rising, self-reproach."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui07adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. VII"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v08
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui08adam/memoirsofjohnqui08adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. VIII (1828-1833)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1828-1833"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - presidency-and-party-battles
+      - antislavery-house-years
+    curator_score: 9.0
+    signals:
+      - defeat by Jackson
+      - return to the House 1831
+      - nullification crisis
+    why_keep: "Defeat by Jackson in 1828, the bitter retirement, and the unheard-of return: an ex-president taking a House seat in 1831 as the nullification crisis builds — the hinge of the whole record."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui08adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. VIII"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v09
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui09adam/memoirsofjohnqui09adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. IX (1833-1838)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1833-1838"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - antislavery-house-years
+      - self-scrutiny-and-science
+    curator_score: 9.5
+    signals:
+      - gag rule of 1836
+      - abolition petitions
+      - Smithson bequest
+    why_keep: "The petition fight begins: abolition petitions by the thousand, the gag rule imposed in 1836 and defied at once, Texas annexation resisted, and the Smithson bequest he took under his wing."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui09adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. IX"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v10
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui10adam/memoirsofjohnqui10adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. X (1838-1841)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1838-1841"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - antislavery-house-years
+    curator_score: 9.5
+    signals:
+      - Amistad case
+      - Supreme Court argument 1841
+      - gag rule battles
+    why_keep: "The Amistad volume: from the first letter asking his opinion on the 'knotty questions' of the case through the Supreme Court argument of February-March 1841, alongside the running gag-rule war."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui10adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. X"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v11
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui11adam/memoirsofjohnqui11adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. XI (1841-1844)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1841-1844"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - antislavery-house-years
+    curator_score: 9.5
+    signals:
+      - censure attempt 1842
+      - Haverhill petition
+      - gag rule repeal December 1844
+    why_keep: "The censure battle of 1842 over the Haverhill petition — Old Man Eloquent defending himself on the House floor for two weeks — through the repeal of the gag rule in December 1844."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui11adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. XI"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: ia:memoirs-v12
+    source_type: static_text_url
+    url: "https://archive.org/download/memoirsofjohnqui12adam/memoirsofjohnqui12adam_djvu.txt"
+    title: "Memoirs of John Quincy Adams, Vol. XII (1844-1848)"
+    author: "John Quincy Adams; ed. Charles Francis Adams"
+    date: "1844-1848"
+    document_type: diary_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - antislavery-house-years
+      - self-scrutiny-and-science
+    curator_score: 9.0
+    signals:
+      - Texas annexation and Mexican War
+      - Smithsonian founding
+      - last entries January 1848
+    why_keep: "The close: Texas annexation and the Mexican War opposed, the Smithsonian founded at last, the 1846 stroke, and the final thinning entries to 4 January 1848, nineteen days before his collapse in the House."
+    metadata:
+      archive_org_identifier: "memoirsofjohnqui12adam"
+      edition: "Charles Francis Adams, ed., Memoirs of John Quincy Adams (Philadelphia: J. B. Lippincott, 1874-1877), vol. XII"
+      access_note: "Uncorrected OCR of the 1874 edition scan; search quality is degraded."
+  - id: psc:jqa-digital-diary
+    source_type: catalog_only
+    url: https://www.primarysourcecoop.org/jqa/
+    title: "John Quincy Adams Digital Diary"
+    author: "Primary Source Cooperative; Massachusetts Historical Society"
+    date: "1779-1848"
+    document_type: "digital edition record"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+      - presidency-and-party-battles
+      - antislavery-house-years
+      - self-scrutiny-and-science
+    curator_score: 5
+    signals:
+      - complete_verified_transcription
+      - searchable_online
+      - sixty_eight_years
+      - fifty_one_volumes
+    why_keep: "The complete verified transcription of all 51 diary volumes, searchable online — the scholarly complete version to consult when the Memoirs selection omits a date or the OCR is doubtful."
+    why_skip: "The Cooperative publishes the transcription for on-site reading and search and documents no public bulk export; scraping the edition is not a permitted download path, so no text is fetched."
+    metadata:
+      source_collection: "Primary Source Cooperative (MHS)"
+      access_note: "Catalog-only record. Read and search online; no text is downloaded."
+      import_instructions: "Read and search entries at https://www.primarysourcecoop.org/jqa/. For bulk research use, contact the Massachusetts Historical Society / Primary Source Cooperative and request an export of the entries you need. Save permitted text files (one file per entry or per date range) into a local folder and run `dialogues import-folder <folder>` to index them here."
+  - id: mhs:adams-papers-search
+    source_type: catalog_only
+    url: https://www.masshist.org/publications/adams-papers/index.php/search
+    title: "Adams Papers Digital Edition search"
+    author: "Massachusetts Historical Society"
+    document_type: "digital edition search portal"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - diplomacy-and-cabinet
+      - antislavery-house-years
+    curator_score: 4
+    signals:
+      - adams_papers_edition
+      - annotated_documents
+      - correspondence_context
+    why_keep: "The MHS search portal across the published Adams Papers volumes — the annotated context (letters, state papers, family documents) surrounding the diary."
+    why_skip: "The digital edition is an MHS publication with no bulk-export path; records here locate documents and annotation but no text is downloaded."
+    metadata:
+      source_collection: "Massachusetts Historical Society"
+      access_note: "Catalog-only search portal record."
+      import_instructions: "Search the Adams Papers Digital Edition at the URL above to locate documents and annotation. Request permission from MHS for any text you want to reuse, save permitted files locally, and run `dialogues import-folder <folder>` (or `dialogues corpus import`) to index them."

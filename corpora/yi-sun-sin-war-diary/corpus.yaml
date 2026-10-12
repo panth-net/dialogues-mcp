@@ -1,0 +1,46 @@
+id: yi-sun-sin-war-diary
+title: Yi Sun-sin War Diary
+subtitle: Nanjung Ilgi, seven years of the Imjin War from the admiral's own brush
+tagline: "The Korean admiral's day-by-day war diary, written between naval battles he never lost — Hansan, Myeongnyang, Noryang — while fighting his own court as much as the Japanese."
+description: >
+  A curated-source capsule for Nanjung Ilgi, the war diary Admiral Yi Sun-sin
+  kept from 1592 to 1598 during the Imjin War: fleet drills and turtle ships,
+  weather lines and executions, his imprisonment and torture after court
+  intrigue, the thirteen ships at Myeongnyang, grief for his mother and son,
+  and his death at Noryang. The Classical Chinese text of the public-domain
+  1795 Yi Chungmugong jeonseo compilation downloads from Korean Wikisource
+  (books 5-7) and the ITKC classics database (book 8) after a rights
+  confirmation. UNESCO Memory of the World; National Treasure of Korea.
+languages:
+  - lzh
+  - ko
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled. The Classical Chinese text of the 1795 jeonseo compilation downloads only after the user confirms the rights notice: the original is public domain, the Wikisource transcription carries no translation layer, and the ITKC transcription layer's exact open-license type is unconfirmed, so ITKC text stays local personal-use only. The standard English translation is in copyright and must be user-supplied; no modern Korean translation is downloaded."

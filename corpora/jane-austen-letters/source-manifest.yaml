@@ -1,0 +1,57 @@
+version: 1
+corpus_id: jane-austen-letters
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected public-domain Jane Austen letter edition for family, social, and writing-life questions."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Austen source work."
+paths:
+  cassandra-and-family:
+    title: "Cassandra and Family"
+    point: "Read family correspondence as practical, intimate evidence."
+  wit-and-social-judgment:
+    title: "Wit and Social Judgment"
+    point: "Find jokes, irritation, manners, and rapid evaluation of people and scenes."
+  writing-publication-and-money:
+    title: "Writing, Publication, and Money"
+    point: "Trace references to authorship, books, payment, publication, and fame."
+  illness-loss-and-limitation:
+    title: "Illness, Loss, and Limitation"
+    point: "Follow health, death, worry, dependency, and constraint."
+  selection-and-silence:
+    title: "Selection and Silence"
+    point: "Keep gaps, omissions, destroyed letters, and editorial mediation visible."
+items:
+  - id: pg:austen-letters
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/42078.txt.utf-8"
+    title: "The Letters of Jane Austen"
+    author: "Jane Austen"
+    recipient: "various"
+    date: "1796-1817"
+    document_type: letters_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - cassandra-and-family
+      - wit-and-social-judgment
+      - writing-publication-and-money
+      - illness-loss-and-limitation
+      - selection-and-silence
+    curator_score: 9.0
+    signals:
+      - correspondence
+      - family
+      - wit
+      - publication
+      - editorial selection
+    why_keep: "Compact public-domain source for Austen's surviving letters, with important selection limitations."
+    metadata:
+      gutenberg_id: "42078"
+      source_title: "The Letters of Jane Austen"
+      compiler: "Susan Coolidge / Brabourne selection"
+      limitation: "Selected public-domain edition, not complete manuscript archive"

@@ -1,0 +1,5 @@
+# Prefer: dialogues setup --client codex   (or: dialogues mcp config codex for a ready-made snippet)
+# Replace the placeholder paths with absolute paths on your computer.
+[mcp_servers.dialogues]
+command = "/absolute/path/to/node"
+args = ["/absolute/path/to/dialogues-mcp/dist/cli/index.js", "mcp", "serve", "--data-dir", "/absolute/path/to/Dialogues"]

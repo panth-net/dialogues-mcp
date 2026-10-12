@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "dialogues": {
+      "type": "stdio",
+      "command": "/absolute/path/to/node",
+      "args": ["/absolute/path/to/dialogues-mcp/dist/cli/index.js", "mcp", "serve", "--data-dir", "/absolute/path/to/Dialogues"]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+version: 1
+corpus_id: evliya-celebi-travels
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The two public-domain volumes of the von Hammer English translation of the Seyahatname from Project Gutenberg."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Evliya Celebi source work."
+paths:
+  istanbul-described:
+    title: "Istanbul Described"
+    point: "Walk the imperial city: foundation legends, twenty-seven gates, sixty-six talismans, nine sieges, and the conquest of 1453."
+  sultans-and-the-court:
+    title: "Sultans and the Court"
+    point: "Read the imperial mosques and reign-by-reign rosters from Suleyman to Mehmed IV, with Murad IV's palace seen from inside."
+  roads-and-journeys:
+    title: "Roads and Journeys"
+    point: "Ride the first circuits: Bursa's hot springs, Trabzon, Mingrelia, the Crimea, Erzurum, and the mission to Tabriz."
+  war-and-frontier:
+    title: "War and the Frontier"
+    point: "Follow the Azov campaign, Tatar raids, the siege of Canea on Crete, and a Black Sea storm survived by inches."
+  marvels-and-tall-tales:
+    title: "Marvels and Tall Tales"
+    point: "Collect talismans, enchanted columns, miracles, and glorious exaggerations — the wonders the genre demanded."
+items:
+  - id: pg:evliya-travels-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/53597.txt.utf-8"
+    title: "Narrative of Travels in Europe, Asia, and Africa, in the Seventeenth Century, Vol. I"
+    author: "Evliya Celebi"
+    date: "1630-1650"
+    document_type: travel_narrative
+    rights_level: public_domain
+    selected: true
+    paths:
+      - istanbul-described
+      - sultans-and-the-court
+      - marvels-and-tall-tales
+    curator_score: 9.2
+    signals:
+      - dream of travel
+      - talismans of Constantinople
+      - conquest of 1453
+      - imperial mosques
+      - Murad IV's court
+    why_keep: "The Istanbul volume: the traveler's dream, the city's legends, walls, and talismans, the 1453 conquest, and the sultans and court Evliya served under Murad IV."
+    metadata:
+      gutenberg_id: "53597"
+      translator: "Joseph von Hammer (Hammer-Purgstall)"
+      edition: "Oriental Translation Fund, 1834"
+  - id: pg:evliya-travels-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/54255.txt.utf-8"
+    title: "Narrative of Travels in Europe, Asia, and Africa, in the Seventeenth Century, Vol. II"
+    author: "Evliya Celebi"
+    date: "1640-1648"
+    document_type: travel_narrative
+    rights_level: public_domain
+    selected: true
+    paths:
+      - roads-and-journeys
+      - war-and-frontier
+      - marvels-and-tall-tales
+    curator_score: 9.0
+    signals:
+      - Bursa and Trabzon
+      - Crimea and Azov
+      - siege of Canea
+      - Erzurum and Tabriz
+      - Black Sea storm
+    why_keep: "The first journeys out: Bursa, Trabzon, Mingrelia, Azov, the Crimea, the storm on the Black Sea, Canea, Erzurum, and the Persian mission to Tabriz."
+    metadata:
+      gutenberg_id: "54255"
+      translator: "Joseph von Hammer (Hammer-Purgstall)"
+      edition: "Oriental Translation Fund, 1850"
+  - id: ia:seyahatname-ottoman-edition
+    source_type: catalog_only
+    url: "https://archive.org/details/evliyaelebisey01evliuoft"
+    title: "Evliya Celebi Seyahatnamesi (Istanbul printed edition, volume 1 of 10)"
+    author: "Evliya Celebi"
+    date: "1896-1938"
+    document_type: printed_edition
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - istanbul-described
+      - sultans-and-the-court
+      - roads-and-journeys
+      - war-and-frontier
+      - marvels-and-tall-tales
+    curator_score: 4
+    signals:
+      - full ten volumes
+      - Ottoman Turkish text
+      - scale of the untranslated work
+    why_keep: "Honest pointer to the full ten-volume Seyahatname: the two translated volumes in this capsule are a small fraction of it, and the Istanbul printed edition (further volumes under sibling identifiers) shows the scale of what remains untranslated."
+    why_skip: "Ottoman Turkish in Arabic script, scanned page images only; no public-domain English translation of volumes III-X exists, so nothing here can be downloaded into an English full-text index."
+    metadata:
+      source_collection: "Internet Archive"
+      access_note: "Catalog-only pointer. Do not treat as passage evidence."

@@ -1,0 +1,42 @@
+id: teika-diary
+title: Fujiwara no Teika Diary
+subtitle: Meigetsuki, fifty-six years of court, poetry, and the night sky in Teika's own hand
+tagline: "A great classical Japanese poet's diary spanning 56 years of court life — poetry contests, promotions denied, comets observed — kept while he shaped the canon of Japanese verse."
+description: >
+  A catalog-only capsule for Meigetsuki, the diary Fujiwara no Teika (1162-1241)
+  kept from 1180 to 1235: court promotion anxieties, poetry contests and the
+  compiling of the Shin Kokinshu and Hyakunin Isshu, the red aurora of 1204, the
+  guest-star records astronomers still cite for the 1054 supernova, and a
+  lifetime of illness complaints, written in kanbun in the poet's own hand.
+languages:
+  - ja
+type: diary
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: false
+download_policy: catalog_only
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No diary text is bundled or downloaded. The manifest holds catalog records for manuscript image records only; a printed Japanese transcription must be supplied by the user, who confirms rights before importing anything."

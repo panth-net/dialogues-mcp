@@ -1,0 +1,239 @@
+version: 1
+corpus_id: newton-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Newton documents that reveal drafts, revisions, reasoning systems, and working method."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  drafts-and-revisions:
+    title: "Drafts and Revisions"
+    point: "Treat correction, cancellation, and alternate versions as evidence."
+  mathematical-thinking:
+    title: "Mathematical Thinking"
+    point: "Trace propositions, calculations, diagrams, and method."
+  optics-and-experiment:
+    title: "Optics and Experiment"
+    point: "Follow experimental reasoning around light, color, and instruments."
+  alchemy-and-chymistry:
+    title: "Alchemy and Chymistry"
+    point: "Read chymical notes as working procedures and systems."
+  theology-and-chronology:
+    title: "Theology and Chronology"
+    point: "Trace scriptural, prophetic, and chronological reasoning."
+  public-private-newton:
+    title: "Public and Private Newton"
+    point: "Compare drafts, letters, disputes, and publication decisions."
+items:
+  - id: newton:NATP00001
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00001"
+    title: "Pierpont Morgan Notebook"
+    author: "Isaac Newton"
+    date: "1659-01-01"
+    document_type: "notebook"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "mathematical-thinking", "public-private-newton"]
+    curator_score: 9
+    signals: ["notebook", "mathematical_reasoning", "draft_or_revision", "private_public_gap"]
+    why_keep: "Early notebook evidence for Newton's private mathematical and natural-philosophical working habits."
+    metadata:
+      newton_catalogue_id: "NATP00001"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:PERS00001
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/PERS00001"
+    title: "Trinity College Notebook"
+    author: "Isaac Newton"
+    date: "1660-03-19"
+    document_type: "notebook"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "mathematical-thinking", "public-private-newton"]
+    curator_score: 8.6
+    signals: ["notebook", "mathematical_reasoning", "draft_or_revision", "private_public_gap"]
+    why_keep: "Notebook material from Newton's early formation, useful for seeing study, excerpting, and private method."
+    metadata:
+      newton_catalogue_id: "PERS00001"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00228
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00228"
+    title: "Letter from Newton to John Collins, dated 18 February 1669/70"
+    author: "Isaac Newton"
+    recipient: "John Collins"
+    date: "1670-02-18"
+    document_type: "letter"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["mathematical-thinking", "public-private-newton"]
+    curator_score: 8
+    signals: ["letter", "mathematical_reasoning", "dialogue_with_others"]
+    why_keep: "A mathematical correspondence item for tracing how Newton communicated and withheld mathematical work."
+    metadata:
+      newton_catalogue_id: "NATP00228"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00182
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00182"
+    title: "Copy of a letter from Newton to Henry Oldenburg, dated 13 June 1676"
+    author: "Isaac Newton"
+    recipient: "Henry Oldenburg"
+    date: "1676-06-13"
+    document_type: "letter"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["mathematical-thinking", "public-private-newton"]
+    curator_score: 8.2
+    signals: ["letter", "mathematical_reasoning", "dialogue_with_others", "private_public_gap"]
+    why_keep: "Correspondence evidence for Newton's mathematical disclosure, priority, and communication practices."
+    metadata:
+      newton_catalogue_id: "NATP00182"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00285
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00285"
+    title: "Tractatui de Quadratura Curvarum praemittatur haec admonitio"
+    author: "Isaac Newton"
+    date: "1704-01-01"
+    document_type: "mathematical_draft"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "mathematical-thinking"]
+    curator_score: 7.8
+    signals: ["draft_or_revision", "mathematical_reasoning", "argument_under_constraint"]
+    why_keep: "Concise mathematical drafting around quadrature and publication framing."
+    metadata:
+      newton_catalogue_id: "NATP00285"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00126
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00126"
+    title: "Draft of the Discourse Concerning Light and Colors"
+    author: "Isaac Newton"
+    date: "1675-01-01"
+    document_type: "scientific_draft"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "optics-and-experiment", "public-private-newton"]
+    curator_score: 9.2
+    signals: ["draft_or_revision", "scientific_reasoning", "experimental_record", "argument_under_constraint"]
+    why_keep: "Central optical draft where experimental reasoning and public presentation are still in formation."
+    metadata:
+      newton_catalogue_id: "NATP00126"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00321
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00321"
+    title: "Letter to Oldenburg answering Linus's second letter on Newton's new doctrine of light and colour"
+    author: "Isaac Newton"
+    recipient: "Henry Oldenburg"
+    date: "1676-02-29"
+    document_type: "letter"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["optics-and-experiment", "public-private-newton"]
+    curator_score: 8.8
+    signals: ["letter", "scientific_reasoning", "response_to_pressure", "dialogue_with_others"]
+    why_keep: "Shows Newton defending optical claims under criticism and through Royal Society correspondence."
+    metadata:
+      newton_catalogue_id: "NATP00321"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:NATP00058
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/NATP00058"
+    title: "Draft B of the Scholium Generale"
+    author: "Isaac Newton"
+    date: "1713-01-01"
+    document_type: "theological_draft"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "theology-and-chronology", "public-private-newton"]
+    curator_score: 9
+    signals: ["draft_or_revision", "self_explanation", "argument_under_constraint", "private_public_gap"]
+    why_keep: "A revision-stage draft where metaphysical, theological, and publication decisions meet."
+    metadata:
+      newton_catalogue_id: "NATP00058"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:THEM00255
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/THEM00255"
+    title: "Original letter from Isaac Newton to Richard Bentley, dated 17 January 1692/3"
+    author: "Isaac Newton"
+    recipient: "Richard Bentley"
+    date: "1693-01-17"
+    document_type: "letter"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["theology-and-chronology", "public-private-newton"]
+    curator_score: 8.5
+    signals: ["letter", "self_explanation", "dialogue_with_others", "argument_under_constraint"]
+    why_keep: "Correspondence evidence for Newton reasoning about natural philosophy and theological implication with Bentley."
+    metadata:
+      newton_catalogue_id: "THEM00255"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:THEM00049
+    source_type: newton_project_item
+    url: "https://www.newtonproject.ox.ac.uk/view/texts/xml/THEM00049"
+    title: "The synchronisms of the three parts of the prophetick Interpretation"
+    author: "Isaac Newton"
+    date: "1701-01-01"
+    document_type: "theological_manuscript"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "theology-and-chronology"]
+    curator_score: 8.4
+    signals: ["draft_or_revision", "self_explanation", "argument_under_constraint"]
+    why_keep: "Chronological and prophetic system-building that shows Newton's non-scientific reasoning as sustained work."
+    metadata:
+      newton_catalogue_id: "THEM00049"
+      transcription: "diplomatic XML"
+      source_collection: "Newton Project"
+  - id: newton:ALCH00034
+    source_type: newton_project_item
+    url: "https://webapp1.dlib.indiana.edu/newton/mss/norm/ALCH00034"
+    title: "Practica Mariae Prophetissae in Artem Alchemicam"
+    author: "Isaac Newton"
+    date: "early 1690s"
+    document_type: "chymical_manuscript"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["drafts-and-revisions", "alchemy-and-chymistry"]
+    curator_score: 8.1
+    signals: ["draft_or_revision", "scientific_reasoning", "experimental_record"]
+    why_keep: "Chymistry of Isaac Newton text linked from the Newton Project catalogue; useful for alchemical procedure and copied authorities."
+    metadata:
+      newton_catalogue_id: "ALCH00034"
+      transcription: "normalized HTML"
+      source_collection: "Chymistry of Isaac Newton"
+  - id: newton:ALCH00028
+    source_type: newton_project_item
+    url: "https://webapp1.dlib.indiana.edu/newton/mss/norm/ALCH00028"
+    title: "Observations of ye matter in ye Glass. Authore Anonymo"
+    author: "Isaac Newton"
+    date: "mid-1670s"
+    document_type: "chymical_manuscript"
+    rights_level: noncommercial_open_license
+    selected: true
+    paths: ["alchemy-and-chymistry", "optics-and-experiment"]
+    curator_score: 8.2
+    signals: ["scientific_reasoning", "experimental_record", "draft_or_revision"]
+    why_keep: "Short chymical observation text that links material procedure, glass, and experimental attention."
+    metadata:
+      newton_catalogue_id: "ALCH00028"
+      transcription: "normalized HTML"
+      source_collection: "Chymistry of Isaac Newton"

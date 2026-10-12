@@ -1,0 +1,389 @@
+version: 1
+corpus_id: yi-sun-sin-war-diary
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The Classical Chinese diary text from the public-domain 1795 Yi Chungmugong jeonseo compilation: books 5-7 from Korean Wikisource, and the 13 surviving months of book 8 (April 1597 - November 1598) from the ITKC Korean classics database, downloaded after an explicit rights confirmation. Catalog records for the autograph manuscript and the copyrighted English translation stay pointers."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Imjin War source work."
+paths:
+  command-at-sea:
+    title: "Command at Sea"
+    point: "Follow drills, formations, turtle ships, and the battles from Okpo and Hansan to Myeongnyang and Noryang."
+  court-and-injustice:
+    title: "Court and Injustice"
+    point: "Trace the 1597 arrest, torture, and demotion, Won Gyun's disaster at Chilcheollyang, and the reinstatement."
+  camp-life-day-by-day:
+    title: "Camp Life Day by Day"
+    point: "Read the terse daily record: weather lines, illness, executions, dreams, and grief for his mother and son."
+items:
+  - id: kows:jeonseo-vol5-nanjung-ilgi-1
+    source_type: static_html_url
+    url: "https://ko.wikisource.org/api/rest_v1/page/html/%EC%9D%B4%EC%B6%A9%EB%AC%B4%EA%B3%B5%EC%A0%84%EC%84%9C%2F%EC%A0%9C5%EA%B6%8C"
+    title: "Nanjung Ilgi I — Yi Chungmugong jeonseo, book 5 (1592-1593)"
+    author: "Yi Sun-sin"
+    date: "1592-1593"
+    document_type: war_diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - command-at-sea
+      - camp-life-day-by-day
+    curator_score: 9.4
+    signals:
+      - 1592 New Year opening entry
+      - Okpo and Hansan campaigns
+      - turtle ship launch
+      - hanmun original text
+    why_keep: "The war's first two years in the admiral's own Classical Chinese, from the famous 1592 New Year entry onward. Verified July 2026: the Wikisource REST HTML carries the full hanmun text (initial entry 初一日壬戌。晴。...)."
+    metadata:
+      source_collection: "Korean Wikisource (이충무공전서, 1795 royal compilation)"
+      source_record_url: "https://ko.wikisource.org/wiki/이충무공전서/제5권"
+      rights_note: "Original 1795 hanmun text, public domain; Wikisource transcription carries no modern translation layer."
+  - id: kows:jeonseo-vol6-nanjung-ilgi-2
+    source_type: static_html_url
+    url: "https://ko.wikisource.org/api/rest_v1/page/html/%EC%9D%B4%EC%B6%A9%EB%AC%B4%EA%B3%B5%EC%A0%84%EC%84%9C%2F%EC%A0%9C6%EA%B6%8C"
+    title: "Nanjung Ilgi II — Yi Chungmugong jeonseo, book 6 (1594-1595)"
+    author: "Yi Sun-sin"
+    date: "1594-1595"
+    document_type: war_diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - camp-life-day-by-day
+      - command-at-sea
+    curator_score: 9.0
+    signals:
+      - Hansando camp years
+      - fleet maintenance and drills
+      - illness and family entries
+    why_keep: "The long stalemate years at the Hansando camp: drills, provisioning, illness, and the daily weather lines. Verified July 2026 via the Wikisource REST HTML (opening 1594 entry 初一日庚辰。雨下如注。...)."
+    metadata:
+      source_collection: "Korean Wikisource (이충무공전서, 1795 royal compilation)"
+      source_record_url: "https://ko.wikisource.org/wiki/이충무공전서/제6권"
+      rights_note: "Original 1795 hanmun text, public domain; Wikisource transcription carries no modern translation layer."
+  - id: kows:jeonseo-vol7-nanjung-ilgi-3
+    source_type: static_html_url
+    url: "https://ko.wikisource.org/api/rest_v1/page/html/%EC%9D%B4%EC%B6%A9%EB%AC%B4%EA%B3%B5%EC%A0%84%EC%84%9C%2F%EC%A0%9C7%EA%B6%8C"
+    title: "Nanjung Ilgi III — Yi Chungmugong jeonseo, book 7 (1596)"
+    author: "Yi Sun-sin"
+    date: "1596"
+    document_type: war_diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - camp-life-day-by-day
+    curator_score: 8.6
+    signals:
+      - last year before the arrest
+      - camp administration
+      - court pressure building
+    why_keep: "The last full year before the arrest: camp life under growing court pressure. Verified July 2026 via the Wikisource REST HTML (1596 entries)."
+    metadata:
+      source_collection: "Korean Wikisource (이충무공전서, 1795 royal compilation)"
+      source_record_url: "https://ko.wikisource.org/wiki/이충무공전서/제7권"
+      rights_note: "Original 1795 hanmun text, public domain; Wikisource transcription carries no modern translation layer."
+  - id: itkc:jeonseo-vol8-1597-04
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0010"
+    title: "Nanjung Ilgi IV — 1597, 4th lunar month (release from prison)"
+    author: "Yi Sun-sin"
+    date: "1597-04"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - court-and-injustice
+      - camp-life-day-by-day
+    curator_score: 9.2
+    signals:
+      - release from prison
+      - journey south in disgrace
+      - mother's death on the road
+    why_keep: "The diary resumes the day Yi walks out of the prison gate (初一日辛酉。晴。得出圓門...), demoted to common soldier, and learns of his mother's death on the journey south. Verified July 2026 via a plain GET of the ITKC node page."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      source_record_url: "https://db.itkc.or.kr/dir/item?itemId=MO#/dir/node?dataId=ITKC_MO_0232A_0110_010_0010"
+      rights_note: "Original 1795 hanmun text is public domain; the ITKC transcription layer's exact KOGL open-license type could not be confirmed programmatically, so the download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-05
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0020"
+    title: "Nanjung Ilgi IV — 1597, 5th lunar month"
+    author: "Yi Sun-sin"
+    date: "1597-05"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - court-and-injustice
+      - camp-life-day-by-day
+    curator_score: 8.4
+    signals:
+      - mourning under demotion
+      - serving under Kwon Yul
+    why_keep: "Mourning months served out as a demoted soldier attached to Kwon Yul's command."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-06
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0030"
+    title: "Nanjung Ilgi IV — 1597, 6th lunar month"
+    author: "Yi Sun-sin"
+    date: "1597-06"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - court-and-injustice
+      - camp-life-day-by-day
+    curator_score: 8.2
+    signals:
+      - watching the fleet from outside
+      - Won Gyun in command
+    why_keep: "The fleet under Won Gyun seen from outside command, weeks before Chilcheollyang."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-07
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0040"
+    title: "Nanjung Ilgi IV — 1597, 7th lunar month (Chilcheollyang disaster)"
+    author: "Yi Sun-sin"
+    date: "1597-07"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - court-and-injustice
+      - command-at-sea
+    curator_score: 9.3
+    signals:
+      - Chilcheollyang defeat reported
+      - almost the entire fleet lost
+      - Won Gyun dead
+    why_keep: "The month the news of Chilcheollyang arrives: the fleet Yi built destroyed in a night, recorded in his own hand."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-08
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0050"
+    title: "Nanjung Ilgi IV — 1597, 8th lunar month (reinstatement)"
+    author: "Yi Sun-sin"
+    date: "1597-08"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - court-and-injustice
+      - command-at-sea
+    curator_score: 9.0
+    signals:
+      - reinstated as naval commander
+      - gathering the twelve ships
+    why_keep: "Reinstatement and the scramble to gather the dozen surviving ships along a broken coast."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-09
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0060"
+    title: "Nanjung Ilgi IV — 1597, 9th lunar month (Myeongnyang)"
+    author: "Yi Sun-sin"
+    date: "1597-09"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - command-at-sea
+    curator_score: 9.6
+    signals:
+      - 必死則生 必生則死 speech
+      - thirteen ships against three hundred thirty
+      - dream of a spirit promising victory
+    why_keep: "The Myeongnyang month: the 'those who seek death shall live' address to the captains and the battle entry of the 16th day. Verified July 2026: the ITKC page carries the 鳴梁 entries including the speech and the 330-ship count."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-10
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0070"
+    title: "Nanjung Ilgi IV — 1597, 10th lunar month (death of his son Myeon)"
+    author: "Yi Sun-sin"
+    date: "1597-10"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camp-life-day-by-day
+    curator_score: 9.1
+    signals:
+      - son Myeon killed in a Japanese raid
+      - grief entries
+    why_keep: "The month his youngest son Myeon is killed at Asan — the diary's rawest grief."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-11
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0080"
+    title: "Nanjung Ilgi IV — 1597, 11th lunar month"
+    author: "Yi Sun-sin"
+    date: "1597-11"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camp-life-day-by-day
+      - command-at-sea
+    curator_score: 8.0
+    signals:
+      - rebuilding after Myeongnyang
+    why_keep: "Rebuilding the fleet and base after Myeongnyang."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1597-12
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0090"
+    title: "Nanjung Ilgi IV — 1597, 12th lunar month"
+    author: "Yi Sun-sin"
+    date: "1597-12"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camp-life-day-by-day
+    curator_score: 7.8
+    signals:
+      - winter at the new base
+    why_keep: "Winter close of the terrible year 1597."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1598-01
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0100"
+    title: "Nanjung Ilgi IV — 1598, 1st lunar month"
+    author: "Yi Sun-sin"
+    date: "1598-01"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - camp-life-day-by-day
+    curator_score: 7.8
+    signals:
+      - last New Year of the war
+    why_keep: "The last New Year entries; the diary then falls silent until autumn."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1598-09
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0110"
+    title: "Nanjung Ilgi IV — 1598, 9th lunar month"
+    author: "Yi Sun-sin"
+    date: "1598-09"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - command-at-sea
+    curator_score: 8.4
+    signals:
+      - combined operations with the Ming fleet
+    why_keep: "The autumn 1598 combined operations with Chen Lin's Ming fleet begin."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1598-10
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0120"
+    title: "Nanjung Ilgi IV — 1598, 10th lunar month"
+    author: "Yi Sun-sin"
+    date: "1598-10"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - command-at-sea
+    curator_score: 8.2
+    signals:
+      - blockade of the retreating Japanese
+    why_keep: "Blockading Konishi's retreat corridor in the war's final weeks."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: itkc:jeonseo-vol8-1598-11
+    source_type: static_html_url
+    url: "https://db.itkc.or.kr/dir/node?dataId=ITKC_MO_0232A_0110_010_0130"
+    title: "Nanjung Ilgi IV — 1598, 11th lunar month (final entries before Noryang)"
+    author: "Yi Sun-sin"
+    date: "1598-11"
+    document_type: war_diary
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - command-at-sea
+    curator_score: 9.5
+    signals:
+      - final diary entries
+      - days before death at Noryang
+    why_keep: "The diary's last entries, breaking off days before Yi is shot at the moment of victory at Noryang."
+    metadata:
+      source_collection: "ITKC Korean Classics Comprehensive DB (한국고전종합DB), Yi Chungmugong jeonseo ITKC_MO_0232A"
+      rights_note: "Original 1795 hanmun text is public domain; ITKC transcription layer KOGL type unconfirmed, so download requires explicit user confirmation and stays local."
+  - id: khs:nanjung-ilgi-national-treasure
+    source_type: catalog_only
+    url: "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?pageNo=1_1_1_1&ccbaCpno=1113400760000"
+    title: "국보 이순신 난중일기 및 서간첩 임진장초 (National Treasure: Yi Sun-sin's Nanjung Ilgi with Letters and Draft War Reports)"
+    author: "Korea Heritage Service (국가유산포털)"
+    date: "1592-1598"
+    document_type: "national heritage record"
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - command-at-sea
+      - court-and-injustice
+      - camp-life-day-by-day
+    curator_score: 5
+    signals:
+      - national_treasure_76
+      - unesco_memory_of_the_world
+      - autograph_manuscript
+      - original_text_viewable
+    why_keep: "The authoritative record for the autograph diary: seven manuscript books at Hyeonchungsa in Asan. Note the downloaded text here is the 1795 jeonseo redaction; the autograph draft books contain additional entries not in it."
+    why_skip: "The portal presents the autograph text for on-site viewing under its own terms; this capsule does not scrape it. The record documents the object and points readers to the viewer."
+    metadata:
+      source_collection: "Korean National Heritage Portal"
+      access_note: "Catalog-only record. Original text and Korean translations are viewable on the portal; nothing is fetched."
+      import_instructions: "Open the heritage portal record and follow its links to the original text (원문텍스트) and Korean translation viewers. Copy or export only what the portal's terms permit, save the permitted text files into a local folder, and run `dialogues import-folder <folder>` to index them here."
+  - id: ltikorea:nanjung-ilgi-english-translation
+    source_type: user_supplied_only
+    url: "https://library.ltikorea.or.kr/translatedbooks/820.0?currentLanguageCd=CO-LAN-ENG"
+    title: "Nanjung Ilgi: War Diary of Admiral Yi Sun-sin (English translation catalog record)"
+    author: "Yi Sun-sin; Ha Tae-hung (translator); Sohn Pow-key (editor)"
+    date: "1977"
+    document_type: "translation catalog record"
+    rights_level: user_supplied_only
+    selected: true
+    paths:
+      - command-at-sea
+      - court-and-injustice
+      - camp-life-day-by-day
+    curator_score: 4
+    signals:
+      - standard_english_translation
+      - in_copyright
+      - complete_diary_coverage
+    why_keep: "Identifies the standard complete English translation, the edition most English-language research quotes, so users know exactly which book to obtain."
+    why_skip: "The translation is in copyright. No text may be downloaded from anywhere; the record exists so users can purchase or borrow a legitimate copy and supply their own permitted text."
+    metadata:
+      source_collection: "Literature Translation Institute of Korea library"
+      access_note: "User-supplied only. The catalog record identifies the edition; the text must come from the user's own permitted copy."
+      import_instructions: "Purchase or borrow the Ha Tae-hung translation (Yonsei University Press). If you have rights to a digital text — your own transcription of permitted excerpts, or files from a licensed copy — save them into a local folder and run `dialogues import-folder <folder>` (or `dialogues corpus import`). Do not import scans or text you do not have permission to use."

@@ -1,0 +1,43 @@
+id: occom-papers
+title: Samson Occom Papers
+subtitle: Sermons, journals, and letters of the Mohegan minister who broke with Dartmouth's founder
+tagline: "Mohegan minister and the first Native American to publish in English — sermons, diaries, and letters negotiating two worlds that both claimed him."
+description: >
+  A curated-source capsule for Samson Occom (1723-1792): his autobiographical
+  narratives, mission journals from Montauk to Oneida country, the correspondence
+  with Eleazar Wheelock that ended in a public break over Moor's Charity School
+  funds and Dartmouth's founding, the 1772 execution sermon for Moses Paul,
+  hymns, and the Brothertown petitions of the 1780s.
+languages:
+  - en
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No document text is bundled. Occom Circle transcriptions are downloaded locally from Dartmouth, which publishes them for non-commercial search and display (Copyright Trustees of Dartmouth College); redistribution requires permission. The Moses Paul execution sermon comes from a public-domain Internet Archive scan."

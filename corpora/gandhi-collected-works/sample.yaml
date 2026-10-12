@@ -1,0 +1,10 @@
+# Small first-run sample offered after setup. Downloads only after the user agrees.
+version: 1
+profile_version: 1
+title: "Gandhi sample: the Salt March, March to June 1930"
+summary: "Volume 43 of the Collected Works: the march from Sabarmati to Dandi, the salt law broken, and the arrest of 5 May 1930."
+# Measured size of this volume's OCR text on 2026-10-08.
+download_bytes: 1049091
+download_note: "One volume of OCR text from archive.org (about 1 MB). The Collected Works are offered under non-commercial terms; review the notice before agreeing."
+items:
+  - id: dli:cwmg-vol-43

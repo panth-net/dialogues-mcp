@@ -1,0 +1,45 @@
+id: whitman-papers
+title: Walt Whitman Papers
+subtitle: Civil War hospital letters, letters to Peter Doyle, working notebooks, and the Emerson greeting that launched Leaves of Grass
+tagline: "America's poet in prose — Civil War letters from Washington hospitals, working notebooks, and the correspondence behind Leaves of Grass."
+description: >
+  A curated-source capsule for Walt Whitman (1819-1892) in his own prose:
+  letters from wartime Washington to his mother Louisa Van Velsor Whitman and
+  to wounded soldiers, the affectionate letters to Peter Doyle, Emerson's 1855
+  greeting of Leaves of Grass, late letters from Mickle Street in Camden, and
+  the pre-1855 and Civil War notebooks in which the poems and the hospital
+  visits were first written down. Sources are the Walt Whitman Archive's TEI
+  transcriptions, fetched from its public data repositories.
+languages:
+  - en
+type: correspondence_and_notebooks
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Whitman text is bundled. Users download individual TEI transcriptions locally from the Walt Whitman Archive's public GitHub data repositories. The Archive's stated policy is to make as much as possible available under CC BY 4.0, but the TEI files themselves carry a Folsom/Price copyright statement permitting sharing under U.S. fair use, so each download requires an explicit rights confirmation; local personal indexing is the intended use, and republication requires checking the Archive's conditions of use."

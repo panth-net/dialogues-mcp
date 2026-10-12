@@ -1,0 +1,44 @@
+id: witbooi-papers
+title: Hendrik Witbooi Papers
+subtitle: The captured letter-book of a Nama kaptein, 1884-1894, from Gibeon and Hoornkrans to the Naukluft war
+tagline: "Nama kaptein whose captured letter-books record diplomacy, warning, and armed resistance against German colonial power — in his own words."
+description: >
+  A curated-source capsule for the letter-book and diary of Hendrik Witbooi
+  (c. 1830-1905), kaptein of the Witbooi Nama at Gibeon in what is now Namibia:
+  letters to Herero and Nama leaders, to German commissioners, officers, and
+  governors, and to Cape officials, arguing land, treaties, sovereignty, and
+  the right to wage war, from his succession in 1884 through the German storm
+  of Hoornkrans in 1893 and the Naukluft correspondence of 1894.
+languages:
+  - nl
+  - af
+type: letter_book
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Witbooi text is bundled. Users download the DBNL digitization of the 1929 Van Riebeeck Society edition locally. DBNL marks this edition as possibly copyright protected, so the download requires an explicit rights confirmation: local personal indexing and reading is what this tool does, and users must confirm reuse or republication terms with DBNL and the Van Riebeeck Society themselves."

@@ -1,0 +1,48 @@
+id: babad-diponegoro
+title: Babad Diponegoro
+subtitle: Prince Diponegoro's verse autobiography of the Java War, written in exile
+tagline: "A Javanese prince's verse autobiography, written in exile after leading the largest anti-colonial war Java ever saw."
+description: >
+  A curated-source capsule for the Babad Diponegoro, the autobiographical
+  chronicle of Prince Diponegoro (1785-1855), leader of the Java War
+  (1825-1830), composed in Javanese verse during his exile in Manado in
+  1831-1832: the road stakes through Tegalrejo that sparked the war, five
+  guerrilla years, the capture at Magelang during negotiations, and the babad
+  genre's weave of prophecy, ancestry, and event. Inscribed in the UNESCO
+  Memory of the World register in 2013. A romanized transliteration of the
+  LOr 6547 manuscript downloads canto by canto from an openly hosted
+  archive.org item after a rights confirmation (41 of 43 cantos; the
+  transliteration layer is uncredited and unvetted, so treat it as a working
+  text).
+languages:
+  - jv
+type: verse_chronicle
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No babad text is bundled. A romanized transliteration of LOr 6547 downloads from archive.org only after the user confirms the rights notice: the 1831-1832 chronicle is public domain, but the digital transliteration layer is uncredited, carries no stated license, and appears machine-generated, so it stays local for personal indexing and its philological quality is unvetted. Scholarly editions and translations remain user-supplied."

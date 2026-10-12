@@ -1,0 +1,51 @@
+id: miranda-archive
+title: Francisco de Miranda Archive
+subtitle: The self-archived life of the Precursor — diaries, campaigns, and correspondence in 63 volumes
+tagline: "The Venezuelan revolutionary who fought in three revolutions and archived everything — the paper trail of independence before Bolívar."
+description: >
+  A curated-source capsule for the archive of Francisco de Miranda (1750-1816),
+  the "Precursor" of Spanish American independence, who bound his own papers
+  into 63 volumes: travel diaries across the United States, Europe, and
+  Catherine the Great's Russia; service records from three revolutions,
+  including the French Revolutionary army; the 1806 Leander expedition; the
+  First Venezuelan Republic and its collapse; and correspondence with figures
+  from Catherine the Great to Alexander Hamilton. Published in Caracas,
+  1929-1950, as the Archivo del General Miranda. Eight verified public-domain
+  satellite volumes of the archive — the 1783-1784 US travel diary, the 1794
+  Dumouriez correspondence, the 1806 Coro proclamation, the 1810-1811 Leander
+  documents, and more — download as text after a rights confirmation; the
+  24-volume Archivo itself stays a HathiTrust catalog pointer.
+languages:
+  - es
+  - en
+  - fr
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No archive text is bundled. Seven archive.org OCR volumes and one es.wikisource transcription download only after the user confirms the rights notice: all but one are public-domain editions (1794-1928); the 1931 Fragments diary translation is gray edition-copyright and stays local personal-use only. The 24-volume Archivo del General Miranda (HathiTrust) and the copyrighted Colombeia edition are never downloaded."

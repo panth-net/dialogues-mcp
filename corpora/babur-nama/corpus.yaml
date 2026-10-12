@@ -1,0 +1,43 @@
+id: babur-nama
+title: The Baburnama
+subtitle: Memoirs of Babur — ruler of Fergana at eleven, king of Kabul, first Mughal emperor
+tagline: "Founder of the Mughal Empire writing his own life with disarming honesty — battles lost, kingdoms won, gardens planted, and homesickness for melons."
+description: >
+  A curated-source capsule for the Baburnama, the memoirs of Zahir-ud-din
+  Muhammad Babur (1483-1530): Fergana inherited at eleven, Samarkand won
+  and lost, the throneless wandering years, the taking of Kabul in 1504,
+  victory at Panipat and Khanua, the founding of Mughal rule in Hindustan,
+  and a king's plain-spoken record of gardens, fruit, wine, verse, grief,
+  and his own faults.
+languages:
+  - en
+type: memoir
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No Baburnama text is bundled. Users download the public-domain Project Gutenberg edition of Annette Beveridge's English translation locally after reviewing source terms."

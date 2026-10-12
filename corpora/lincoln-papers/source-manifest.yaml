@@ -1,0 +1,592 @@
+version: 1
+corpus_id: lincoln-papers
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Selected Lincoln documents that best reveal thinking, reasoning, pressure, revision, and working context."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only harvest of all candidate records."
+paths:
+  legal-mind:
+    title: "Lincoln's Legal Mind"
+    point: "Recover how Lincoln reasoned as a working lawyer and constitutional thinker."
+  emancipation-in-motion:
+    title: "Emancipation in Motion"
+    point: "Trace policy formation, revision, constraint, and response to pressure."
+  humor-human-lincoln:
+    title: "Humor and Human Lincoln"
+    point: "Find documents that show tone, jokes, ordinary language, and social instinct."
+  war-as-paperwork:
+    title: "War as Paperwork"
+    point: "Follow how war became letters, orders, telegrams, appointments, and pardons."
+  incoming-pressure:
+    title: "Incoming Pressure"
+    point: "Track petitions, requests, criticism, recommendations, and demands."
+  public-private-lincoln:
+    title: "Public and Private Lincoln"
+    point: "Compare public language with drafts, notes, and private working documents."
+  lincoln-after-lincoln:
+    title: "Lincoln after Lincoln"
+    point: "Separate memory, commemoration, and myth-making from working evidence."
+items:
+  - id: loc:mal0042500
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal0042500/"
+    title: "A Bill to Abolish Slavery in the District of Columbia"
+    author: "Abraham Lincoln"
+    date: "1849-01-01"
+    document_type: draft_legislation
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - legal-mind
+      - emancipation-in-motion
+      - public-private-lincoln
+    curator_score: 9.4
+    signals:
+      - legal reasoning
+      - slavery policy
+      - practical constraint
+      - draft legislation
+    why_keep: "Early legal and constitutional reasoning on slavery policy before the presidency."
+    metadata:
+      loc_item_id: mal0042500
+  - id: loc:mal0150800
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal0150800/"
+    title: "Notes on Illinois Election Laws"
+    author: "Abraham Lincoln"
+    date: "1858-10-01"
+    document_type: notes
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - legal-mind
+    curator_score: 8.6
+    signals:
+      - legal reasoning
+      - procedural thinking
+      - election law
+    why_keep: "Compact working notes that show Lincoln reasoning through legal procedure."
+    metadata:
+      loc_item_id: mal0150800
+  - id: loc:mal0321400
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal0321400/"
+    title: "Autobiographical Notes"
+    author: "Abraham Lincoln"
+    date: "1860-05-01"
+    document_type: autobiographical_notes
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - humor-human-lincoln
+      - public-private-lincoln
+    curator_score: 8.9
+    signals:
+      - self-presentation
+      - ordinary language
+      - public persona
+    why_keep: "A human self-account useful for comparing Lincoln's public image with his own plain style."
+    metadata:
+      loc_item_id: mal0321400
+  - id: loc:mal4339100
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal4339100/"
+    title: "Letter to Jesse W. Fell with Autobiographical Sketch"
+    author: "Abraham Lincoln"
+    recipient: "Jesse W. Fell"
+    date: "1859-12-20"
+    document_type: letter_with_enclosure
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - humor-human-lincoln
+      - public-private-lincoln
+    curator_score: 8.8
+    signals:
+      - self-presentation
+      - campaign biography
+      - ordinary language
+    why_keep: "Shows Lincoln packaging his own life story for public political use."
+    metadata:
+      loc_item_id: mal4339100
+  - id: loc:mal3500900
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal3500900/"
+    title: "James H. Hackett to Abraham Lincoln, Davy Crockett Anecdote"
+    author: "James H. Hackett"
+    recipient: "Abraham Lincoln"
+    date: "1864-08-02"
+    document_type: letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - humor-human-lincoln
+      - incoming-pressure
+    curator_score: 7.4
+    signals:
+      - anecdote
+      - humor
+      - social instinct
+      - incoming correspondence
+    why_keep: "A personality and anecdote item that anchors the humor path in full-text collection evidence."
+    metadata:
+      loc_item_id: mal3500900
+  - id: loc:mal1723200
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal1723200/"
+    title: "Preliminary Draft of Emancipation Proclamation"
+    author: "Abraham Lincoln"
+    date: "1862-07-22"
+    document_type: draft_proclamation
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - emancipation-in-motion
+      - public-private-lincoln
+    curator_score: 10
+    signals:
+      - draft
+      - emancipation policy
+      - revision chain
+      - executive action
+    why_keep: "Earliest proclamation draft; central evidence for policy formation before public release."
+    metadata:
+      loc_item_id: mal1723200
+  - id: loc:mal1859300
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal1859300/"
+    title: "Preliminary Emancipation Proclamation"
+    author: "Abraham Lincoln"
+    date: "1862-09-22"
+    document_type: proclamation
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - emancipation-in-motion
+    curator_score: 9.6
+    signals:
+      - emancipation policy
+      - public language
+      - executive action
+    why_keep: "Public proclamation stage for comparison against earlier and later drafts."
+    metadata:
+      loc_item_id: mal1859300
+  - id: loc:mal2083200
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal2083200/"
+    title: "Final Emancipation Proclamation, Preliminary Draft"
+    author: "Abraham Lincoln"
+    date: "1862-12-30"
+    document_type: draft_proclamation
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - emancipation-in-motion
+      - public-private-lincoln
+    curator_score: 9.7
+    signals:
+      - draft
+      - revision chain
+      - emancipation policy
+      - executive action
+    why_keep: "Late draft evidence for what changed as the final proclamation approached."
+    metadata:
+      loc_item_id: mal2083200
+  - id: loc:mal2399500
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal2399500/"
+    title: "Draft Reply to Erastus Corning and Others"
+    author: "Abraham Lincoln"
+    recipient: "Erastus Corning and others"
+    date: "1863-06-01"
+    document_type: draft_letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - legal-mind
+      - incoming-pressure
+      - public-private-lincoln
+    curator_score: 9.8
+    signals:
+      - constitutional reasoning
+      - habeas corpus
+      - public criticism
+      - draft response
+    why_keep: "A major constitutional self-defense written under political pressure."
+    metadata:
+      loc_item_id: mal2399500
+  - id: loc:mal2480600
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal2480600/"
+    title: "Draft Letter to George G. Meade on Failure to Pursue Lee"
+    author: "Abraham Lincoln"
+    recipient: "George G. Meade"
+    date: "1863-07-14"
+    document_type: draft_letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - war-as-paperwork
+      - public-private-lincoln
+    curator_score: 9.2
+    signals:
+      - military command
+      - unsent draft
+      - frustration
+      - war paperwork
+    why_keep: "Shows Lincoln turning military disappointment into a drafted but restrained paper response."
+    metadata:
+      loc_item_id: mal2480600
+  - id: loc:mal1678700
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal1678700/"
+    title: "Draft Letter to George B. McClellan on the Peninsula"
+    author: "Abraham Lincoln"
+    recipient: "George B. McClellan"
+    date: "1862-07-04"
+    document_type: draft_letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - war-as-paperwork
+      - public-private-lincoln
+    curator_score: 8.8
+    signals:
+      - military command
+      - logistics
+      - draft response
+      - war paperwork
+    why_keep: "Evidence of how Lincoln converted operational pressure into written direction."
+    metadata:
+      loc_item_id: mal1678700
+  - id: loc:mal1134700
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal1134700/"
+    title: "Edward Bates to Abraham Lincoln on Missouri Pardons"
+    author: "Edward Bates"
+    recipient: "Abraham Lincoln"
+    date: "1861-08-24"
+    document_type: letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - war-as-paperwork
+      - incoming-pressure
+    curator_score: 7.9
+    signals:
+      - pardon request
+      - wartime administration
+      - incoming pressure
+    why_keep: "A compact example of wartime pardon pressure reaching Lincoln through official channels."
+    metadata:
+      loc_item_id: mal1134700
+  - id: loc:mal2593300
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal2593300/"
+    title: "Addition to Lincoln's Letter to James C. Conkling"
+    author: "Abraham Lincoln"
+    recipient: "James C. Conkling"
+    date: "1863-08-31"
+    document_type: letter_addition
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - emancipation-in-motion
+      - incoming-pressure
+      - public-private-lincoln
+    curator_score: 8.7
+    signals:
+      - public argument
+      - emancipation defense
+      - Black soldiers
+      - political pressure
+    why_keep: "A small but pointed addition that shows public argument being tuned under pressure."
+    metadata:
+      loc_item_id: mal2593300
+  - id: loc:mal3565200
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal3565200/"
+    title: "Frederick Douglass to Abraham Lincoln on Helping Slaves Escape"
+    author: "Frederick Douglass"
+    recipient: "Abraham Lincoln"
+    date: "1864-08-29"
+    document_type: letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - emancipation-in-motion
+      - incoming-pressure
+    curator_score: 9.1
+    signals:
+      - incoming pressure
+      - emancipation policy
+      - practical plan
+      - Black leadership
+    why_keep: "External pressure and practical emancipation planning from Douglass in direct correspondence."
+    metadata:
+      loc_item_id: mal3565200
+  - id: loc:mal2812800
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal2812800/"
+    title: "Lincoln to Edward Everett on the Gettysburg Address"
+    author: "Abraham Lincoln"
+    recipient: "Edward Everett"
+    date: "1863-11-20"
+    document_type: letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - public-private-lincoln
+    curator_score: 8.1
+    signals:
+      - public text circulation
+      - private letter
+      - Gettysburg Address
+    why_keep: "Private circulation context for one of Lincoln's most public texts."
+    metadata:
+      loc_item_id: mal2812800
+  - id: loc:mal4356500
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal4356500/"
+    title: "Gettysburg Address, Nicolay Copy"
+    author: "Abraham Lincoln"
+    date: "1863-11-01"
+    document_type: speech_draft
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - public-private-lincoln
+    curator_score: 8.9
+    signals:
+      - public language
+      - draft copy
+      - rhetoric
+    why_keep: "A manuscript copy for comparing public rhetoric with document transmission."
+    metadata:
+      loc_item_id: mal4356500
+  - id: loc:mal4359700
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal4359700/"
+    title: "Memorandum on Probable Failure of Reelection"
+    author: "Abraham Lincoln"
+    date: "1864-08-23"
+    document_type: memorandum
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - incoming-pressure
+      - public-private-lincoln
+    curator_score: 9.4
+    signals:
+      - private memorandum
+      - political pressure
+      - cabinet endorsement
+      - election crisis
+    why_keep: "Brief but unusually direct evidence of private political contingency planning."
+    metadata:
+      loc_item_id: mal4359700
+  - id: loc:mal4500030
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal4500030/"
+    title: "Mourning Cards and Funeral Ephemera"
+    date: "1865"
+    document_type: ephemera
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - lincoln-after-lincoln
+    curator_score: 7.6
+    signals:
+      - mourning
+      - commemoration
+      - posthumous memory
+    why_keep: "Post-assassination material for separating Lincoln's memory from working Lincoln evidence."
+    metadata:
+      loc_item_id: mal4500030
+  - id: loc:mal4170100
+    source_type: loc_item
+    url: "https://www.loc.gov/item/mal4170100/"
+    title: "John Hay to John G. Nicolay on Lincoln Biography"
+    author: "John Hay"
+    recipient: "John G. Nicolay"
+    date: "1882-06-25"
+    document_type: letter
+    rights_level: no_known_restrictions
+    selected: true
+    paths:
+      - lincoln-after-lincoln
+    curator_score: 7.8
+    signals:
+      - biography
+      - memory work
+      - posthumous interpretation
+    why_keep: "A posthumous biography-planning item that keeps memory-making distinct from life-era documents."
+    metadata:
+      loc_item_id: mal4170100
+  - id: pg:lincoln-writings-vol-1
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2653.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 1: 1832-1843"
+    author: "Abraham Lincoln"
+    date: "1832-1843"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - legal-mind
+      - humor-human-lincoln
+      - public-private-lincoln
+    curator_score: 9.2
+    signals:
+      - early career
+      - Illinois legislature
+      - Lyceum address
+      - plain style
+    why_keep: "New Salem to Springfield: earliest speeches, letters, and legal-political apprenticeship in Lincoln's own words."
+    metadata:
+      gutenberg_id: "2653"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-2
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2654.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 2: 1843-1858"
+    author: "Abraham Lincoln"
+    date: "1843-1858"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - legal-mind
+      - emancipation-in-motion
+      - public-private-lincoln
+    curator_score: 9.3
+    signals:
+      - Congress
+      - Mexican War opposition
+      - law practice
+      - Peoria speech
+    why_keep: "Congressional years and the anti-Nebraska turn, including the Peoria argument that reopened slavery as Lincoln's central question."
+    metadata:
+      gutenberg_id: "2654"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-3
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2655.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 3: The Lincoln-Douglas Debates (1858)"
+    author: "Abraham Lincoln"
+    date: "1858"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - legal-mind
+      - emancipation-in-motion
+      - humor-human-lincoln
+    curator_score: 9.4
+    signals:
+      - House Divided speech
+      - debate argument
+      - slavery politics
+      - platform humor
+    why_keep: "The House Divided speech and first Lincoln-Douglas debates: sustained public argument under direct rebuttal."
+    metadata:
+      gutenberg_id: "2655"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-4
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2656.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 4: The Lincoln-Douglas Debates, concluded (1858)"
+    author: "Abraham Lincoln"
+    date: "1858"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - legal-mind
+      - emancipation-in-motion
+      - humor-human-lincoln
+    curator_score: 9.2
+    signals:
+      - debate argument
+      - slavery politics
+      - constitutional reasoning
+      - platform humor
+    why_keep: "The later Lincoln-Douglas debates, where positions harden and Lincoln's constitutional case gets its fullest public test."
+    metadata:
+      gutenberg_id: "2656"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-5
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2657.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 5: 1858-1862"
+    author: "Abraham Lincoln"
+    date: "1858-1862"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - public-private-lincoln
+      - war-as-paperwork
+      - incoming-pressure
+      - emancipation-in-motion
+    curator_score: 9.6
+    signals:
+      - Cooper Union
+      - first inaugural
+      - secession crisis
+      - early war letters
+    why_keep: "Cooper Union, the first inaugural, and the secession crisis becoming a war presidency of letters and orders."
+    metadata:
+      gutenberg_id: "2657"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-6
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2658.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 6: 1862-1863"
+    author: "Abraham Lincoln"
+    date: "1862-1863"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - emancipation-in-motion
+      - war-as-paperwork
+      - public-private-lincoln
+    curator_score: 9.6
+    signals:
+      - emancipation policy
+      - Greeley letter
+      - military correspondence
+      - Gettysburg Address
+    why_keep: "Emancipation as published policy — Greeley letter, proclamations, army correspondence, and the Gettysburg Address."
+    metadata:
+      gutenberg_id: "2658"
+      editor: "Arthur Brooks Lapsley"
+  - id: pg:lincoln-writings-vol-7
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/2659.txt.utf-8"
+    title: "The Papers and Writings of Abraham Lincoln — Volume 7: 1863-1865"
+    author: "Abraham Lincoln"
+    date: "1863-1865"
+    document_type: writings_edited_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - war-as-paperwork
+      - incoming-pressure
+      - public-private-lincoln
+    curator_score: 9.5
+    signals:
+      - second inaugural
+      - 1864 election
+      - amnesty and reconstruction
+      - last speeches
+    why_keep: "Amnesty, the 1864 election, the second inaugural, and Lincoln's final speeches and telegrams to the end of the war."
+    metadata:
+      gutenberg_id: "2659"
+      editor: "Arthur Brooks Lapsley"

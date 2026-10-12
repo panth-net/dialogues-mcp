@@ -1,0 +1,245 @@
+version: 1
+corpus_id: miranda-archive
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "Verified public-domain Miranda primary-source volumes downloaded as OCR text from archive.org (the 1928 Robertson edition of the 1783-1784 US travel diary, the 1794 Dumouriez correspondence, the 1810 Antepara documents, the 1811 Biggs Leander account, the 1889 French-Revolution documents volume, the 1884 Rojas documentary biography, and the 1931 Fragments diary translation), plus the 1806 Coro proclamation from es.wikisource, after an explicit rights confirmation. The 24-volume Archivo del General Miranda itself stays a HathiTrust catalog pointer."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Miranda source work (further Archivo volumes, related archives)."
+paths:
+  three-revolutions:
+    title: "Three Revolutions"
+    point: "Follow one soldier through the American Revolution (Pensacola, 1781, under Spain), the French Revolutionary army (Valmy, Antwerp, his name on the Arc de Triomphe), and Spanish American independence."
+  travel-diaries-and-networks:
+    title: "Travel Diaries and Networks"
+    point: "Read the 1780s tours: the young United States (Washington, Hamilton, Knox), Europe, the Ottoman lands, and Catherine the Great's Russia, in obsessively kept diaries."
+  leander-and-the-first-republic:
+    title: "Leander and the First Republic"
+    point: "Trace the 1806 Leander expedition and the Coro landing, the First Venezuelan Republic, the capitulation of San Mateo in 1812, and the arrest at La Guaira."
+  archive-odyssey:
+    title: "The Archive's Own Odyssey"
+    point: "Track the 63 bound volumes themselves: shipped out in 1812, lost in England, found at Cirencester in 1922, bought by Venezuela, printed in Caracas from 1929."
+items:
+  - id: ia:robertson-diary-us-tour-1928
+    source_type: static_text_url
+    url: "https://archive.org/download/diaryoffrancisco1928unse/diaryoffrancisco1928unse_djvu.txt"
+    title: "The Diary of Francisco de Miranda: Tour of the United States, 1783-1784 (ed. W. S. Robertson, New York, 1928)"
+    author: "Francisco de Miranda"
+    date: "1783-1784 (edition 1928)"
+    document_type: travel_diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - travel-diaries-and-networks
+      - three-revolutions
+    curator_score: 9.5
+    signals:
+      - Spanish diary text
+      - Charleston to Boston tour
+      - Washington, Hamilton, Knox encounters
+      - pre-1930 US publication
+    why_keep: "The core travel-diary text in Miranda's own Spanish: the 1783-1784 tour of the young United States, in the 1928 Robertson edition (published in the US before 1930, public domain there). Verified July 2026: the OCR carries the diary text (El fuerte Moultry... on the Charleston defenses)."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/diaryoffrancisco1928unse"
+      ocr_note: "Uncorrected OCR of 18th-century-style Spanish (long-s rendered as f); prefer distinctive proper names when searching."
+      alternate_scans: "Same edition also at archive.org items diaryoffrancisco0000will and robertson-diary-of-francisco-de-miranda (the latter's text file keeps its original filename, not the <id>_djvu.txt pattern)."
+  - id: ia:dumouriez-correspondence-1794
+    source_type: static_text_url
+    url: "https://archive.org/download/originalcorrespo00miraiala/originalcorrespo00miraiala_djvu.txt"
+    title: "Original Correspondence between Generals Dumourier, Miranda, Pache and Beurnonville (London, 1794)"
+    author: "Francisco de Miranda and correspondents"
+    date: "1792-1793 (edition 1794)"
+    document_type: correspondence_volume
+    rights_level: public_domain
+    selected: true
+    paths:
+      - three-revolutions
+    curator_score: 8.8
+    signals:
+      - French Revolutionary army command
+      - Dumouriez and the war ministry
+      - Belgium campaign 1792-1793
+    why_keep: "Miranda's French Revolutionary generalship in the primary correspondence, published in London while he stood trial in Paris. Verified July 2026: the OCR carries the letters (I repeat it, General, I am moft fenfibly afflicted with the condition of the French troops in Belgium...)."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/originalcorrespo00miraiala"
+      ocr_note: "1794 typesetting: long-s appears as f in the OCR."
+  - id: ia:antepara-south-american-emancipation-1810
+    source_type: static_text_url
+    url: "https://archive.org/download/southamericanem00antegoog/southamericanem00antegoog_djvu.txt"
+    title: "South American Emancipation: Documents, Historical and Explanatory (J. M. Antepara, London, 1810)"
+    author: "Francisco de Miranda; José María Antepara (compiler)"
+    date: "1790s-1810 (edition 1810)"
+    document_type: document_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - three-revolutions
+      - leander-and-the-first-republic
+    curator_score: 8.4
+    signals:
+      - Miranda-sanctioned propaganda collection
+      - London lobbying for independence
+      - trial of the Leander prisoners
+    why_keep: "The document collection Miranda himself sanctioned in London to make the case for Spanish American independence, including Leander-expedition material. Verified July 2026 via the archive.org OCR text."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/southamericanem00antegoog"
+      ocr_note: "Google-scan OCR of 1810 print; expect character errors."
+  - id: ia:biggs-leander-history-1811
+    source_type: static_text_url
+    url: "https://archive.org/download/historydonfranc03bigggoog/historydonfranc03bigggoog_djvu.txt"
+    title: "History of Don Francisco de Miranda's Attempt to Effect a Revolution in South America (James Biggs, 1811)"
+    author: "James Biggs (participant); documents of Francisco de Miranda"
+    date: "1806-1808 (edition 1811)"
+    document_type: participant_account
+    rights_level: public_domain
+    selected: true
+    paths:
+      - leander-and-the-first-republic
+    curator_score: 8.6
+    signals:
+      - Leander expedition first-hand
+      - Coro landing 1806
+      - letters from the expedition
+    why_keep: "A participant's letters from the Leander expedition itself: the ship, the Coro landing, and the collapse — the closest open text to the 1806 campaign from inside it. Verified July 2026 via the archive.org OCR text. Note the author is a disillusioned volunteer, not Miranda; treat as witness testimony about him."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/historydonfranc03bigggoog"
+      ocr_note: "Google-scan OCR of 1811 print; expect character errors."
+  - id: ia:miranda-revolucion-francesa-1889
+    source_type: static_text_url
+    url: "https://archive.org/download/mirandaenlarevol00mira/mirandaenlarevol00mira_djvu.txt"
+    title: "Miranda en la revolución francesa: colección de documentos auténticos, 1792-1798 (Caracas, 1889)"
+    author: "Francisco de Miranda and correspondents"
+    date: "1792-1798 (edition 1889)"
+    document_type: document_collection
+    rights_level: public_domain
+    selected: true
+    paths:
+      - three-revolutions
+    curator_score: 8.5
+    signals:
+      - Valmy and Antwerp campaigns
+      - revolutionary tribunal defense
+      - documentos auténticos in Spanish
+    why_keep: "The French Revolution years in authentic documents, Spanish edition of 1889 collated against the 1810 original. Verified July 2026: the OCR carries the documentary text (el teniente de Dumouriez; el antiguo voluntario de Washington: el caraqueño General Miranda...)."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/mirandaenlarevol00mira"
+      ocr_note: "OCR of 1889 print; expect accent and ligature errors."
+  - id: ia:rojas-el-general-miranda-1884
+    source_type: static_text_url
+    url: "https://archive.org/download/elgeneralmirand00rojagoog/elgeneralmirand00rojagoog_djvu.txt"
+    title: "El general Miranda (Marqués de Rojas, Paris, 1884) — biography with transcribed documents"
+    author: "Marqués de Rojas; documents of Francisco de Miranda"
+    date: "1750-1816 (edition 1884)"
+    document_type: documentary_biography
+    rights_level: public_domain
+    selected: true
+    paths:
+      - three-revolutions
+      - archive-odyssey
+    curator_score: 7.5
+    signals:
+      - extensive document transcriptions
+      - nineteenth-century biography
+    why_keep: "A nineteenth-century documentary biography that transcribes many Miranda papers otherwise locked in the unprinted archive — useful Spanish coverage, but a biographer's selection: separate quoted documents from Rojas's narration when citing. Verified July 2026 via the archive.org OCR text."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/elgeneralmirand00rojagoog"
+      ocr_note: "Google-scan OCR of 1884 print; expect character errors."
+  - id: ia:fragments-xviii-century-diary-1931
+    source_type: static_text_url
+    url: "https://archive.org/download/fragmentsfromxvi00mira/fragmentsfromxvi00mira_djvu.txt"
+    title: "Fragments from an XVIII Century Diary: travels and adventures 1771-1789 (Caracas, 1931, English translation)"
+    author: "Francisco de Miranda"
+    date: "1771-1789 (edition 1931)"
+    document_type: travel_diary_translation
+    rights_level: rights_confirmed_user_download
+    selected: true
+    paths:
+      - travel-diaries-and-networks
+    curator_score: 7.8
+    signals:
+      - English translation of diary fragments
+      - Russia and the court of Catherine the Great
+      - Europe and Ottoman travels
+    why_keep: "English-language access to the wider 1771-1789 diary fragments, including the Russian episode. Verified July 2026 via the archive.org OCR text."
+    metadata:
+      source_collection: "Internet Archive"
+      source_record_url: "https://archive.org/details/fragmentsfromxvi00mira"
+      rights_note: "Published Caracas 1931 — one year past the US pre-1930 public-domain line, so the edition's status is gray; download requires explicit user confirmation and the text stays local for personal indexing."
+  - id: ws:proclamacion-coro-1806
+    source_type: static_html_url
+    url: "https://es.wikisource.org/api/rest_v1/page/html/Proclamaci%C3%B3n_de_Don_Francisco_de_Miranda%2C_Comandante-General_del_Ex%C3%A9rcito_Colombiano%2C_%C3%A1_los_pueblos_habitantes_del_Continente_Americo-Colombiano"
+    title: "Proclamación de Don Francisco de Miranda á los pueblos habitantes del Continente Americo-Colombiano (Coro, 1806)"
+    author: "Francisco de Miranda"
+    date: "1806"
+    document_type: proclamation
+    rights_level: public_domain
+    selected: true
+    paths:
+      - leander-and-the-first-republic
+    curator_score: 8.2
+    signals:
+      - Coro landing proclamation
+      - Colombian continent address
+      - es.wikisource transcription
+    why_keep: "The proclamation of the 1806 landing in Miranda's own words, the only substantive Miranda document transcribed on es.wikisource. Verified July 2026: the REST HTML carries the text (Obedeciendo á vuestros llamamientos... somos desembarcados en esta Provincia de Caracas...)."
+    metadata:
+      source_collection: "Spanish Wikisource"
+      source_record_url: "https://es.wikisource.org/wiki/Proclamación_de_Don_Francisco_de_Miranda,_Comandante-General_del_Exército_Colombiano,_á_los_pueblos_habitantes_del_Continente_Americo-Colombiano"
+      rights_note: "Public-domain 1806 text; Wikisource page framework is CC BY-SA."
+  - id: hathi:archivo-del-general-miranda
+    source_type: catalog_only
+    url: "https://catalog.hathitrust.org/Record/008300057"
+    title: "Archivo del General Miranda (24 volumes, Caracas, 1929-1950) — HathiTrust catalog record"
+    author: "Francisco de Miranda; Academia Nacional de la Historia (editors)"
+    date: "papers 1770s-1816; printed 1929-1950"
+    document_type: published_archive_edition
+    rights_level: catalog_only
+    selected: true
+    paths:
+      - archive-odyssey
+      - three-revolutions
+      - travel-diaries-and-networks
+      - leander-and-the-first-republic
+    curator_score: 6
+    signals:
+      - the only published run of the 63-volume archive
+      - HathiTrust digitization
+      - bulk download blocked
+    why_keep: "The printed Archivo itself — the only published edition of Miranda's 63-volume self-archive — is digitized at HathiTrust and nowhere else found (checked July 2026: absent from archive.org). Pointer only."
+    why_skip: "HathiTrust blocks bulk/programmatic download and its catalog 403s scripted requests, so nothing is fetched. Open the record in a browser to read volumes page by page; per-volume full-view status varies. The modern Colombeia edition (1978- ) is copyrighted and excluded."
+    metadata:
+      source_collection: "HathiTrust"
+      access_note: "Catalog pointer. View in a browser; do not script downloads against HathiTrust."
+      import_instructions: "If you legitimately obtain text of Archivo volumes (e.g., your own page-by-page reading notes or rights-cleared OCR), place UTF-8 .txt or .md files in this capsule's documents/ folder and run `dialogues corpus reindex miranda-archive`, after assessing the 1929-1950 edition's rights in your jurisdiction."
+  - id: user:miranda-extracted-text
+    source_type: user_supplied_only
+    title: "Text you extract from Archivo del General Miranda volumes"
+    author: "Francisco de Miranda and correspondents"
+    date: "papers 1770s-1816"
+    document_type: extracted archive text
+    rights_level: user_supplied_only
+    selected: true
+    paths:
+      - three-revolutions
+      - travel-diaries-and-networks
+      - leander-and-the-first-republic
+      - archive-odyssey
+    curator_score: 4
+    signals:
+      - user supplied text
+      - OCR from PDF scans
+      - multilingual papers
+    why_keep: "The downloaded set covers published satellites of the archive; text you extract from the Archivo volumes themselves can extend coverage locally."
+    why_skip: "Nothing is bundled or fetched. The 1929-1950 Caracas printing and the modern Colombeia edition (1978- ) carry edition-level rights the user must assess; OCR of old Spanish, French, and English type will be imperfect."
+    metadata:
+      access_note: "Miranda wrote and filed papers in Spanish, French, and English; keep the source language in the imported files."
+      import_instructions: "Place UTF-8 .txt or .md files (one document or one volume section per file) in this capsule's documents/ folder and run `dialogues corpus reindex miranda-archive`."

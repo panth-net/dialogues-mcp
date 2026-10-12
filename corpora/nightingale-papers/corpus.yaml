@@ -1,0 +1,43 @@
+id: nightingale-papers
+title: Florence Nightingale Papers
+subtitle: Nursing reform, hospital statistics, and four decades of letters from a sickroom command post
+tagline: "The founder of modern nursing — a data reformer whose books and letters turned hospital death rates into a public argument."
+description: >
+  A curated-source capsule for Florence Nightingale (1820-1910): the 1859
+  "Notes on Nursing", her post-Crimea program for female nursing in military
+  hospitals, her addresses to the St Thomas' training-school nurses, her
+  statistical assault on lying-in hospital mortality, and catalog records for
+  the Wellcome Collection's manuscript letters.
+languages:
+  - en
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - recipient
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No source text is bundled. Users download public-domain Project Gutenberg editions of Nightingale's published works locally. Wellcome Collection manuscript letters remain catalog-only records; their descriptions are not letter text."

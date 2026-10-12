@@ -1,0 +1,58 @@
+version: 1
+corpus_id: pepys-diary
+source_policy: user_downloaded_from_original_sources
+default_mode: curated-core
+download_modes:
+  curated-core:
+    visible_to_users: true
+    description: "The complete public-domain Wheatley edition of the diary from Project Gutenberg."
+  full-dev:
+    visible_to_users: false
+    description: "Curator-only candidates for fuller Pepys source work."
+paths:
+  plague-and-fire:
+    title: "Plague and Fire"
+    point: "Live through 1665-1666: the plague year and the Great Fire as one resident experienced them."
+  navy-office-and-work:
+    title: "Navy Office and Work"
+    point: "Follow administration, contracts, the Dutch war, and a career being built."
+  marriage-and-household:
+    title: "Marriage and Household"
+    point: "Read the domestic record: Elizabeth, servants, quarrels, jealousy, and reconciliation."
+  theatre-music-and-pleasure:
+    title: "Theatre, Music, and Pleasure"
+    point: "Track plays, music, food, and the vows Pepys made to ration his own pleasures."
+  money-and-ambition:
+    title: "Money and Ambition"
+    point: "Watch monthly accountings of worth, gifts, place-seeking, and self-advancement."
+  restoration-politics:
+    title: "Restoration Politics"
+    point: "See the court, the King, Parliament, and national crisis from a working insider."
+items:
+  - id: pg:pepys-diary-complete
+    source_type: static_text_url
+    url: "https://www.gutenberg.org/ebooks/4200.txt.utf-8"
+    title: "The Diary of Samuel Pepys, Complete (1660-1669)"
+    author: "Samuel Pepys"
+    date: "1660-1669"
+    document_type: diary
+    rights_level: public_domain
+    selected: true
+    paths:
+      - plague-and-fire
+      - navy-office-and-work
+      - marriage-and-household
+      - theatre-music-and-pleasure
+      - money-and-ambition
+      - restoration-politics
+    curator_score: 9.5
+    signals:
+      - plague year
+      - Great Fire
+      - Navy Office
+      - Restoration court
+      - domestic candor
+    why_keep: "The complete nine-year diary in one public-domain edition; the richest single first-person record of Restoration London."
+    metadata:
+      gutenberg_id: "4200"
+      edition: "Wheatley (1893-1899), transcribed by Mynors Bright"

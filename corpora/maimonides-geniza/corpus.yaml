@@ -1,0 +1,46 @@
+id: maimonides-geniza
+title: Maimonides in the Cairo Geniza
+subtitle: Autograph drafts, letters, and responsa of Moses Maimonides preserved in a synagogue storeroom
+tagline: "Autograph drafts and letters of the great medieval philosopher-physician, preserved by accident for 800 years in a Cairo synagogue storeroom."
+description: >
+  A hybrid capsule for Maimonides (1138-1204): catalog records for the Cairo
+  Geniza material — Judeo-Arabic working drafts of the Mishneh Torah and the
+  Guide of the Perplexed, responsa answered in his own hand, medical and
+  communal correspondence, and the letters around his brother David's death
+  at sea, as the Ben Ezra synagogue storeroom preserved them — plus
+  downloadable public-domain English translations of the finished works
+  (the Guide for the Perplexed and the Eight Chapters) so the books behind
+  the drafts can be read and searched locally.
+languages:
+  - he
+  - ar
+type: documentary_archive
+status: source_manifest_ready
+data_policy: curated_public_source_manifest_only
+default_search_mode: fts
+guide: guide.md
+search_rules: search-rules.md
+source_notes: source-notes.md
+citation_rules: citation-rules.md
+source_manifest: source-manifest.yaml
+downloadable: true
+download_policy: curated_public_source
+fields:
+  - doc_id
+  - title
+  - author
+  - date
+  - document_type
+  - source_item_id
+  - selection_paths
+  - curator_score
+  - chunk_index
+chunking:
+  min_chars: 300
+  max_chars: 1400
+  overlap_chars: 120
+  preserve_paragraphs: true
+license:
+  data_included: false
+  user_must_confirm_rights: true
+  notes: "No fragment text is bundled or downloaded: the Geniza records are Princeton Geniza Project catalog pointers only, and users request permitted transcriptions from the Princeton Geniza Lab before importing anything. Separately, users can download public-domain English translations of Maimonides' published works (Project Gutenberg and Internet Archive) after reviewing source terms."
