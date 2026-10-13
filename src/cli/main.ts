@@ -668,7 +668,7 @@ corpus
     if (options.json) writeJson(response);
     else {
       writeText(`Source status for ${response.corpus_id}: ${response.collection_state}`);
-      for (const approval of response.approved_selections) writeText(`- approved: ${approval.label} (${approval.coverage}), agreed ${approval.consented_at ?? "before agreements were recorded"}`);
+      for (const approval of response.approved_selections) writeText(`- downloaded: ${approval.label} (${approval.coverage}), started ${approval.consented_at ?? "before download records were kept"}`);
       writeText(`Downloaded: ${response.downloaded_items}; failed: ${response.failed_items}; no text: ${response.no_text_items}; blocked: ${response.blocked_items}`);
       writeText(`Download job: ${response.job.status}`);
       writeText(`Downloaded files: ${response.source_cache_files} (${formatBytes(response.source_cache_bytes)})`);
@@ -685,7 +685,7 @@ corpus
   .option("--mode <mode>", "Source manifest download mode")
   .option("--path <path>", "Curated source path to download")
   .option("--limit <number>", "Only the first N items of the chosen selection")
-  .option("--yes", "Agree to the shown notice without prompting (only after reviewing it)")
+  .option("--yes", "Accepted for older scripts; downloads no longer ask for confirmation")
   .option("--dry-run", "Show what would be downloaded without downloading")
   .option("--force", "Download again even if already on this computer")
   .option("--skip-index", "Download without rebuilding the search file")
@@ -724,16 +724,10 @@ corpus
       }
       const spec = specFromOptions({ sample: options.sample, mode: options.mode, path: options.path, itemIds });
       const preview = previewDownload(id, spec);
-      const confirmed = options.dryRun ? false : await confirmNotice(
-        `${preview.title}: ${preview.label}. ${preview.download_note ?? ""}\n${preview.rights_notice}`,
-        `Download ${preview.text_items} item(s) for ${id}?`,
-        options.yes
-      );
-      if (!confirmed && !options.dryRun) {
-        results.push({ corpus_id: id, ok: false, needs_confirmation: true, rights_notice: preview.rights_notice });
-        failures += 1;
-        continue;
+      if (!options.dryRun && !options.json) {
+        writeText(`${preview.title}: ${preview.label}. ${preview.download_note ?? ""}\n${preview.rights_notice}`);
       }
+      const confirmed = !options.dryRun;
       try {
         const response = await downloadFromSourceManifest(id, {
           sample: options.sample,

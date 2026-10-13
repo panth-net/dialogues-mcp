@@ -6,9 +6,9 @@ import { canDownloadText, rightsLevelForItem, rightsSummary } from "./rights.js"
 import { selectedManifestItems } from "./sourceManifest.js";
 import type { SourceItem, SourceManifest } from "./types.js";
 
-// A selection says exactly which manifest items a download covers. Consent is
-// bound to a selection ID derived from the items, rules, and notice text, so
-// a changed selection or materially changed notice needs a new agreement.
+// A selection says exactly which manifest items a download covers. Each
+// download is recorded with a selection ID derived from the items, rules, and
+// notice text, so a changed selection or notice shows up as a new record.
 
 export type SelectionSpec =
   | { kind: "sample" }
@@ -138,7 +138,7 @@ function buildNotice(capsule: CorpusCapsule, manifest: SourceManifest, items: So
     `Collection: ${capsule.manifest.title} (${capsule.id}). Selection: ${label}.`,
     downloadNote,
     capsule.manifest.license.notes,
-    "Dialogues downloads these documents from their original sources to this computer only after you agree. It never bypasses logins, borrowing, DRM, paywalls, or other access controls.",
+    "Dialogues downloads these documents from their original sources to this computer. It never bypasses logins, borrowing, DRM, paywalls, or other access controls.",
     `Rights levels in this selection: ${Object.entries(summary).map(([level, count]) => `${level} ${count}`).join(", ") || "none"}.`,
     manifest.source_policy ? `Source policy: ${manifest.source_policy}.` : null
   ].filter(Boolean).join(" ");

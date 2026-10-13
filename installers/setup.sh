@@ -114,4 +114,4 @@ if [ -n "$DATA_DIR" ]; then set -- "$@" --data-dir "$DATA_DIR"; fi
 echo ""
 echo "No document collections were downloaded."
 echo "Next: fully quit and reopen the app you connected, then send:"
-echo "  Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything."
+echo "  Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose."

@@ -106,12 +106,12 @@ test("list_corpora reports local size, status, and the sample separately from ar
   }
 });
 
-test("download without agreement returns the notice and fetches nothing", async () => {
+test("a preview-only call returns the notice and fetches nothing", async () => {
   const network = mockFetch(() => new Response("should not be fetched", { status: 200 }));
   const { client, close } = await connect();
   try {
-    const response = structured(await client.callTool({ name: "download_builtin_corpus", arguments: { corpusId: "darwin-correspondence", selection: "sample" } }));
-    assert.equal(response.needs_confirmation, true);
+    const response = structured(await client.callTool({ name: "download_builtin_corpus", arguments: { corpusId: "darwin-correspondence", selection: "sample", confirmedRights: false } }));
+    assert.equal(response.preview_only, true);
     assert.equal(response.coverage, "sample");
     assert.equal(response.source_count, 6);
     assert.equal(response.download_bytes, 723433);
@@ -160,17 +160,17 @@ test("preferences round-trip and reject oversized values", async () => {
   }
 });
 
-test("agreed downloads run in the background, report progress, resume by continuation, and index in a worker", async () => {
+test("downloads start without a confirmation step, run in the background, report progress, resume by continuation, and index in a worker", async () => {
   const network = mockFetch((href) => href.includes("archive.org")
     ? new Response(`RELATION of what occurred in New France. ${href.includes("jesuits34") ? "Brebeuf" : "Acadia"} winter canoe mission.`, { status: 200 })
     : new Response("missing", { status: 404 }));
   const { client, close } = await connect();
   try {
-    const preview = structured(await client.callTool({ name: "download_builtin_corpus", arguments: { corpusId: "jesuit-relations", selection: "sample" } }));
-    assert.equal(preview.needs_confirmation, true);
+    const preview = structured(await client.callTool({ name: "download_builtin_corpus", arguments: { corpusId: "jesuit-relations", selection: "sample", confirmedRights: false } }));
+    assert.equal(preview.preview_only, true);
     let response = structured(await client.callTool({
       name: "download_builtin_corpus",
-      arguments: { corpusId: "jesuit-relations", selection: "sample", confirmedRights: true, noticeSha256: preview.notice_sha256 }
+      arguments: { corpusId: "jesuit-relations", selection: "sample", noticeSha256: preview.notice_sha256 }
     }));
     for (let attempt = 0; response.status === "in_progress" && attempt < 20; attempt += 1) {
       assert.ok(response.continuation);

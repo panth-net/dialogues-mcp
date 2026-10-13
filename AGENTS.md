@@ -43,12 +43,12 @@ The installer checks for Node.js 22.16 or newer and npm, builds this folder, ins
 Then verify with `dialogues ready`. Tell the user to fully quit and reopen the app, then send:
 
 ```text
-Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything.
+Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose.
 ```
 
 ## Choosing collections
 
-After restart, the user chooses collections inside their AI app. Show the collections as a table (title, tagline, local size, status). Recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi: say what each contains, its download size, and the source terms in plain words. Get one clear yes for the exact batch before downloading. A changed selection or notice needs a new yes. Offer fuller collections after the user has tried the sample.
+After restart, the user chooses collections inside their AI app. Show the collections as a table (title, tagline, local size, status). Recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi: say what each contains, its download size, and the source terms in plain words. Download what the user picks without asking them to confirm. Offer fuller collections after the user has tried the sample.
 
 ## Plain setup language
 

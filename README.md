@@ -29,7 +29,7 @@ When you're done, tell me in plain English whether it worked, which app you conn
 
 <!-- first-message:start -->
 ```text
-Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything.
+Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose.
 ```
 <!-- first-message:end -->
 
@@ -44,7 +44,7 @@ dialogues setup --client claude-desktop   # or claude-code, codex, cursor, vscod
 
 ## Documents
 
-Dialogues MCP runs completely on your computer. The diaries and letters are downloaded to your computer and stay there. The package contains no document text, only guides and source lists, and your AI asks before downloading anything.
+Dialogues MCP runs completely on your computer. The diaries and letters are downloaded to your computer and stay there. The package contains no document text, only guides and source lists.
 
 | Collection | Downloads from |
 | --- | --- |
@@ -83,7 +83,7 @@ Dialogues MCP runs completely on your computer. The diaries and letters are down
 | Xu Xiake Travel Diaries | [Wikisource](https://wikisource.org) · [Chinese Text Project](https://ctext.org) |
 | Yi Sun-sin War Diary | [Institute for the Translation of Korean Classics](https://db.itkc.or.kr) · [Wikisource](https://wikisource.org) · [Korea Heritage Service](https://www.heritage.go.kr) · [LTI Korea Library](https://library.ltikorea.or.kr) |
 
-Some sources are non-commercial or share-alike, such as the Van Gogh letters and Gandhi's Collected Works. Your AI shows the terms before you agree to a download.
+Some sources are non-commercial or share-alike, such as the Van Gogh letters and Gandhi's Collected Works. Your AI mentions this when it downloads them.
 
 You can also add your own files (`.txt`, `.md`, `.pdf` with selectable text, `.epub`, `.docx`): ask your AI to use Dialogues to import a folder as a new document collection.
 
@@ -104,7 +104,7 @@ Documents are stored in `~/Dialogues` unless you choose another folder with `--d
 
 ## Privacy
 
-Documents, search files, and logs stay on your computer. Passages Dialogues finds are sent to the AI app you use, under that app's terms. Dialogues has no account, telemetry, or update checks, and goes online only to download documents you agreed to. See [PRIVACY.md](PRIVACY.md).
+Documents, search files, and logs stay on your computer. Passages Dialogues finds are sent to the AI app you use, under that app's terms. Dialogues has no account, telemetry, or update checks, and goes online only to download the documents you ask for. See [PRIVACY.md](PRIVACY.md).
 
 ## Development
 

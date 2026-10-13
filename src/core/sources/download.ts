@@ -299,7 +299,7 @@ export function startDownload(corpusId: string, spec: SelectionSpec, options: St
     return { started: false as const, needs_confirmation: true as const, preview: previewDownload(corpusId, spec) };
   }
   if (options.expectedNoticeSha256 && options.expectedNoticeSha256 !== selection.notice_sha256) {
-    throw new Error("The source notice changed since it was shown. Show the new notice and ask again before downloading.");
+    throw new Error("The source notice changed since the preview. Download again without noticeSha256, or preview first.");
   }
   const running = activeJobs.get(corpusId);
   if (running && running.selectionId !== selection.selection_id) {
@@ -361,16 +361,16 @@ export function resumeDownload(corpusId: string, continuation: string, options: 
   const state = loadDownloadState(corpusId);
   const job = state.job;
   if (!job || job.selection_id !== token.selectionId) throw new Error("No matching download to continue. Check the download status.");
-  if (job.status === "canceled") throw new Error("That download was canceled. Start it again (with agreement) if you still want it.");
+  if (job.status === "canceled") throw new Error("That download was canceled. Start it again if you still want it.");
   if (job.status === "complete") return { resumed: false };
   const approval = state.approvals.find((entry) => entry.selection_id === job.selection_id);
-  if (!approval) throw new Error("The agreement for this download is missing. Start it again with agreement.");
+  if (!approval) throw new Error("The record for this download is missing. Start it again.");
   const capsule = getCorpusCapsule(corpusId);
   assertDownloadAllowedCapsule(capsule, options);
   const manifest = loadSourceManifest(capsule);
   const selection = resolveSelection(capsule, manifest, approval.spec);
   if (selection.selection_id !== approval.selection_id) {
-    throw new Error("The collection's source list changed since you agreed. Review the new notice and start again.");
+    throw new Error("The collection's source list changed since this download started. Start it again.");
   }
   job.status = "running";
   job.updated_at = nowIso();
@@ -676,7 +676,7 @@ function writeReport(capsule: CorpusCapsule, state: DownloadStateV2): void {
     "",
     "## Approved selections",
     "",
-    ...state.approvals.map((approval) => `- ${approval.label} [${approval.coverage}] agreed ${approval.consented_at ?? "before consent records were kept"}`),
+    ...state.approvals.map((approval) => `- ${approval.label} [${approval.coverage}] started ${approval.consented_at ?? "before download records were kept"}`),
     "",
     "## Items",
     "",
@@ -763,7 +763,7 @@ export async function downloadFromSourceManifest(corpusId: string, options: Sour
       ...preview,
       ok: false,
       needs_confirmation: true,
-      next_step: "Ask the user to agree to this notice, then call again with confirmedRights: true."
+      next_step: "Nothing was downloaded. Call again with confirmedRights: true to download."
     };
   }
   const started = startDownload(corpusId, spec, {

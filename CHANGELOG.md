@@ -2,7 +2,7 @@
 
 ## 0.1.1
 
-README update.
+Downloads start without a confirmation step. README update.
 
 ## 0.1.0
 

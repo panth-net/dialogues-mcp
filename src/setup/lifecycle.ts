@@ -33,7 +33,7 @@ export function firstMessage(): string {
     const prompts = JSON.parse(fs.readFileSync(path.join(packageRoot(), "resources", "install-prompts.json"), "utf8")) as { first_message: string };
     return prompts.first_message;
   } catch {
-    return "Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything.";
+    return "Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose.";
   }
 }
 

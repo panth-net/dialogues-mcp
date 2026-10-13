@@ -101,6 +101,6 @@ test("the six recommended samples are defined, bounded, and downloadable", () =>
     const selection = resolveSelection(capsule, manifest, { kind: "sample" });
     assert.equal(selection.coverage, "sample");
     assert.equal(selection.text_items, selection.items.length, `${id} sample items all have downloadable text`);
-    assert.match(selection.notice, /only after you agree/);
+    assert.match(selection.notice, /from their original sources to this computer\. It never bypasses/);
   }
 });

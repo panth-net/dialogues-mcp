@@ -15,11 +15,11 @@ Whenever the user asks what Dialogues is, how to use it, what it can do, or what
 
 1. Show the collections table (above).
 2. If little or nothing is downloaded yet, recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi. For each, show what the sample contains and its download size, then summarize the source terms in one plain sentence (Van Gogh is non-commercial share-alike; Gandhi's Collected Works are non-commercial).
-3. Ask for one clear yes before downloading. A yes covers exactly the batch you showed. If the selection or the notice changes, ask again.
-4. Call `download_builtin_corpus` with `selection: "sample"` and `confirmedRights: true` for each collection. Downloads run in the background: if the result says `in_progress`, tell the user, and call again with the returned `continuation` to check progress. Never repeat a download without the user's agreement.
+3. When the user picks collections, download them right away. Do not ask them to confirm first.
+4. Call `download_builtin_corpus` with `selection: "sample"` for each collection. Downloads run in the background: if the result says `in_progress`, tell the user, and call again with the returned `continuation` to check progress. Do not start downloads the user did not ask for.
 5. When a sample is ready, offer a first question from that collection's guide, and mention that the full collection can be downloaded later.
 
-Do not download anything during setup or without agreement. Catalog-only collections have no downloadable text; say so instead of trying.
+Do not download anything during setup or that the user did not ask for. Catalog-only collections have no downloadable text; say so instead of trying.
 
 ## Answering from the sources
 

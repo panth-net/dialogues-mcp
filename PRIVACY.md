@@ -8,7 +8,7 @@ Everything Dialogues stores is in your data folder (`~/Dialogues` unless you cho
 
 - search files (`indexes/`), downloaded source text (`source-cache/`), and collections you imported (`user-corpora/`);
 - `preferences.json` (for example how you like answers formatted);
-- `consents.jsonl`: each download you agreed to, with the time, the selection, and the notice text and its hash;
+- `consents.jsonl`: a record of each download, with the time, the selection, and the notice text and its hash;
 - `install-state.json`: which app entries and skill files Dialogues created, with a digest of each, the data folder, and the version (no other app settings);
 - `logs/`: operation logs.
 
@@ -22,7 +22,7 @@ When you ask a question, the AI app calls Dialogues' tools. The results (collect
 
 Dialogues contacts the internet only:
 
-- when you agree to download a collection: requests go to the original archives listed in that collection's source list (for example the Library of Congress, the Internet Archive, Project Gutenberg, the Darwin Correspondence Project, the Van Gogh Museum's letters site);
+- when you ask for a collection to be downloaded: requests go to the original archives listed in that collection's source list (for example the Library of Congress, the Internet Archive, Project Gutenberg, the Darwin Correspondence Project, the Van Gogh Museum's letters site);
 - when you install or update the package with npm (`npm install`, `dialogues update`).
 
 Starting the server, listing collections, searching, fetching passages, `dialogues ready`, and `dialogues doctor` make no network requests. Dialogues has no telemetry, no automatic update checks, no account, and does not listen on a network port.
@@ -33,7 +33,7 @@ Operation logs record what Dialogues did: commands, collection IDs, search queri
 
 - `DIALOGUES_LOG=off` turns operation logs off; `DIALOGUES_LOG=errors` keeps only errors.
 - `dialogues logs clear` deletes them.
-- Consent records (`consents.jsonl`) are kept regardless of the log setting, because they record what you agreed to download.
+- Download records (`consents.jsonl`) are kept regardless of the log setting, because they record what was downloaded and under which terms.
 
 ## Imports
 

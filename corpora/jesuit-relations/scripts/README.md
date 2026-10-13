@@ -10,7 +10,7 @@ dialogues corpus download jesuit-relations            # all 73 volumes
 dialogues reindex jesuit-relations                    # rebuild from downloaded text
 ```
 
-Both download commands show the source notice and ask before downloading.
+Both download commands show the source notice.
 Downloaded text and the search file are stored in your Dialogues data folder
 (`source-cache/jesuit-relations/` and `indexes/jesuit-relations/`), never in
 this capsule. The Thwaites edition is treated as public-domain source material;

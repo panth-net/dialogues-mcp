@@ -8,20 +8,19 @@ Dialogues is local-first. The package includes guides, source lists, importers, 
 - Built-in capsules are read-only at runtime. Downloads, search files, imported collections, logs, preferences, and consent records live in the user's data folder.
 - Users are responsible for confirming copyright, license, privacy, provenance, and source terms before importing, downloading, or sharing outputs.
 - Every capsule declares whether data is downloaded or user-provided, and every source item carries a rights level.
-- Download reports and consent records keep the source list, rights summary, and the notice the user agreed to (with its hash), separately from report timestamps.
+- Download reports and download records keep the source list, rights summary, and the notice shown (with its hash), separately from report timestamps.
 - A license label such as `open_license` or `no_known_restrictions` is not, by itself, permission to redistribute. Prebuilt text or index bundles are out of scope for v1 and would need per-source review.
 
-## Consent
+## Downloads
 
-- Every built-in download requires an explicit agreement to a notice that names the selection, its size when known, and the rights levels involved.
-- An agreement covers exactly that selection and notice. A different selection, or a changed notice, needs a new agreement. Clients may pass the `noticeSha256` they showed; a mismatch refuses the download.
-- `confirmedRights` is what the AI client reports. It is a record of agreement in that conversation, not independent proof of who agreed.
+- Built-in downloads start when the user asks for them; there is no separate confirmation step. The AI client mentions non-commercial or share-alike terms in plain words.
+- Each download is recorded in `consents.jsonl` with its selection, size when known, rights levels, and notice (with its hash). Clients may pass the `noticeSha256` from a preview; a mismatch refuses the download.
 
 ## No-circumvention policy
 
 Do not bypass login, borrowing, DRM, paywalls, IIIF restrictions, robots exclusions, or archive access controls. Do not scrape borrow-only books. Do not package restricted source text.
 
-Adapters refuse text downloads for `borrow_only`, `catalog_only`, and `user_supplied_only` items. `unknown`, `noncommercial_open_license`, and `rights_confirmed_user_download` items are downloaded only under the explicit agreement above.
+Adapters refuse text downloads for `borrow_only`, `catalog_only`, and `user_supplied_only` items. `unknown`, `noncommercial_open_license`, and `rights_confirmed_user_download` items are downloaded with their notice recorded as above.
 
 ## Network boundary
 

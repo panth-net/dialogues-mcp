@@ -168,8 +168,8 @@ const INSTRUCTIONS = [
   "Do not add unnecessary disclaimers, caveats, side notes, or red herrings about methodology - how the search works, what the sources or the library cannot settle, where else the user might look - while someone is using the service. Say such things only when they actually ask about the methodology or the code. (For example, do not write: \"A letter archive can't settle how much is inborn; that's a question for psychology research, which this library doesn't cover.\")",
   "Do not compress into fragments, shorthand, or clipped notes when writing, or just state a point and move on. The reader should never have to reassemble your meaning.",
   "Documents and search files are stored on the user's computer. Passages you fetch are shared with this AI app. Do not describe Dialogues as uploading nothing at all.",
-  "Whenever the user asks what Dialogues is, how to use it, what it can do, or what collections there are - including first-time setup - call list_corpora and show every collection, downloaded or not, as a short markdown table: title, the one-sentence tagline, size on this computer, and status in everyday words (for example: ready, sample only, partly downloaded, not downloaded, not available to download). If little or nothing is downloaded yet, recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi: say what each sample contains and its download size, summarize the source terms in one plain sentence, and ask which collections the user wants to download. Get one clear yes for the exact batch you showed before downloading.",
-  "Do not download collection text until the user agrees to the notice in plain words. A yes covers only the batch you showed; if the selection or notice changes, ask again. Downloads run in the background: when download_builtin_corpus reports in_progress, tell the user and call it again with the continuation to check on it. When reporting status, do not describe local document counts as the full archive size; they are locally indexed source items, and a sample is a deliberate selection.",
+  "Whenever the user asks what Dialogues is, how to use it, what it can do, or what collections there are - including first-time setup - call list_corpora and show every collection, downloaded or not, as a short markdown table: title, the one-sentence tagline, size on this computer, and status in everyday words (for example: ready, sample only, partly downloaded, not downloaded, not available to download). If little or nothing is downloaded yet, recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi: say what each sample contains and its download size, summarize the source terms in one plain sentence, and ask which collections the user wants to download. Download whatever they pick; do not ask them to confirm again.",
+  "When the user picks a collection or the sample, download it right away; do not ask them to confirm first. If a source is non-commercial or share-alike, mention that in one line. Downloads run in the background: when download_builtin_corpus reports in_progress, tell the user and call it again with the continuation to check on it. When reporting status, do not describe local document counts as the full archive size; they are locally indexed source items, and a sample is a deliberate selection.",
   "When someone greets a collection like a person ('hi Gandhi', 'let me talk to Pepys'), do not refuse and do not impersonate. Answer warmly in plain English: you cannot speak as him, but you can take them through what he actually wrote - then offer the 'Where to start' entries from that corpus guide as concrete first questions.",
   "When someone is vague, aimless, or just curious, treat it as an invitation, not a bad query. Pick something genuinely interesting from the sources, show it with a short quote, and suggest what to look at next. Plain English; never mention tool names or ask the user to rephrase in search terms.",
   "When a question touches a person or subject that is in one of the Dialogues collections and the user has not mentioned Dialogues yet in this conversation, first ask whether they want you to use Dialogues for the answer. If they say no, do not ask again in this conversation unless they tell you to.",
@@ -264,7 +264,7 @@ export function createDialoguesServer(): McpServer {
           }),
           errors,
           recommended_sample: ["pepys-diary", "vangogh-letters", "jesuit-relations", "darwin-correspondence", "lincoln-papers", "gandhi-collected-works"],
-          setup_next_step: "Show every collection as a short markdown table (title, tagline, size on this computer, status in everyday words). If little or nothing is downloaded yet, recommend the six-collection sample with its sizes and terms, and ask for one clear yes before downloading.",
+          setup_next_step: "Show every collection as a short markdown table (title, tagline, size on this computer, status in everyday words). If little or nothing is downloaded yet, recommend the six-collection sample with its sizes and terms, and download whatever the user picks without asking them to confirm.",
           coverage_note: "documents/chunks are locally indexed source items, not the full external archive. local_size is the search file on this computer; sample (only on collections that are not downloaded or hold just the sample) describes an optional small download, not what is searchable now; sample.download_bytes is what it downloads; full download sizes are not known in advance (null).",
           next_step: "Call get_corpus_guide for the relevant corpus before searching."
         };
@@ -529,7 +529,7 @@ export function createDialoguesServer(): McpServer {
     {
       title: "Download status",
       description:
-        "Show what is downloaded for a collection: approved selections with their agreement times, downloaded/failed/no-text counts, any running download, and what the search file covers. Does not return source text.",
+        "Show what is downloaded for a collection: downloaded selections with their start times, downloaded/failed/no-text counts, any running download, and what the search file covers. Does not return source text.",
       inputSchema: z.object({ corpusId: corpusIdSchema }),
       annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false }
     },
@@ -547,14 +547,14 @@ export function createDialoguesServer(): McpServer {
     {
       title: "Download a collection",
       description:
-        "Download a built-in collection from its original sources after the user chooses it and agrees to the notice. Never call this silently during setup. Without confirmedRights it only returns the notice and sizes. With confirmedRights it starts a background download and returns within about 40 seconds: if status is in_progress, call again with the continuation to check on it. Already-downloaded items and earlier selections are kept.",
+        "Download a built-in collection from its original sources when the user asks for it; no separate confirmation is needed. Never call this silently during setup. It starts a background download and returns within about 40 seconds: if status is in_progress, call again with the continuation to check on it. Pass confirmedRights: false to get only the contents, sizes, and terms without downloading. Already-downloaded items and earlier selections are kept.",
       inputSchema: z.object({
         corpusId: corpusIdSchema,
         selection: z.enum(["sample", "full"]).optional().describe("sample: the small first-run sample. full: the curated selection (default)."),
         mode: z.string().max(80).optional(),
         path: z.string().max(120).optional(),
-        confirmedRights: z.boolean().default(false).describe("True only after the user agreed to the notice for this exact selection."),
-        noticeSha256: z.string().max(80).optional().describe("notice_sha256 from the notice you showed, so the agreement is bound to that notice."),
+        confirmedRights: z.boolean().default(true).describe("Leave out to download. False returns only the contents, sizes, and terms."),
+        noticeSha256: z.string().max(80).optional().describe("Optional notice_sha256 from a preview; the download is refused if the notice changed since."),
         continuation: z.string().max(500).optional().describe("Continuation from an earlier call, to check on or resume a download."),
         force: z.boolean().default(false).describe("Download again even if already on this computer.")
       }),
@@ -582,8 +582,8 @@ export function createDialoguesServer(): McpServer {
           return jsonToolResult({
             ...preview,
             ok: false,
-            needs_confirmation: true,
-            next_step: "Show the user what this selection contains, its download size, and the notice in plain words. If they agree, call again with confirmedRights: true and noticeSha256."
+            preview_only: true,
+            next_step: "Nothing was downloaded. Call again without confirmedRights: false to download this selection."
           });
         }
         startDownload(corpusId, spec, {
@@ -707,7 +707,7 @@ export function createDialoguesServer(): McpServer {
     () => promptMessage([
       "Use Dialogues for a guided conversation with local document collections.",
       "First call list_corpora.",
-      "If I am setting up for the first time, show me the collections as a table with one sentence about each person, recommend the small sample, and ask before downloading anything.",
+      "If I am setting up for the first time, show me the collections as a table with one sentence about each person, recommend the small sample, and download what I choose.",
       "Before answering from a collection, read the guide, search, fetch exact passages with context, then answer with citations and limitations.",
       "If I seem unsure what to ask, offer me the collection's 'Where to start' questions.",
       "Use simple words unless I ask for technical detail."

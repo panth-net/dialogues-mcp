@@ -17,7 +17,7 @@ Transitive dependencies are under MIT, ISC, BSD-2-Clause, BSD-3-Clause, Apache-2
 
 ## Documents
 
-Dialogues ships guides and source lists, never source texts. Texts you download keep the terms of their publishers, recorded per item as a rights level and summarized in the notice you agree to before downloading. Notable cases:
+Dialogues ships guides and source lists, never source texts. Texts you download keep the terms of their publishers, recorded per item as a rights level and summarized in the notice shown when you download them. Notable cases:
 
 - **Vincent van Gogh - The Letters** (Van Gogh Museum and Huygens ING): CC BY-NC-SA 4.0. Non-commercial use; share adaptations under the same license; attribute the edition.
 - **The Collected Works of Mahatma Gandhi** (Publications Division, Government of India, via archive.org scans): offered under non-commercial terms.

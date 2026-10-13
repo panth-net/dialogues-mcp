@@ -66,10 +66,10 @@ Do not make the user hand-edit Claude, Codex, Cursor, VS Code, or Antigravity co
 After setup, tell the user to fully quit and reopen the app, then send:
 
 ```text
-Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose. Ask me before downloading anything.
+Hi! I want to use Dialogues. Show me the document collections, recommend where to start, and help me choose.
 ```
 
-Then show the collections as a table (title, one-sentence tagline, local size, status), recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi with its sizes and source terms, and ask before downloading anything.
+Then show the collections as a table (title, one-sentence tagline, local size, status), recommend the small sample from Pepys, Van Gogh, Jesuit Relations, Darwin, Lincoln, and Gandhi with its sizes and source terms, and download what the user picks.
 
 ## Add a corpus
 
