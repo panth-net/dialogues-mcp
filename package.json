@@ -1,6 +1,6 @@
 {
   "name": "dialogues-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Guided conversations with historical diaries, letters, and papers. A local-first MCP server: collections and search files stay on your computer.",
   "type": "module",
   "mcpName": "io.github.panth-net/dialogues",

@@ -3,7 +3,7 @@
   "name": "io.github.panth-net/dialogues",
   "title": "Dialogues",
   "description": "Guided conversations with historical diaries, letters, and papers stored on your computer.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://panth-net.github.io/dialogues-mcp-landing-page/",
   "repository": {
     "url": "https://github.com/panth-net/dialogues-mcp",
@@ -14,13 +14,19 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "dialogues-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        { "type": "positional", "value": "mcp" },
-        { "type": "positional", "value": "serve" },
+        {
+          "type": "positional",
+          "value": "mcp"
+        },
+        {
+          "type": "positional",
+          "value": "serve"
+        },
         {
           "type": "named",
           "name": "--data-dir",
